@@ -1,15 +1,941 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    Hola Mundo <i class="ri-github-fill"></i> GitHub
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Noto+Sans:wght@400;500;600;700&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <div class="header-container">
+        <a href="#hero" class="logo">
+          <h1 class="sitename">Portafolio</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#resume">Currículum</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Más</span> <i class="ri-arrow-down-s-line toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Elemento uno</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Más aún</span> <i class="ri-arrow-down-s-line toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Sub elemento uno</a></li>
+                    <li><a href="#">Sub elemento dos</a></li>
+                    <li><a href="#">Sub elemento tres</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Elemento dos</a></li>
+                <li><a href="#">Elemento tres</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+          <i id="mobileNavToggle" class="mobile-nav-toggle ri-menu-line"></i>
+        </nav>
+        <div class="header-social-links">
+          <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="hero" class="hero section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="reveal" data-delay="100">
+              <h2>Lorem ipsum dolor sit amet consectetur</h2>
+              <p class="lead">
+                Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim
+              </p>
+              <div class="cta-buttons reveal" data-delay="200">
+                <a href="#portfolio" class="btn btn-primary">Ver mi trabajo</a>
+                <a href="#contact" class="btn btn-outline">Conectemos</a>
+              </div>
+              <div class="hero-stats reveal" data-delay="300">
+                <div class="stat-item">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">100+</span>
+                  <span class="stat-label">Proyectos completados</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Clientes satisfechos</span>
+                </div>
+              </div>
+            </div>
+            <div class="reveal" data-effect="zoom" data-delay="300">
+              <div class="hero-image">
+                <div class="media-placeholder"><span class="circle"></span></div>
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section light-background">
+        <div class="container section-title reveal">
+          <h2>Sobre mí</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
+            ut labore
+          </p>
+        </div>
+        <div class="container">
+          <div class="about-grid">
+            <div class="reveal" data-effect="right" data-delay="200">
+              <div class="about-image">
+                <div class="media-placeholder"><span class="circle"></span></div>
+              </div>
+            </div>
+            <div class="reveal" data-effect="left" data-delay="300">
+              <div class="about-content">
+                <span class="subtitle">Sobre mí</span>
+                <h2>Diseño UI/UX y desarrollo web</h2>
+                <p class="lead mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="mb-4">
+                  Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip
+                </p>
+                <div class="personal-info">
+                  <div class="info-grid">
+                    <div class="info-item">
+                      <span class="label">Nombre</span>
+                      <span class="value">Lorem Ipsum</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Teléfono</span>
+                      <span class="value">+00 000 000 000</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Edad</span>
+                      <span class="value">00 años</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Correo</span>
+                      <span class="value">lorem@ipsum.com</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Ocupación</span>
+                      <span class="value">Ingeniero Lorem</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Nacionalidad</span>
+                      <span class="value">Ipsolandia</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="signature">
+                  <div class="signature-image">
+                    <span class="avatar-circle"></span>
+                  </div>
+                  <div class="signature-info">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Adipiscing Elit, Lorem Ipsum</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section">
+        <div class="container">
+          <div class="skills-grid">
+            <div class="skill-box reveal" data-delay="100">
+              <h3>HTML</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              <span class="progress-value">90%</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-value="90"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-box reveal" data-delay="200">
+              <h3>CSS</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              <span class="progress-value">95%</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-value="95"
+                  aria-valuenow="95"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-box reveal" data-delay="300">
+              <h3>JavaScript</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              <span class="progress-value">80%</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-value="80"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-box reveal" data-delay="400">
+              <h3>Photoshop</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              <span class="progress-value">55%</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  data-value="55"
+                  aria-valuenow="55"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="resume section">
+        <div class="container section-title reveal">
+          <h2>Currículum</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
+            ut labore
+          </p>
+        </div>
+        <div class="container">
+          <div class="resume-wrapper">
+            <div class="resume-block reveal">
+              <h2>Experiencia laboral</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                incididunt.
+              </p>
+              <div class="timeline">
+                <div class="timeline-item reveal" data-delay="200">
+                  <div class="timeline-left">
+                    <h4 class="company">Industrias Lorem</h4>
+                    <span class="period">2023 - Actualidad</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Líder de proyecto</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="300">
+                  <div class="timeline-left">
+                    <h4 class="company">Corporación Ipsum</h4>
+                    <span class="period">2019 - 2023</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Especialista senior en diseño gráfico</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+                    </p>
+                    <ul>
+                      <li>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                        incididunt
+                      </li>
+                      <li>
+                        Ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud
+                        exercitation
+                      </li>
+                      <li>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure
+                        dolor
+                      </li>
+                      <li>
+                        Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="400">
+                  <div class="timeline-left">
+                    <h4 class="company">Soluciones Dolor</h4>
+                    <span class="period">2015 - 2019</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Especialista en diseño gráfico</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="resume-block reveal" data-delay="100">
+              <h2>Formación académica</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+              </p>
+              <div class="timeline">
+                <div class="timeline-item reveal" data-delay="200">
+                  <div class="timeline-left">
+                    <h4 class="company">Universidad Sit Amet</h4>
+                    <span class="period">2017 - 2019</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Diplomado en Consequat</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="300">
+                  <div class="timeline-left">
+                    <h4 class="company">Corporación Ipsum</h4>
+                    <span class="period">2019 - 2023</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Maestría en Bellas Artes y Diseño Gráfico</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item reveal" data-delay="400">
+                  <div class="timeline-left">
+                    <h4 class="company">Universidad Sit Amet</h4>
+                    <span class="period">2015 - 2019</span>
+                  </div>
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-right">
+                    <h3 class="position">Licenciatura en Bellas Artes y Diseño Gráfico</h3>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio section">
+        <div class="container section-title reveal">
+          <h2>Portafolio</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
+            ut labore
+          </p>
+        </div>
+        <div class="container">
+          <div class="portfolio-filters-container reveal" data-delay="200">
+            <ul class="portfolio-filters">
+              <li data-filter="*" class="filter-active">Todo</li>
+              <li data-filter="web">Diseño web</li>
+              <li data-filter="graphics">Gráficos</li>
+              <li data-filter="motion">Animación</li>
+              <li data-filter="brand">Identidad de marca</li>
+            </ul>
+          </div>
+          <div class="portfolio-grid reveal" data-delay="300">
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="media-placeholder"><span class="circle"></span></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="#" class="preview-link" aria-label="Vista previa"
+                        ><i class="ri-eye-line"></i
+                      ></a>
+                      <a href="#" class="details-link" aria-label="Ver detalles"
+                        ><i class="ri-arrow-right-line"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Diseño web</span>
+                  <h3>Lorem Ipsum Dolor</h3>
+                  <p>Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="media-placeholder"><span class="circle"></span></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="#" class="preview-link" aria-label="Vista previa"
+                        ><i class="ri-eye-line"></i
+                      ></a>
+                      <a href="#" class="details-link" aria-label="Ver detalles"
+                        ><i class="ri-arrow-right-line"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Gráficos</span>
+                  <h3>Consectetur Adipiscing</h3>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="motion">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="media-placeholder"><span class="circle"></span></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="#" class="preview-link" aria-label="Vista previa"
+                        ><i class="ri-eye-line"></i
+                      ></a>
+                      <a href="#" class="details-link" aria-label="Ver detalles"
+                        ><i class="ri-arrow-right-line"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Animación</span>
+                  <h3>Sed Do Eiusmod</h3>
+                  <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="brand">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="media-placeholder"><span class="circle"></span></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="#" class="preview-link" aria-label="Vista previa"
+                        ><i class="ri-eye-line"></i
+                      ></a>
+                      <a href="#" class="details-link" aria-label="Ver detalles"
+                        ><i class="ri-arrow-right-line"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Identidad de marca</span>
+                  <h3>Ut Enim Minim</h3>
+                  <p>Nisi ut aliquip ex ea commodo consequat duis aute irure dolor</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="media-placeholder"><span class="circle"></span></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="#" class="preview-link" aria-label="Vista previa"
+                        ><i class="ri-eye-line"></i
+                      ></a>
+                      <a href="#" class="details-link" aria-label="Ver detalles"
+                        ><i class="ri-arrow-right-line"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Diseño web</span>
+                  <h3>Quis Nostrud</h3>
+                  <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <div class="media-placeholder"><span class="circle"></span></div>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="#" class="preview-link" aria-label="Vista previa"
+                        ><i class="ri-eye-line"></i
+                      ></a>
+                      <a href="#" class="details-link" aria-label="Ver detalles"
+                        ><i class="ri-arrow-right-line"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Gráficos</span>
+                  <h3>Exercitation Ullamco</h3>
+                  <p>Laboris nisi ut aliquip ex ea commodo consequat duis aute</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials section light-background">
+        <div class="container section-title reveal">
+          <h2>Testimonios</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
+            ut labore
+          </p>
+        </div>
+        <div class="container reveal">
+          <div class="testimonials-slider">
+            <div class="slider-track">
+              <div class="testimonial-slide">
+                <div class="testimonial-item">
+                  <div class="layout">
+                    <div>
+                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <p>
+                        Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt
+                        in culpa qui officia.
+                      </p>
+                      <div class="profile">
+                        <span class="avatar-circle profile-img"></span>
+                        <div class="profile-info">
+                          <h3>Lorem Ipsum</h3>
+                          <span>Cliente</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-img-wrapper">
+                      <div class="media-placeholder"><span class="circle"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial-item">
+                  <div class="layout">
+                    <div>
+                      <h2>Dolor Sit Amet Consectetur</h2>
+                      <p>
+                        Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat duis aute.
+                      </p>
+                      <p>
+                        Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa
+                        qui officia deserunt mollit anim.
+                      </p>
+                      <div class="profile">
+                        <span class="avatar-circle profile-img"></span>
+                        <div class="profile-info">
+                          <h3>Dolor Sit Amet</h3>
+                          <span>Diseñadora</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-img-wrapper">
+                      <div class="media-placeholder"><span class="circle"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial-item">
+                  <div class="layout">
+                    <div>
+                      <h2>Consectetur Adipiscing Elit</h2>
+                      <p>
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad
+                        minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat duis aute irure.
+                      </p>
+                      <p>
+                        Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                        officia deserunt mollit anim id est.
+                      </p>
+                      <div class="profile">
+                        <span class="avatar-circle profile-img"></span>
+                        <div class="profile-info">
+                          <h3>Consectetur Adipiscing</h3>
+                          <span>Freelance</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-img-wrapper">
+                      <div class="media-placeholder"><span class="circle"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial-item">
+                  <div class="layout">
+                    <div>
+                      <h2>Sed Do Eiusmod Tempor</h2>
+                      <p>
+                        Incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        duis aute irure dolor in reprehenderit.
+                      </p>
+                      <p>
+                        In voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur
+                        sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
+                        mollit anim id est laborum perspiciatis.
+                      </p>
+                      <div class="profile">
+                        <span class="avatar-circle profile-img"></span>
+                        <div class="profile-info">
+                          <h3>Sed Do Eiusmod</h3>
+                          <span>Propietaria de tienda</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-img-wrapper">
+                      <div class="media-placeholder"><span class="circle"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-navigation">
+              <button type="button" class="testimonial-prev" aria-label="Anterior">
+                <i class="ri-arrow-left-s-line"></i>
+              </button>
+              <button type="button" class="testimonial-next" aria-label="Siguiente">
+                <i class="ri-arrow-right-s-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section">
+        <div class="container">
+          <div class="services-layout">
+            <div class="reveal">
+              <h2 class="fw-bold servies-title">Consectetur adipiscing elit sed do eiusmod</h2>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                incididunt ut labore.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Ver todos los servicios</a>
+            </div>
+            <div class="services-grid">
+              <div class="service-item reveal" data-delay="200">
+                <i class="ri-pulse-line icon"></i>
+                <h3><a href="#">Eget nulla facilisi etiam</a></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+              </div>
+              <div class="service-item reveal" data-delay="300">
+                <i class="ri-palette-line icon"></i>
+                <h3><a href="#">Duis aute irure dolor</a></h3>
+                <p>
+                  Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+              </div>
+              <div class="service-item reveal" data-delay="400">
+                <i class="ri-broadcast-line icon"></i>
+                <h3><a href="#">Excepteur sint occaecat</a></h3>
+                <p>
+                  Magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris.
+                </p>
+              </div>
+              <div class="service-item reveal" data-delay="500">
+                <i class="ri-shapes-line icon"></i>
+                <h3><a href="#">Tempor incididunt ut labore</a></h3>
+                <p>
+                  Nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section">
+        <div class="container section-title reveal">
+          <h2>Preguntas frecuentes</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
+            ut labore
+          </p>
+        </div>
+        <div class="container">
+          <div class="faq-container reveal">
+            <div class="faq-item faq-active">
+              <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit?</h3>
+              <div class="faq-content">
+                <p>
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim
+                  veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+              </div>
+              <i class="faq-toggle ri-arrow-right-s-line"></i>
+            </div>
+            <div class="faq-item">
+              <h3>Ut enim ad minim veniam quis nostrud exercitation?</h3>
+              <div class="faq-content">
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                  excepteur sint occaecat.
+                </p>
+              </div>
+              <i class="faq-toggle ri-arrow-right-s-line"></i>
+            </div>
+            <div class="faq-item">
+              <h3>Duis aute irure dolor in reprehenderit in voluptate?</h3>
+              <div class="faq-content">
+                <p>
+                  Velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
+                  cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est
+                  laborum perspiciatis unde omnis.
+                </p>
+              </div>
+              <i class="faq-toggle ri-arrow-right-s-line"></i>
+            </div>
+            <div class="faq-item">
+              <h3>Excepteur sint occaecat cupidatat non proident sunt?</h3>
+              <div class="faq-content">
+                <p>
+                  In culpa qui officia deserunt mollit anim id est laborum perspiciatis unde omnis
+                  iste natus error sit voluptatem accusantium doloremque laudantium totam rem
+                  aperiam eaque ipsa quae.
+                </p>
+              </div>
+              <i class="faq-toggle ri-arrow-right-s-line"></i>
+            </div>
+            <div class="faq-item">
+              <h3>Perspiciatis unde omnis iste natus error sit voluptatem?</h3>
+              <div class="faq-content">
+                <p>
+                  Accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo
+                  enim ipsam voluptatem quia.
+                </p>
+              </div>
+              <i class="faq-toggle ri-arrow-right-s-line"></i>
+            </div>
+            <div class="faq-item">
+              <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur?</h3>
+              <div class="faq-content">
+                <p>
+                  Aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem
+                  sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                  consectetur.
+                </p>
+              </div>
+              <i class="faq-toggle ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section light-background">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="reveal" data-delay="200">
+              <div class="section-category">Contacto</div>
+              <h2 class="display-5">Lorem ipsum dolor sit amet consectetur adipiscing</h2>
+              <p class="lead mb-4">
+                Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad
+                minim veniam.
+              </p>
+              <div class="contact-info">
+                <div class="info-item">
+                  <i class="ri-mail-line"></i>
+                  <span>lorem@ipsum.com</span>
+                </div>
+                <div class="info-item">
+                  <i class="ri-phone-line"></i>
+                  <span>+00 000 000 000</span>
+                </div>
+                <div class="info-item">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Calle Lorem Ipsum 123, Ciudad Dolor</span>
+                </div>
+                <a href="#" class="map-link">
+                  Ver mapa
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="reveal" data-delay="300">
+              <div class="contact-form">
+                <form id="contactForm" novalidate>
+                  <div class="form-grid">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Tu correo"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      placeholder="Asunto"
+                      required
+                    />
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      rows="6"
+                      placeholder="Mensaje"
+                      required
+                    ></textarea>
+                    <div class="form-status">
+                      <div class="form-loading">Enviando</div>
+                      <div class="form-error"></div>
+                      <div class="form-success">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                      <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright">
+          <p>
+            © <span>Copyright</span> <strong class="sitename">Portafolio</strong>
+            <span>Todos los derechos reservados</span>
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="scrollTop" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
+
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <button type="button" class="lightbox-close" aria-label="Cerrar">
+          <i class="ri-close-line"></i>
+        </button>
+        <span class="lightbox-circle"></span>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
