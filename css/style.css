@@ -802,7 +802,7 @@ textarea.form-control {
   width: 70px;
   height: 70px;
   object-fit: cover;
-  background-color: #c1c1c1 
+  background-color: #c1c1c1;
 }
 
 .signature-info h4 {
@@ -1669,4 +1669,106 @@ textarea.form-control {
   color: var(--accent-color);
   display: inline-block;
   margin-bottom: 0.8rem;
+}
+
+:root {
+  --toggle-size: 78px;
+  color-scheme: light;
+}
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  z-index: 10000;
+  width: var(--toggle-size);
+  height: var(--toggle-size);
+  border-radius: 50%;
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--heading-color);
+  font-size: 28px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    transform 0.3s;
+}
+.theme-toggle:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+.theme-toggle-icon {
+  display: none;
+  line-height: 0;
+}
+.theme-toggle-icon-dark {
+  display: block;
+}
+html[data-theme='dark'] .theme-toggle-icon-dark {
+  display: none;
+}
+html[data-theme='dark'] .theme-toggle-icon-light {
+  display: block;
+}
+@media (max-width: 1199px) {
+  :root {
+    --toggle-size: 46px;
+  }
+  .theme-toggle {
+    right: 16px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .theme-toggle {
+    right: 10px;
+  }
+}
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --background-color: #0a0f14;
+  --default-color: #eef2f6;
+  --heading-color: #f5f8fb;
+  --accent-color: #ff8a4c;
+  --surface-color: #111a24;
+  --contrast-color: #ffffff;
+  --nav-color: #eef2f6;
+  --nav-hover-color: #ff8a4c;
+  --nav-mobile-background-color: #111a24;
+  --nav-dropdown-background-color: #111a24;
+  --nav-dropdown-color: #eef2f6;
+  --nav-dropdown-hover-color: #ff8a4c;
+}
+html[data-theme='dark'] .light-background {
+  --background-color: #0d151f;
+  --surface-color: #141e2a;
+}
+html[data-theme='dark'] .chip {
+  background-color: #0f2943;
+}
+html[data-theme='dark'] .form-control {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+html[data-theme='dark'] .navmenu .dropdown ul {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.45);
+}
+html[data-theme='dark'] .header-container,
+html[data-theme='dark'] .portfolio-card,
+html[data-theme='dark'] .skill-box,
+html[data-theme='dark'] .service-item,
+html[data-theme='dark'] .testimonial-item,
+html[data-theme='dark'] .contact-form,
+html[data-theme='dark'] .personal-info,
+html[data-theme='dark'] .faq-item,
+html[data-theme='dark'] .theme-toggle {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 }

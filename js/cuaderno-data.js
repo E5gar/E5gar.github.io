@@ -70,45 +70,14 @@ const cuadernoWeeksData = {
         subtitle: 'Procedimiento',
       },
       {
-        text: '1. Desarrollo de clases en hora de teoría',
+        text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica de laboratorio <br> 4. Creación de la versión inicial del portafolio electrónico',
 
         image: {
-          src: 'https://picsum.photos/seed/cuaderno01a/460/340',
-          alt: 'Lorem ipsum dolor sit amet',
+          src: 'assets/images/Semana01/Semana01Teoria.jpeg',
+          alt: 'Desarrollo de clases teóricas',
           side: 'right',
           tilt: -6,
         },
-      },
-      {
-        text: '2. Desarrollo de clases en hora práctica',
-
-        // image: {
-        //   src: 'https://picsum.photos/seed/cuaderno01a/460/340',
-        //   alt: 'Lorem ipsum dolor sit amet',
-        //   side: 'left',
-        //   tilt: -6,
-        // },
-      },
-      ,
-      {
-        text: '3. Realización de la práctica de laboratorio',
-
-        // image: {
-        //   src: 'https://picsum.photos/seed/cuaderno01a/460/340',
-        //   alt: 'Lorem ipsum dolor sit amet',
-        //   side: 'left',
-        //   tilt: -6,
-        // },
-      },
-      {
-        text: '4. Creación de la versión inicial del portafolio electrónico',
-
-        // image: {
-        //   src: 'https://picsum.photos/seed/cuaderno01a/460/340',
-        //   alt: 'Lorem ipsum dolor sit amet',
-        //   side: 'left',
-        //   tilt: -6,
-        // },
       },
     ],
     right: [

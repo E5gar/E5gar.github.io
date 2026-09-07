@@ -437,3 +437,35 @@
     min-width: 420px;
   }
 }
+html[data-theme='dark'] .notebook {
+  --heading-color: #1b3a5c;
+}
+html[data-theme='dark'] .notebook-page {
+  background-color: #161d27;
+  background-image:
+    repeating-linear-gradient(to right, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 28px),
+    repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 28px);
+}
+html[data-theme='dark'] .entry-title {
+  color: #e5fbff;
+}
+html[data-theme='dark'] .week-nav-btn {
+  background-color: #1c2530;
+  color: #f3f6fa;
+}
+html[data-theme='dark'] .week-dropdown {
+  background-color: #1c2530;
+}
+html[data-theme='dark'] .week-option {
+  color: #f3f6fa;
+}
+html[data-theme='dark'] .entry-table th,
+html[data-theme='dark'] .entry-table td {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+html[data-theme='dark'] .entry-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+html[data-theme='dark'] .cuaderno-viewer {
+  background-color: rgba(0, 0, 0, 0.92);
+}
