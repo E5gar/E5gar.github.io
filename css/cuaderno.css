@@ -5,6 +5,8 @@
   border-radius: 20px;
   padding: 18px;
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
 }
 .notebook-page {
   position: relative;
@@ -228,8 +230,10 @@
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
-.week-nav-btn.is-hidden {
-  display: none;
+.week-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 .week-selector {
   position: relative;
@@ -279,10 +283,19 @@
 }
 .week-option:hover {
   padding: 10px 15px;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
   color: var(--accent-color);
 }
 .week-option.selected {
   background-color: var(--accent-color);
   color: var(--contrast-color);
+}
+.page-content {
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+.page-content.is-loading {
+  opacity: 0;
+  transform: translateY(8px);
 }
