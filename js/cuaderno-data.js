@@ -1,33 +1,149 @@
 const cuadernoWeeksData = {
   1: {
-    left: {
-      chip: 'Lorem Ipsum 01',
-      title: 'Lorem Ipsum Dolor',
-      subtitle: 'Consectetur adipiscing elit sed do',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      image: null,
-      table: {
-        headers: ['Semana', 'Tema', 'Horas'],
-        rows: [
-          ['01', 'Introducción', '4'],
-          ['02', 'Fundamentos', '6'],
-          ['03', 'Práctica', '8'],
-        ],
-        caption: 'Cronograma de actividades',
+    left: [
+      {
+        chip: 'Tema',
+        title: 'Fundamentos de Desarrollo Web',
       },
-    },
-    right: {
-      chip: 'Lorem Ipsum 01',
-      title: 'Eiusmod Tempor',
-      subtitle: 'Incididunt ut labore et dolore',
-      text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: {
-        src: 'https://picsum.photos/seed/cuaderno01a/460/340',
-        alt: 'Lorem ipsum dolor sit amet',
-        side: 'right',
-        tilt: -6,
+      {
+        subtitle: 'Definiciones',
       },
-    },
+      {
+        text: '<b>Tecnologías de  Software Nativo</b> <br> Son aquellas que son ejecutadas sobre un sistema operativo. No pueden ser llevados a otro directamente, requieren de cambios.',
+      },
+      {
+        text: '<b>Tecnologías Web</b> <br> Son aquellas que pueden ser ejecutadas directamente en el navegador. No dependen del sistema operativo, por lo que pueden ser usadas en cualquier dispositivo.',
+      },
+      {
+        text: '<b>Open Web Platform</b> <br> Es el conjunto de tecnologías y estándares que permiten el desarrollo libre de la web. Gracias a ello, ninguna empresa puede apropiarse de dichos estándares, permitiendo así su uso para todas las personas.',
+      },
+      {
+        text: '<b>Funcionamiento de Internet</b> <br> El protocolo TCP separa la información que el Emisor quiere enviar en paqeutes, que luego son enrutados vía Internet por diferentes rutas por el protocolo IP, para finalmente llegar al Destinatario y ser reconstruidos nuevamente por el protocolo TCP.',
+      },
+      {
+        text: '<b>Estándares Principales</b> <br> HTTP y HTTPs para la transmisión de hipertexto. HTML como lenguaje de marcado usado para presentar la información en web. CSS para darle estilo al contenido del HTML. JavaScript como lenguaje de programación para darle interactividad al HTML. XML como lenguaje de marcado usado para enviar información.',
+      },
+      {
+        text: '<b>Desarrollo Frontend</b> <br> Está enfocado en la parte de interfaz, lo que el usuario final ve y utiliza. Se ejecuta en el lado del navegador.',
+      },
+      {
+        text: '<b>Desarrollo Backend</b> <br> Está enfocado en la parte de la lógica detrás de la interfaz, lo que el usuario final no ve, es decir el funcionamiento interno y conexiones con bases de datos. Se ejecuta en el lado del servidor.',
+      },
+      {
+        text: '<b>Sistema de Control de Versiones</b> <br> Es una herramienta que permite darle un seguimiento a detalle de todos los cambios realizados a nivel de código, y así poder regresar a un estado anterior si se lo requiere.',
+        table: {
+          headers: ['Herramienta', '¿Qué es?'],
+          rows: [
+            ['Git', 'Sistema de Control de Versiones'],
+            ['GitHub', 'Plataforma de Repositorio de Código'],
+          ],
+          caption: 'Diferencia entre Git y GitHub',
+        },
+      },
+
+      {
+        text: '<b>Dominio</b> <br> Es el nombre propio que identifica a la aplicación web. Siendo .edu para organizaciones educativas y .pe que indica país de origen Perú',
+      },
+      {
+        text: '<b>Hosting</b> <br> Es el espacio asignado dentro de un servidor en donde se almacenan los archivos de la aplicación web',
+      },
+      {
+        text: '<b>Página, Sitio y Aplicación Web</b>',
+        table: {
+          headers: ['Nombre', '¿Qué es?'],
+          rows: [
+            ['Página Web', 'Es solo una página individual'],
+            [
+              'Sitio Web',
+              'Es una colección de páginas web relacionadas, usado para presentar sólo información',
+            ],
+            [
+              'Aplicación Web',
+              'Es una colección de páginas web relacionadas, además de presentar permite interactuar con la información',
+            ],
+          ],
+          caption: 'Diferencia entre Página, Sitio y Aplicación Web',
+        },
+      },
+
+      {
+        subtitle: 'Procedimiento',
+      },
+      {
+        text: '1. Desarrollo de clases en hora de teoría',
+
+        image: {
+          src: 'https://picsum.photos/seed/cuaderno01a/460/340',
+          alt: 'Lorem ipsum dolor sit amet',
+          side: 'right',
+          tilt: -6,
+        },
+      },
+      {
+        text: '2. Desarrollo de clases en hora práctica',
+
+        // image: {
+        //   src: 'https://picsum.photos/seed/cuaderno01a/460/340',
+        //   alt: 'Lorem ipsum dolor sit amet',
+        //   side: 'left',
+        //   tilt: -6,
+        // },
+      },
+      ,
+      {
+        text: '3. Realización de la práctica de laboratorio',
+
+        // image: {
+        //   src: 'https://picsum.photos/seed/cuaderno01a/460/340',
+        //   alt: 'Lorem ipsum dolor sit amet',
+        //   side: 'left',
+        //   tilt: -6,
+        // },
+      },
+      {
+        text: '4. Creación de la versión inicial del portafolio electrónico',
+
+        // image: {
+        //   src: 'https://picsum.photos/seed/cuaderno01a/460/340',
+        //   alt: 'Lorem ipsum dolor sit amet',
+        //   side: 'left',
+        //   tilt: -6,
+        // },
+      },
+    ],
+    right: [
+      {
+        chip: 'Ejercicios de Laboratorio',
+      },
+      {
+        title: '1. ABCD',
+        subtitle: 'Incididunt ut labore et dolore',
+        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      },
+      {
+        chip: 'Reflexión',
+      },
+      {
+        title: '¿Qué aprendió?',
+        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      },
+      {
+        title: '¿Cómo aprendió?',
+        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      },
+      {
+        title: 'Bibliografía',
+        table: {
+          headers: ['N°', 'Título', 'Tipo'],
+          rows: [
+            ['01', 'Titulo', 'Libro'],
+            ['02', 'Titulo', 'Libro'],
+            ['03', 'Titulo', 'Libro'],
+          ],
+          caption: '',
+        },
+      },
+    ],
   },
 
   2: {
