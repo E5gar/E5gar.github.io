@@ -801,6 +801,8 @@ textarea.form-control {
 .signature-image .avatar-circle {
   width: 70px;
   height: 70px;
+  object-fit: cover;
+  background-color: #c1c1c1 
 }
 
 .signature-info h4 {
@@ -1650,4 +1652,14 @@ textarea.form-control {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 1rem;
+}
+
+.about-image .media-placeholder .circle {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: cover;
+  object-position: 25% center;
 }
