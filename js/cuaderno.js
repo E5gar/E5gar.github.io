@@ -21,21 +21,35 @@
 
   function buildEntryHTML(data) {
     if (!data) return '';
+
+    const weekHTML = data.chip ? `<span class="entry-week">${data.chip}</span>` : '';
+    const titleHTML = data.title ? `<h2 class="entry-title">${data.title}</h2>` : '';
+    const subtitleHTML = data.subtitle ? `<h3 class="entry-subtitle">${data.subtitle}</h3>` : '';
+
+    const paragraphs = Array.isArray(data.text) ? data.text : data.text ? [data.text] : [];
+    const textHTML = paragraphs.map((p) => `<p class="entry-text">${p}</p>`).join('');
+
     const body = data.image
       ? `<div class="entry-body">
-           <span class="entry-image-wrap entry-image-${data.image.side}" style="--tilt: ${data.image.tilt || 0}deg">
-             <img class="entry-image" src="${data.image.src}" alt="${data.image.alt || ''}" data-tilt="${data.image.tilt || 0}">
-           </span>
-           <p class="entry-text">${data.text}</p>
-         </div>`
-      : `<p class="entry-text">${data.text}</p>`;
+         <span class="entry-image-wrap entry-image-${data.image.side}" style="--tilt: ${data.image.tilt || 0}deg">
+           <img class="entry-image" src="${data.image.src}" alt="${data.image.alt || ''}" data-tilt="${data.image.tilt || 0}">
+         </span>
+         ${textHTML}
+       </div>`
+      : textHTML;
+
     return `
-      <article class="entry">
-        <span class="entry-week">${data.week}</span>
-        <h2 class="entry-title">${data.title}</h2>
-        <h3 class="entry-subtitle">${data.subtitle}</h3>
-        ${body}
-      </article>`;
+    <article class="entry">
+      ${weekHTML}
+      ${titleHTML}
+      ${subtitleHTML}
+      ${body}
+    </article>`;
+  }
+
+  function buildPageHTML(entries) {
+    const list = Array.isArray(entries) ? entries : entries ? [entries] : [];
+    return list.map(buildEntryHTML).join('');
   }
 
   function renderNotebookWeek(weekNumber) {
@@ -43,8 +57,8 @@
     if (!data || !leftContainer || !rightContainer) return;
     [leftContainer, rightContainer].forEach((el) => el.classList.add('is-loading'));
     setTimeout(() => {
-      leftContainer.innerHTML = buildEntryHTML(data.left);
-      rightContainer.innerHTML = buildEntryHTML(data.right);
+      leftContainer.innerHTML = buildPageHTML(data.left);
+      rightContainer.innerHTML = buildPageHTML(data.right);
       bindEntryImages(leftContainer);
       bindEntryImages(rightContainer);
       [leftContainer, rightContainer].forEach((el) => el.classList.remove('is-loading'));

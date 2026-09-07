@@ -1,3 +1,7 @@
+:root {
+  --heading-color: #1b3a5c;
+}
+
 .notebook {
   display: flex;
   align-items: stretch;
@@ -73,7 +77,7 @@
   font-weight: 700;
   letter-spacing: 1.4px;
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-color: var(--heading-color);
   padding: 4px 14px;
   border-radius: 20px;
   margin-bottom: 14px;
