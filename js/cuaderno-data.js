@@ -6,6 +6,15 @@ const cuadernoWeeksData = {
       subtitle: 'Consectetur adipiscing elit sed do',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       image: null,
+      table: {
+        headers: ['Semana', 'Tema', 'Horas'],
+        rows: [
+          ['01', 'Introducción', '4'],
+          ['02', 'Fundamentos', '6'],
+          ['03', 'Práctica', '8'],
+        ],
+        caption: 'Cronograma de actividades',
+      },
     },
     right: {
       chip: 'Lorem Ipsum 01',

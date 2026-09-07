@@ -38,13 +38,35 @@
        </div>`
       : textHTML;
 
+    const tableHTML = buildTableHTML(data.table);
+
     return `
     <article class="entry">
       ${weekHTML}
       ${titleHTML}
       ${subtitleHTML}
       ${body}
+      ${tableHTML}
     </article>`;
+  }
+
+  function buildTableHTML(table) {
+    if (!table || !Array.isArray(table.rows)) return '';
+    const headHTML =
+      Array.isArray(table.headers) && table.headers.length
+        ? `<thead><tr>${table.headers.map((h) => `<th>${h}</th>`).join('')}</tr></thead>`
+        : '';
+    const bodyHTML = `<tbody>${table.rows
+      .map((row) => `<tr>${row.map((cell) => `<td>${cell}</td>`).join('')}</tr>`)
+      .join('')}</tbody>`;
+    const captionHTML = table.caption
+      ? `<figcaption class="entry-table-caption">${table.caption}</figcaption>`
+      : '';
+    return `
+    <figure class="entry-table-wrap">
+      <table class="entry-table">${headHTML}${bodyHTML}</table>
+      ${captionHTML}
+    </figure>`;
   }
 
   function buildPageHTML(entries) {
