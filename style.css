@@ -1663,3 +1663,10 @@ textarea.form-control {
   object-fit: cover;
   object-position: 25% center;
 }
+
+.skill-box .icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
