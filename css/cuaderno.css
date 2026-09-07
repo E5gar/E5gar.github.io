@@ -1,0 +1,288 @@
+.notebook {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--heading-color);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+}
+.notebook-page {
+  position: relative;
+  flex: 1 1 50%;
+  min-height: 620px;
+  overflow: hidden;
+  padding: 54px 44px 50px 78px;
+  background-color: #fffdf8;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      color-mix(in srgb, var(--heading-color), transparent 93%) 0 1px,
+      transparent 1px 28px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--heading-color), transparent 93%) 0 1px,
+      transparent 1px 28px
+    );
+}
+.notebook-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 54px;
+  width: 1px;
+  background-color: color-mix(in srgb, #d9564c, transparent 35%);
+}
+.notebook-page-left {
+  border-radius: 14px 3px 3px 14px;
+  box-shadow: inset -30px 0 40px -35px rgba(0, 0, 0, 0.35);
+}
+.notebook-page-right {
+  border-radius: 3px 14px 14px 3px;
+  box-shadow: inset 30px 0 40px -35px rgba(0, 0, 0, 0.35);
+}
+.notebook-spine {
+  position: relative;
+  width: 28px;
+  flex: 0 0 28px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.18),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.18)
+  );
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+.entry {
+  margin-bottom: 48px;
+}
+.entry:last-child {
+  margin-bottom: 0;
+}
+.entry-week {
+  display: inline-block;
+  font-family: var(--nav-font);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.entry-title {
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.entry-subtitle {
+  font-family: var(--nav-font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+.entry-body {
+  display: flow-root;
+}
+.entry-text {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+.entry-image-wrap {
+  display: inline-block;
+  max-width: 46%;
+  cursor: zoom-in;
+}
+.entry-image-right {
+  float: right;
+  margin: 4px 0 16px 22px;
+}
+.entry-image-left {
+  float: left;
+  margin: 4px 22px 16px 0;
+}
+.entry-image {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 0.25s ease;
+}
+.entry-image-wrap:hover .entry-image {
+  transform: rotate(var(--tilt, 0deg)) scale(1.03);
+}
+.page-number {
+  position: absolute;
+  bottom: 16px;
+  font-family: var(--nav-font);
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+}
+.notebook-page-left .page-number {
+  right: 26px;
+}
+.notebook-page-right .page-number {
+  left: 26px;
+}
+.cuaderno-viewer {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 15, 20, 0.86);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 24px;
+  cursor: zoom-out;
+}
+.cuaderno-viewer.active {
+  display: flex;
+}
+.cuaderno-viewer img {
+  max-width: 92vw;
+  max-height: 88vh;
+  border-radius: 16px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+  cursor: zoom-out;
+}
+@media (max-width: 900px) {
+  .notebook {
+    flex-direction: column;
+    padding: 14px;
+  }
+  .notebook-spine {
+    width: 100%;
+    height: 26px;
+    flex: 0 0 26px;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.18),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.18)
+    );
+  }
+
+  .notebook-page {
+    min-height: auto;
+    padding: 44px 32px 44px 64px;
+  }
+  .notebook-page::before {
+    left: 40px;
+  }
+  .notebook-page-left,
+  .notebook-page-right {
+    border-radius: 12px;
+  }
+  .notebook-page-left {
+    box-shadow: inset 0 -30px 40px -35px rgba(0, 0, 0, 0.3);
+  }
+  .notebook-page-right {
+    box-shadow: inset 0 30px 40px -35px rgba(0, 0, 0, 0.3);
+  }
+}
+@media (max-width: 560px) {
+  .notebook-page {
+    padding: 36px 24px 36px 52px;
+  }
+  .entry-title {
+    font-size: 1.3rem;
+  }
+  .entry-image-wrap {
+    float: none;
+    display: block;
+    max-width: 100%;
+    margin: 14px 0 18px;
+  }
+}
+
+.week-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.week-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--surface-color);
+  color: var(--heading-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  font-size: 18px;
+  transition: 0.3s;
+}
+.week-nav-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+.week-nav-btn.is-hidden {
+  display: none;
+}
+.week-selector {
+  position: relative;
+}
+.week-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--nav-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.week-dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  background-color: var(--surface-color);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+.week-dropdown.active {
+  display: grid;
+}
+.week-option {
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-family: var(--nav-font);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  cursor: pointer;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+.week-option:hover {
+  padding: 10px 15px;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+}
+.week-option.selected {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
