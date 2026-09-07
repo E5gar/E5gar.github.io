@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuaderno | Edgar Gago</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Noto+Sans:wght@400;500;600;700&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cuaderno.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header-container">
+        <a href="index.html#hero" class="logo">
+          <h1 class="sitename">Portafolio Electrónico</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero">Inicio</a></li>
+            <li><a href="index.html#about">Sobre mí</a></li>
+            <li><a href="index.html#resume">Currículum</a></li>
+            <li><a href="index.html#portfolio">Proyectos Concluidos</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Más</span> <i class="ri-arrow-down-s-line toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Elemento uno</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Más aún</span> <i class="ri-arrow-down-s-line toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Sub elemento uno</a></li>
+                    <li><a href="#">Sub elemento dos</a></li>
+                    <li><a href="#">Sub elemento tres</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Elemento dos</a></li>
+                <li><a href="#">Elemento tres</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#contact">Contacto</a></li>
+            <li><a href="cuaderno.html" class="active">Cuaderno</a></li>
+          </ul>
+          <i id="mobileNavToggle" class="mobile-nav-toggle ri-menu-line"></i>
+        </nav>
+        <div class="header-social-links">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=egagouribe15@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Correo"
+            ><i class="ri-mail-line"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/edgar.gago.13"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><i class="ri-facebook-fill"></i
+          ></a>
+          <a href="https://github.com/E5gar" target="_blank" rel="noopener" aria-label="GitHub"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/edgargago/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="cuaderno" class="cuaderno section light-background">
+        <div class="container section-title reveal">
+          <h2>Cuaderno de la Asignatura</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="container">
+          <div class="notebook reveal" data-delay="200">
+            <div class="notebook-page notebook-page-left" data-page="izquierda">
+              <div class="page-content">
+                <article class="entry">
+                  <div class="week-nav reveal" data-delay="150">
+                    <button
+                      type="button"
+                      class="week-nav-btn week-prev"
+                      aria-label="Semana anterior"
+                    >
+                      <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <div class="week-selector">
+                      <button type="button" class="week-label" id="weekLabel">Semana 01</button>
+                      <div class="week-dropdown" id="weekDropdown"></div>
+                    </div>
+                    <button
+                      type="button"
+                      class="week-nav-btn week-next"
+                      aria-label="Semana siguiente"
+                    >
+                      <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                  </div>
+                  <span class="entry-week">Semana 01</span>
+                  <h2 class="entry-title">Lorem Ipsum Dolor Sit Amet</h2>
+                  <h3 class="entry-subtitle">Consectetur adipiscing elit sed do eiusmod</h3>
+                  <p class="entry-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </article>
+                <article class="entry">
+                  <span class="entry-week">Semana 02</span>
+                  <h2 class="entry-title">Sed Do Eiusmod Tempor</h2>
+                  <h3 class="entry-subtitle">Incididunt ut labore et dolore magna aliqua</h3>
+                  <div class="entry-body">
+                    <span class="entry-image-wrap entry-image-right" style="--tilt: -8deg">
+                      <img
+                        class="entry-image"
+                        src="https://picsum.photos/seed/cuaderno02/460/340"
+                        alt="Imagen de referencia semana 02"
+                        data-tilt="-8"
+                      />
+                    </span>
+                    <p class="entry-text">
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt
+                      in culpa qui officia deserunt mollit anim id est laborum perspiciatis unde
+                      omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <span class="page-number">01</span>
+            </div>
+            <div class="notebook-spine"></div>
+            <div class="notebook-page notebook-page-right" data-page="derecha">
+              <div class="page-content">
+                <article class="entry">
+                  <span class="entry-week">Semana 03</span>
+                  <h2 class="entry-title">Ut Enim Ad Minim Veniam</h2>
+                  <h3 class="entry-subtitle">Quis nostrud exercitation ullamco laboris</h3>
+                  <div class="entry-body">
+                    <span class="entry-image-wrap entry-image-left" style="--tilt: 7deg">
+                      <img
+                        class="entry-image"
+                        src="https://picsum.photos/seed/cuaderno03/460/340"
+                        alt="Imagen de referencia semana 03"
+                        data-tilt="7"
+                      />
+                    </span>
+                    <p class="entry-text">
+                      Nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit
+                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim
+                      id est laborum.
+                    </p>
+                  </div>
+                </article>
+                <article class="entry">
+                  <span class="entry-week">Semana 04</span>
+                  <h2 class="entry-title">Perspiciatis Unde Omnis</h2>
+                  <h3 class="entry-subtitle">Iste natus error sit voluptatem accusantium</h3>
+                  <div class="entry-body">
+                    <span class="entry-image-wrap entry-image-right">
+                      <img
+                        class="entry-image"
+                        src="https://picsum.photos/seed/cuaderno04/460/340"
+                        alt="Imagen de referencia semana 04"
+                      />
+                    </span>
+                    <p class="entry-text">
+                      Doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <span class="page-number">02</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="copyright">
+          <p>
+            © <span>Copyright</span> <strong class="sitename">Edgar Gago</strong>
+            <span>Todos los derechos reservados</span>
+          </p>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=egagouribe15@gmail.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Correo"
+            ><i class="ri-mail-line"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/edgar.gago.13"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            ><i class="ri-facebook-fill"></i
+          ></a>
+          <a href="https://github.com/E5gar" target="_blank" rel="noopener" aria-label="GitHub"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/edgargago/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <a href="#" id="scrollTop" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
+    <div id="cuadernoViewer" class="cuaderno-viewer">
+      <img src="" alt="" />
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/cuaderno.js"></script>
+  </body>
+</html>
