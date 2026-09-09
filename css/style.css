@@ -1664,6 +1664,15 @@ textarea.form-control {
   object-position: 25% center;
 }
 
+.portfolio-image .media-placeholder img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
 .skill-box .icon {
   font-size: 2rem;
   color: var(--accent-color);
