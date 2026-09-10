@@ -82,12 +82,39 @@ const cuadernoWeeksData = {
     ],
     right: [
       {
-        chip: 'Ejercicios de Laboratorio',
+        chip: 'Ejercicios de Laboratorio y Resultados',
       },
       {
-        title: '1. ABCD',
-        subtitle: 'Incididunt ut labore et dolore',
-        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        title: '1. Elaboración de Infografía',
+        subtitle: 'Propuesta de Hosting para Proyecto Web - Textiles Andinos S.A.C.',
+        text: 'Comparativa entre Hostings gratuitos (Vercel Free, Render Free y Supabase Free) y 3 de pago (Vercel Plan, Heroku Plan y PlanetScale Plan) para Frontend, Backend y Base de Datos PostgreSQL, respectivamente. Decisión recomendada para Textiles Andinos S.A.C. que contrate Hostings de pago, para tener derecho de uso comercial, mejor rendimiento, seguridad, administración por consola, atención técnica rápida y capacidad de escalar bajo demanda.',
+        image: {
+          src: 'assets/images/Semana01/Semana01Infografia.jpg',
+          alt: 'Infografía comparativa de Hosting',
+          side: 'left',
+          tilt: 2,
+        },
+      },
+      {
+        title: '2. Dominando Visual Studio Code',
+        text: 'Instalación, exploración de la interfaz, extensiones esenciales, atajos de teclado para productividad y alojando un index.html con Live Server.',
+        image: {
+          src: 'assets/images/Semana01/Semana01InterfazVSC.png',
+          alt: 'Partes de la interfaz de Visual Studio Code',
+          side: 'right',
+          tilt: -6,
+        },
+      },
+      {
+        title: '3. Reto Semanal',
+        subtitle: 'Mi tarjeta de presentación como Desarrollador Web',
+        text: 'Creación de una presentación básica con foto, nombre, párrafo de rol de mayor interés y enlaces a perfil de GitHub, LinkedIn y correo institucional',
+        image: {
+          src: 'assets/images/Semana01/Semana01RetoSemanal.png',
+          alt: 'Tarjeta de presentación básica',
+          side: 'left',
+          tilt: 4,
+        },
       },
       {
         chip: 'Reflexión',
