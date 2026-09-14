@@ -372,3 +372,9 @@ html[data-theme='dark'] .entry-table tbody tr:nth-child(even) {
 html[data-theme='dark'] .cuaderno-viewer {
   background-color: rgba(0, 0, 0, 0.82);
 }
+
+html[data-theme='dark'] .entry-week,
+html[data-theme='dark'] .entry-table thead th {
+  background-color: #1c2530;
+  color: #f3f6fa;
+}
