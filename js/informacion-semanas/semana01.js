@@ -124,11 +124,11 @@ cuadernoWeeksData[1] = {
     },
     {
       title: '1. Infografía',
-      text: 'Enlace en <a href="https://canva.link/u322z5qwdrk6qpl">Canva</a>',
+      text: 'Enlace en <a href="https://canva.link/u322z5qwdrk6qpl" target="_blank">Canva</a>',
     },
     {
       title: '2. Presentación Personal con HTML',
-      text: 'Enlace en <a href="https://github.com/E5gar/portafolio-web-uncp">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/portafolio-web-uncp/">GitHub Pages</a>',
+      text: 'Enlace en <a href="https://github.com/E5gar/portafolio-web-uncp" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/portafolio-web-uncp/" target="_blank">GitHub Pages</a>',
     },
     {
       chip: 'Reflexión',
