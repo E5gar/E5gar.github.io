@@ -198,6 +198,7 @@
 
   const navLinks = document.querySelectorAll("#navmenu a[href^='#']");
   const sections = Array.from(navLinks)
+    .filter((link) => link.getAttribute('href').length > 1)
     .map((link) => document.querySelector(link.getAttribute('href')))
     .filter(Boolean);
 
