@@ -132,21 +132,43 @@ const cuadernoWeeksData = {
       },
       {
         title: '¿Qué aprendió?',
-        text: 'He aprendido a diferenciar tecnología de software nativo y software web, siendo la principal distinción que esta último no depende del sistema operativo en donde se ejecute. Asimismo, aprendí cómo funciona la Internet a alto nivel, partiendo desde el emisor que quiere enviar información y esta es fragmentada en paquetes mediante el protocolo TCP, que son enrutados hasta el destinatario y reconstruidos nuevamente. También entendí la importancia de los estándares de web HTML, CSS, JavaScript y HTTPS. De igual manera, el rol que cumple el desarrollador Front-end, Back-end y Full-Stack. Además, aprendí a usar el Sistema de Control de Versiones Git y la Plataforma de Repositorio GitHub para trabajo colaborativo y trazabilidad del código.'
+        text: 'He aprendido a diferenciar tecnología de software nativo y software web, siendo la principal distinción que esta último no depende del sistema operativo en donde se ejecute. Asimismo, aprendí cómo funciona la Internet a alto nivel, partiendo desde el emisor que quiere enviar información y esta es fragmentada en paquetes mediante el protocolo TCP, que son enrutados hasta el destinatario y reconstruidos nuevamente. También entendí la importancia de los estándares de web HTML, CSS, JavaScript y HTTPS. De igual manera, el rol que cumple el desarrollador Front-end, Back-end y Full-Stack. Además, aprendí a usar el Sistema de Control de Versiones Git y la Plataforma de Repositorio GitHub para trabajo colaborativo y trazabilidad del código.',
       },
       {
         title: '¿Cómo aprendió?',
         text: '',
-        text: 'En primer lugar se atendió a las clases teóricas para conocer los fundamentos de la tecnología web, se reforzaron los conceptos mediante una lluvia de ideas en el salón de clases. Luego, recordamos proyectos que hemos elaborado en semestres anteriores para comparar los hosting tanto gratuitos como de paga que hemos utilizado y realizar la respectiva comparación. En la hora práctica, se exploró el entorno de VSC, se instalaron extensiones y se creo el repositorio en GitHub para la publicación de la práctica de presentación personal con HTML.' 
+        text: 'En primer lugar se atendió a las clases teóricas para conocer los fundamentos de la tecnología web, se reforzaron los conceptos mediante una lluvia de ideas en el salón de clases. Luego, recordamos proyectos que hemos elaborado en semestres anteriores para comparar los hosting tanto gratuitos como de paga que hemos utilizado y realizar la respectiva comparación. En la hora práctica, se exploró el entorno de VSC, se instalaron extensiones y se creo el repositorio en GitHub para la publicación de la práctica de presentación personal con HTML.',
       },
       {
         title: 'Bibliografía',
         table: {
           headers: ['N°', 'Título', 'Tipo'],
           rows: [
-            ['01', 'Titulo', 'Libro'],
-            ['02', 'Titulo', 'Libro'],
-            ['03', 'Titulo', 'Libro'],
+            [
+              '01',
+              '<a href="https://infolibros.org/pdfview/manual-de-html-universidade-nacional-autonoma-do-mexico-613/" target="_blank">Manual de HTML</a> - Universidade Nacional Autônoma do México',
+              'Libro',
+            ],
+            [
+              '02',
+              '<a href="https://infolibros.org/pdfview/programacion-web-del-frontend-al-backend-celi-parraga-ricardo-javier-bone-andrade-miguel-fabricio-mora-olivero-aldo-patricio-613/" target="_blank">Programación Web del Frontend al Backend</a> - Celi Párraga Ricardo Javier, Boné Andrade Miguel Fabricio, Mora Olivero Aldo Patricio',
+              'Libro',
+            ],
+            [
+              '03',
+              '<a href="https://infolibros.org/pdfview/curso-de-desarrollo-web-en-entorno-de-servidor-pedro-r-benito-da-rocha-613/" target="_blank">Curso de desarrollo web en entorno de servidor</a> - Pedro R. Benito da Rocha',
+              'Libro',
+            ],
+            [
+              '04',
+              '<a href="https://git-scm.com/book/es/v2" target="_blank">Pro Git</a> - Scott Chacon y Ben Straub',
+              'Libro',
+            ],
+            [
+              '05',
+              '<a href="https://infolibros.org/pdfview/manual-basico-de-creacion-de-paginas-web-aragon-emprendedor-613/" target="_blank">Manual Básico de Creación de Páginas Web</a> - Aragón Emprendedor',
+              'Libro',
+            ],
           ],
           caption: '',
         },
