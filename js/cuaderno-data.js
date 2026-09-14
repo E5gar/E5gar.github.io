@@ -136,7 +136,6 @@ const cuadernoWeeksData = {
       },
       {
         title: '¿Cómo aprendió?',
-        text: '',
         text: 'En primer lugar se atendió a las clases teóricas para conocer los fundamentos de la tecnología web, se reforzaron los conceptos mediante una lluvia de ideas en el salón de clases. Luego, recordamos proyectos que hemos elaborado en semestres anteriores para comparar los hosting tanto gratuitos como de paga que hemos utilizado y realizar la respectiva comparación. En la hora práctica, se exploró el entorno de VSC, se instalaron extensiones y se creo el repositorio en GitHub para la publicación de la práctica de presentación personal con HTML.',
       },
       {
