@@ -82,7 +82,7 @@ const cuadernoWeeksData = {
     ],
     right: [
       {
-        chip: 'Ejercicios de Laboratorio y Resultados',
+        chip: 'Ejercicios de Laboratorio',
       },
       {
         title: '1. Elaboración de Infografía',
@@ -115,6 +115,17 @@ const cuadernoWeeksData = {
           side: 'left',
           tilt: 4,
         },
+      },
+      {
+        chip: 'Resultados',
+      },
+      {
+        title: '1. Infografía',
+        text: 'Enlace en <a href="https://canva.link/u322z5qwdrk6qpl">Canva</a>',
+      },
+      {
+        title: '2. Presentación Personal con HTML',
+        text: 'Enlace en <a href="https://github.com/E5gar/portafolio-web-uncp">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/portafolio-web-uncp/">GitHub Pages</a>',
       },
       {
         chip: 'Reflexión',
