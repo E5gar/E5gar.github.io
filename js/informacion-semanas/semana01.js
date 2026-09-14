@@ -43,7 +43,6 @@ cuadernoWeeksData[1] = {
     {
       text: '<b>DNS</b> <br> Es el sistema de nombres de dominio que permiten traducir las direcciones entendidas como texto natural en direcciones IP que los dispositivos puedan entender.',
     },
-
     {
       text: '<b>Dominio</b> <br> Es el nombre propio que identifica a la aplicación web. Siendo .edu para organizaciones educativas y .pe que indica país de origen Perú',
     },
@@ -68,7 +67,12 @@ cuadernoWeeksData[1] = {
         caption: 'Diferencia entre Página, Sitio y Aplicación Web',
       },
     },
-
+    {
+      text: '<b>UX - Experiencia de Usuario</b> <br> Es el campo que estudia la forma en la que el usuario final va a interactuar con la aplicación web. Busca que su experiencia de uso sea amigable, intuitiva y se sienta eficiente.',
+    },
+    {
+      text: '<b>UI - Interfaz de Usuario</b> <br> Son los componentes visuales que el usuario final observa y con los que interactúa dentro de la aplicación web. Una herramienta para su diseño es Figma, con la posibilidad de crear también mockups.',
+    },
     {
       subtitle: 'Procedimiento',
     },
