@@ -132,11 +132,12 @@ const cuadernoWeeksData = {
       },
       {
         title: '¿Qué aprendió?',
-        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        text: 'He aprendido a diferenciar tecnología de software nativo y software web, siendo la principal distinción que esta último no depende del sistema operativo en donde se ejecute. Asimismo, aprendí cómo funciona la Internet a alto nivel, partiendo desde el emisor que quiere enviar información y esta es fragmentada en paquetes mediante el protocolo TCP, que son enrutados hasta el destinatario y reconstruidos nuevamente. También entendí la importancia de los estándares de web HTML, CSS, JavaScript y HTTPS. De igual manera, el rol que cumple el desarrollador Front-end, Back-end y Full-Stack. Además, aprendí a usar el Sistema de Control de Versiones Git y la Plataforma de Repositorio GitHub para trabajo colaborativo y trazabilidad del código.'
       },
       {
         title: '¿Cómo aprendió?',
-        text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        text: '',
+        text: 'En primer lugar se atendió a las clases teóricas para conocer los fundamentos de la tecnología web, se reforzaron los conceptos mediante una lluvia de ideas en el salón de clases. Luego, recordamos proyectos que hemos elaborado en semestres anteriores para comparar los hosting tanto gratuitos como de paga que hemos utilizado y realizar la respectiva comparación. En la hora práctica, se exploró el entorno de VSC, se instalaron extensiones y se creo el repositorio en GitHub para la publicación de la práctica de presentación personal con HTML.' 
       },
       {
         title: 'Bibliografía',
