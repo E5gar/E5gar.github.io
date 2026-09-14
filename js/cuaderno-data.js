@@ -40,6 +40,9 @@ const cuadernoWeeksData = {
           caption: 'Diferencia entre Git y GitHub',
         },
       },
+      {
+        text: '<b>DNS</b> <br> Es el sistema de nombres de dominio que permiten traducir las direcciones entendidas como texto natural en direcciones IP que los dispositivos puedan entender.',
+      },
 
       {
         text: '<b>Dominio</b> <br> Es el nombre propio que identifica a la aplicación web. Siendo .edu para organizaciones educativas y .pe que indica país de origen Perú',
