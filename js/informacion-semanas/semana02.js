@@ -154,5 +154,24 @@ cuadernoWeeksData[2] = {
       title: '3. Guía Práctica Semana 02',
       text: 'Enlace en <a href="https://github.com/E5gar/PracticaSemana02" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/PracticaSemana02/" target="_blank">GitHub Pages</a>',
     },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana he aprendido a diferenciar los lenguajes de marcado HTML y XML, siendo el primero para la presentación de contenido y el segundo para transmitir información o datos. Asimismo, la importancia que tiene emplear etiquetas semáticas de la version 5 de HTML en lugar de usar solamente divs, lo cual mejora también el posicionamiento SEO. En cuanto a las Hojas de Estilos, comprendí los conceptos de modelos de caja, unidades tanto relativas como absolutas, uso de flexbox, grid y ubicación de elementos, todo ello permite crear páginas web con diseño responsive. De igual manera, me familiaricé más con el flujo de trabajo colaborativo con Git y GitHub, así como el proceso de elicitación de requerimientos funcionales y no funcionales para así crear productos que verdaderamente satisfagan las expectativas del cliente y usuarios.'
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron aún más los estándares HTML, XML y CSS, ello ha sido reforzado con el trabajo realizado en la práctica calificada grupal. Asimismo, se hizo uso de ramas de Git para gestionar el trabajo de cada integrante y así tener una mejor trazabilidad de cada uno. En la hora de práctica, se desarrolló el trabajo de elicitación y análisis de requerimientos, para posteriormente desarrollar una galería de productos técnicos de caracter responsive usando unidades relativas y flexbox. Gracias a las herramietnas de Google Lighthouse y WAVE Tool, se validó que el trabajo desarrollado no tuviera problemas a nivel de rendimiento, accesibilidad e indexación en SEO.'
+    },
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [],
+        caption: '',
+      },
+    },
   ],
 };
