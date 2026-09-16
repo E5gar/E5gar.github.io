@@ -148,7 +148,9 @@ cuadernoWeeksData[2] = {
     },
     {
       title: '2. Práctica de Elicitación y Análisis de Requerimientos',
-      text: 'Enlace en <a href="" target="_blank">PENDIENTE</a>',
+      pdf: {
+        src: 'assets/files/Semana02/PRACTICA_SEMANA_02_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
     },
     {
       title: '3. Guía Práctica Semana 02',
@@ -159,11 +161,11 @@ cuadernoWeeksData[2] = {
     },
     {
       title: '¿Qué aprendió?',
-      text: 'En esta semana he aprendido a diferenciar los lenguajes de marcado HTML y XML, siendo el primero para la presentación de contenido y el segundo para transmitir información o datos. Asimismo, la importancia que tiene emplear etiquetas semáticas de la version 5 de HTML en lugar de usar solamente divs, lo cual mejora también el posicionamiento SEO. En cuanto a las Hojas de Estilos, comprendí los conceptos de modelos de caja, unidades tanto relativas como absolutas, uso de flexbox, grid y ubicación de elementos, todo ello permite crear páginas web con diseño responsive. De igual manera, me familiaricé más con el flujo de trabajo colaborativo con Git y GitHub, así como el proceso de elicitación de requerimientos funcionales y no funcionales para así crear productos que verdaderamente satisfagan las expectativas del cliente y usuarios.'
+      text: 'En esta semana he aprendido a diferenciar los lenguajes de marcado HTML y XML, siendo el primero para la presentación de contenido y el segundo para transmitir información o datos. Asimismo, la importancia que tiene emplear etiquetas semáticas de la version 5 de HTML en lugar de usar solamente divs, lo cual mejora también el posicionamiento SEO. En cuanto a las Hojas de Estilos, comprendí los conceptos de modelos de caja, unidades tanto relativas como absolutas, uso de flexbox, grid y ubicación de elementos, todo ello permite crear páginas web con diseño responsive. De igual manera, me familiaricé más con el flujo de trabajo colaborativo con Git y GitHub, así como el proceso de elicitación de requerimientos funcionales y no funcionales para así crear productos que verdaderamente satisfagan las expectativas del cliente y usuarios.',
     },
     {
       title: '¿Cómo aprendió?',
-      text: 'En la hora de teoría se explicaron aún más los estándares HTML, XML y CSS, ello ha sido reforzado con el trabajo realizado en la práctica calificada grupal. Asimismo, se hizo uso de ramas de Git para gestionar el trabajo de cada integrante y así tener una mejor trazabilidad de cada uno. En la hora de práctica, se desarrolló el trabajo de elicitación y análisis de requerimientos, para posteriormente desarrollar una galería de productos técnicos de caracter responsive usando unidades relativas y flexbox. Gracias a las herramietnas de Google Lighthouse y WAVE Tool, se validó que el trabajo desarrollado no tuviera problemas a nivel de rendimiento, accesibilidad e indexación en SEO.'
+      text: 'En la hora de teoría se explicaron aún más los estándares HTML, XML y CSS, ello ha sido reforzado con el trabajo realizado en la práctica calificada grupal. Asimismo, se hizo uso de ramas de Git para gestionar el trabajo de cada integrante y así tener una mejor trazabilidad de cada uno. En la hora de práctica, se desarrolló el trabajo de elicitación y análisis de requerimientos, para posteriormente desarrollar una galería de productos técnicos de caracter responsive usando unidades relativas y flexbox. Gracias a las herramietnas de Google Lighthouse y WAVE Tool, se validó que el trabajo desarrollado no tuviera problemas a nivel de rendimiento, accesibilidad e indexación en SEO.',
     },
     {
       title: 'Bibliografía',

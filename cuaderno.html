@@ -181,7 +181,31 @@
     </footer>
     <a href="#" id="scrollTop" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
     <div id="cuadernoViewer" class="cuaderno-viewer">
-      <img src="" alt="" />
+      <div class="cuaderno-viewer-image">
+        <img src="" alt="" />
+      </div>
+      <div class="cuaderno-viewer-pdf">
+        <button type="button" class="cuaderno-viewer-pdf-close" aria-label="Cerrar">
+          <i class="ri-close-line"></i>
+        </button>
+        <div class="cuaderno-viewer-pdf-bar">
+          <div class="cuaderno-viewer-pdf-heading">
+            <i class="ri-file-pdf-2-line"></i>
+            <span class="cuaderno-viewer-pdf-title"></span>
+          </div>
+          <div class="cuaderno-viewer-pdf-actions">
+            <a class="cuaderno-viewer-pdf-download" href="" download>
+              <i class="ri-download-2-line"></i> <span>Descargar</span>
+            </a>
+            <a class="cuaderno-viewer-pdf-newtab" href="" target="_blank" rel="noopener">
+              <i class="ri-external-link-line"></i> <span>Abrir en Pestaña</span>
+            </a>
+          </div>
+        </div>
+        <div class="cuaderno-viewer-pdf-body">
+          <iframe class="cuaderno-viewer-pdf-frame" src="" title=""></iframe>
+        </div>
+      </div>
     </div>
     <script src="js/script.js"></script>
     <script src="js/theme.js"></script>
