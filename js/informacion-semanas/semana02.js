@@ -85,5 +85,74 @@ cuadernoWeeksData[2] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Práctica Calificada Grupal 01',
+      subtitle: 'Interfaces con HTML y CSS',
+      text: 'Trabajo desarrollado en equipo de 4 integrantes, donde cada uno colaboró en su propia rama de GitHub para el desarrollo de un formulario con animaciones, un drag y drop de imágenes, un selector de RGB con slider y tarjetas responsives. Todos ellos creados con HTML y CSS nativo',
+      image: {
+        src: 'assets/images/Semana02/Semana02PracticaCalificada01.png',
+        alt: 'Página web desarrollada con HTML y CSS',
+        side: 'right',
+        tilt: -4,
+      },
+    },
+    {
+      title: '2. Práctica de Elicitación y Análisis de Requerimientos',
+      subtitle: 'Caso de un Sistema de Gestión de Citas para la Clínica MediSalud',
+      text: 'Comprensión de las técnicas usadas para la elicitación o recolección de requerimientos a partir de entrevistas, encuestas, observación y talleres JAD realizados en conjunto con el cliente, usuarios y personas interesadas. Asimismo, se identificaron los principales 7 stakeholders, con un resultado de 11 requerimientos funcionales, 13 no funcionales y categorizados por prioridad. Finalmente, se contruyó la matriz de elicitación.',
+      image: {
+        src: 'assets/images/Semana02/Semana02Elicitacion.png',
+        alt: 'Matriz de requerimientos funcionales y no funcionales',
+        side: 'left',
+        tilt: 3,
+      },
+    },
+    {
+      title: '3. Guía Práctica Semana 02',
+      subtitle: 'Parte I. Diseño flexbox, diseño fluido y diseño responsivo',
+      text: 'Maquetación de página web con flexbox para distribuir los elementos mediante unidades relativas con la finalidad de contar con un diseño de tipo fluido. Asimismo, se emplean media queries para escalar la presentación de la página web en diferentes tamaños de pantalla',
+      image: {
+        src: 'assets/images/Semana02/Semana02GuiaPracticaParteI.png',
+        alt: 'Página web con flexbox para diseño responsive',
+        side: 'right',
+        tilt: 2,
+      },
+    },
+    {
+      subtitle: 'Parte II. HTML5 Semántico, ARIA, Grid, Flexbox Híbrido y SEO',
+      text: 'Desarrollo de una galería de proyectos técnicos empleando etiquetas semánticas de atributos ARIA y flexbox al layout para el escalamiento de tarjetas, fuente y espaciado entre elementos. Se validó con las herramientas Google Lighthouse, extensión WAVE Evaluation Tool y W3C Validator para corroborar optimización de SEO',
+      src: 'assets/images/Semana02/Semana02GuiaPracticaParteII-WAVE.png',
+      alt: 'Resultados de WAVE aplicado a la página web de proyectos técnicas con diseño responsive',
+      side: 'right',
+      tilt: -3,
+    },
+    {
+      text: 'Resultados en Google Lighthouse. 98 en Rendimiento, 100 en Accesibilidad, 100 en Mejores Prácticas y 100 en SEO.',
+      image: {
+        src: 'assets/images/Semana02/Semana02GuiaPracticaParteII-Lighthouse.png',
+        alt: 'Resultados de Lighthouse aplicado a la página web de proyectos técnicas con diseño responsive',
+        side: 'left',
+        tilt: 4,
+      },
+    },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Práctica Calificada Grupal 01',
+      text: 'Enlace en <a href="https://github.com/E5gar/PracticaCalificada01" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/PracticaCalificada01/" target="_blank">GitHub Pages</a>',
+    },
+    {
+      title: '2. Práctica de Elicitación y Análisis de Requerimientos',
+      text: 'Enlace en <a href="" target="_blank">PENDIENTE</a>',
+    },
+    {
+      title: '3. Guía Práctica Semana 02',
+      text: 'Enlace en <a href="https://github.com/E5gar/PracticaSemana02" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/PracticaSemana02/" target="_blank">GitHub Pages</a>',
+    },
+  ],
 };
