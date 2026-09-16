@@ -171,7 +171,23 @@ cuadernoWeeksData[2] = {
       title: 'Bibliografía',
       table: {
         headers: ['N°', 'Título', 'Tipo'],
-        rows: [],
+        rows: [
+          [
+            '01',
+            '<a href="https://mislav.github.io/diveintohtml5/" target="_blank">Dive Into HTML5</a> - Mark Pilgrim',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://resilientwebdesign.com" target="_blank">Resilient Web Design</a> - Jeremy Keith',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://bibliotecadigital.utn.edu.ec/files/original/df49ad39c8a4b8ab877f3f13c7083492a1d4e8c3.pdf" target="_blank">El gran libro de HTML5, CSS3 y JavaScript</a> - J.D Gauchat',
+            'Libro',
+          ],
+        ],
         caption: '',
       },
     },
