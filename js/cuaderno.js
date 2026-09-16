@@ -2,19 +2,60 @@
   'use strict';
 
   const viewer = document.querySelector('#cuadernoViewer');
-  const viewerImg = viewer ? viewer.querySelector('img') : null;
+  const viewerImageBox = viewer ? viewer.querySelector('.cuaderno-viewer-image') : null;
+  const viewerImg = viewerImageBox ? viewerImageBox.querySelector('img') : null;
+  const viewerPdfBox = viewer ? viewer.querySelector('.cuaderno-viewer-pdf') : null;
+  const viewerPdfFrame = viewer ? viewer.querySelector('.cuaderno-viewer-pdf-frame') : null;
+  const viewerPdfTitle = viewer ? viewer.querySelector('.cuaderno-viewer-pdf-title') : null;
+  const viewerPdfDownload = viewer ? viewer.querySelector('.cuaderno-viewer-pdf-download') : null;
+  const viewerPdfNewTab = viewer ? viewer.querySelector('.cuaderno-viewer-pdf-newtab') : null;
+  const viewerCloseBtn = viewer ? viewer.querySelector('.cuaderno-viewer-pdf-close') : null;
   const leftContainer = document.querySelector('#pageContentLeft');
   const rightContainer = document.querySelector('#pageContentRight');
   const totalWeeks = 16;
   let currentWeek = 1;
 
+  function openImageViewer(src, alt) {
+    if (!viewer || !viewerImg || !viewerImageBox || !viewerPdfBox) return;
+    viewerImg.src = src;
+    viewerImg.alt = alt || '';
+    viewerImageBox.style.display = 'flex';
+    viewerPdfBox.style.display = 'none';
+    viewer.classList.add('active');
+  }
+
+  function openPdfViewer(src, title) {
+    if (!viewer || !viewerPdfFrame || !viewerImageBox || !viewerPdfBox) return;
+    const label = title || 'Documento PDF';
+    viewerPdfFrame.src = src;
+    viewerPdfFrame.title = label;
+    if (viewerPdfTitle) viewerPdfTitle.textContent = label;
+    if (viewerPdfDownload) viewerPdfDownload.setAttribute('href', src);
+    if (viewerPdfNewTab) viewerPdfNewTab.setAttribute('href', src);
+    viewerImageBox.style.display = 'none';
+    viewerPdfBox.style.display = 'flex';
+    viewer.classList.add('active');
+  }
+
+  function closeViewer() {
+    if (!viewer) return;
+    viewer.classList.remove('active');
+    if (viewerImg) viewerImg.src = '';
+    if (viewerPdfFrame) viewerPdfFrame.src = '';
+  }
+
   function bindEntryImages(container) {
     container.querySelectorAll('.entry-image').forEach((img) => {
       img.addEventListener('click', () => {
-        if (!viewer || !viewerImg) return;
-        viewerImg.src = img.getAttribute('src');
-        viewerImg.alt = img.getAttribute('alt') || '';
-        viewer.classList.add('active');
+        openImageViewer(img.getAttribute('src'), img.getAttribute('alt'));
+      });
+    });
+  }
+
+  function bindEntryPdfs(container) {
+    container.querySelectorAll('.entry-pdf').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        openPdfViewer(btn.dataset.src, btn.dataset.title);
       });
     });
   }
@@ -38,6 +79,7 @@
        </div>`
       : textHTML;
 
+    const pdfHTML = buildPdfHTML(data.pdf);
     const tableHTML = buildTableHTML(data.table);
 
     return `
@@ -46,8 +88,27 @@
       ${titleHTML}
       ${subtitleHTML}
       ${body}
+      ${pdfHTML}
       ${tableHTML}
     </article>`;
+  }
+
+  function buildPdfHTML(pdf) {
+    if (!pdf || !pdf.src) return '';
+    const title = pdf.title || 'Documento PDF';
+    return `
+    <div class="entry-pdf-wrap">
+      <button type="button" class="entry-pdf" data-src="${pdf.src}" data-title="${title}">
+        <i class="ri-file-pdf-2-line entry-pdf-icon"></i>
+        <span class="entry-pdf-info">
+          <span class="entry-pdf-title">${title}</span>
+          <span class="entry-pdf-action">Ver documento</span>
+        </span>
+      </button>
+      <a class="entry-pdf-download" href="${pdf.src}" download aria-label="Descargar PDF">
+        <i class="ri-download-2-line"></i>
+      </a>
+    </div>`;
   }
 
   function buildTableHTML(table) {
@@ -83,13 +144,22 @@
       rightContainer.innerHTML = buildPageHTML(data.right);
       bindEntryImages(leftContainer);
       bindEntryImages(rightContainer);
+      bindEntryPdfs(leftContainer);
+      bindEntryPdfs(rightContainer);
       [leftContainer, rightContainer].forEach((el) => el.classList.remove('is-loading'));
     }, 250);
   }
 
   if (viewer) {
-    viewer.addEventListener('click', () => viewer.classList.remove('active'));
+    viewer.addEventListener('click', (e) => {
+      if (e.target === viewer) closeViewer();
+    });
   }
+  if (viewerImageBox) viewerImageBox.addEventListener('click', closeViewer);
+  if (viewerCloseBtn) viewerCloseBtn.addEventListener('click', closeViewer);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeViewer();
+  });
 
   const weekLabel = document.querySelector('#weekLabel');
   const weekDropdown = document.querySelector('#weekDropdown');

@@ -77,7 +77,7 @@ cuadernoWeeksData[1] = {
       subtitle: 'Procedimiento',
     },
     {
-      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica de laboratorio <br> 4. Creación de la versión inicial del portafolio electrónico',
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica de laboratorio <br> 4. Creación de la versión inicial del portafolio electrónico <br> 5. Actualización del cuaderno de la asignatura',
 
       image: {
         src: 'assets/images/Semana01/Semana01Teoria.jpeg',

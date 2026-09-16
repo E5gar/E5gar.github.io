@@ -185,7 +185,75 @@
   text-align: center;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
-
+.entry-pdf-wrap {
+  clear: both;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin: 6px 0 30px;
+}
+.entry-pdf-wrap:last-child {
+  margin-bottom: 0;
+}
+.entry-pdf {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 85%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+}
+.entry-pdf:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+.entry-pdf-icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+.entry-pdf-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.entry-pdf-title {
+  font-family: var(--nav-font);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--heading-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.entry-pdf-action {
+  font-family: var(--nav-font);
+  font-size: 0.8rem;
+  color: var(--accent-color);
+}
+.entry-pdf-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  transition: 0.25s;
+}
+.entry-pdf-download:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
 .cuaderno-viewer {
   position: fixed;
   inset: 0;
@@ -194,7 +262,6 @@
   justify-content: center;
   z-index: 999999;
   padding: 24px;
-  cursor: zoom-out;
   background-color: rgba(5, 8, 12, 0.78);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -202,12 +269,148 @@
 .cuaderno-viewer.active {
   display: flex;
 }
-.cuaderno-viewer img {
+.cuaderno-viewer-image {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+.cuaderno-viewer-image img {
   max-width: 92vw;
   max-height: 88vh;
   border-radius: 18px;
-  cursor: zoom-out;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+.cuaderno-viewer-pdf {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  width: min(980px, 94vw);
+  height: min(860px, 90vh);
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.55);
+  cursor: default;
+  transform: scale(0.96);
+  opacity: 0;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+.cuaderno-viewer.active .cuaderno-viewer-pdf {
+  transform: scale(1);
+  opacity: 1;
+}
+.cuaderno-viewer-pdf::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  z-index: 2;
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), var(--heading-color) 55%)
+  );
+}
+.cuaderno-viewer-pdf-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--default-color), transparent 88%);
+  color: var(--default-color);
+  font-size: 18px;
+  transition: 0.2s;
+}
+.cuaderno-viewer-pdf-close:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: rotate(90deg);
+}
+.cuaderno-viewer-pdf-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 22px 60px 16px 24px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+.cuaderno-viewer-pdf-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.cuaderno-viewer-pdf-heading i {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+.cuaderno-viewer-pdf-title {
+  font-family: var(--nav-font);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--heading-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cuaderno-viewer-pdf-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.cuaderno-viewer-pdf-download,
+.cuaderno-viewer-pdf-newtab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--nav-font);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+.cuaderno-viewer-pdf-download {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+.cuaderno-viewer-pdf-download:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--contrast-color);
+}
+.cuaderno-viewer-pdf-newtab {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 92%);
+  color: var(--heading-color);
+}
+.cuaderno-viewer-pdf-newtab:hover {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 80%);
+  color: var(--heading-color);
+}
+.cuaderno-viewer-pdf-body {
+  flex: 1;
+  padding: 16px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+}
+.cuaderno-viewer-pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .week-nav {
@@ -334,6 +537,31 @@
   .entry-table {
     min-width: 420px;
   }
+  .entry-pdf-wrap {
+    flex-direction: column;
+  }
+  .entry-pdf-download {
+    width: 100%;
+    height: 44px;
+  }
+  .cuaderno-viewer-pdf {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .cuaderno-viewer-pdf-bar {
+    padding: 18px 50px 14px 16px;
+  }
+  .cuaderno-viewer-pdf-actions span {
+    display: none;
+  }
+  .cuaderno-viewer-pdf-download,
+  .cuaderno-viewer-pdf-newtab {
+    padding: 8px 10px;
+  }
+  .cuaderno-viewer-pdf-body {
+    padding: 10px;
+  }
 }
 
 html[data-theme='dark'] .notebook {
@@ -371,6 +599,30 @@ html[data-theme='dark'] .entry-table tbody tr:nth-child(even) {
 }
 html[data-theme='dark'] .cuaderno-viewer {
   background-color: rgba(0, 0, 0, 0.82);
+}
+html[data-theme='dark'] .entry-pdf {
+  background-color: #1c2530;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+html[data-theme='dark'] .entry-pdf-title {
+  color: #f3f6fa;
+}
+html[data-theme='dark'] .cuaderno-viewer-pdf {
+  background-color: #141e2a;
+}
+html[data-theme='dark'] .cuaderno-viewer-pdf-bar {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+html[data-theme='dark'] .cuaderno-viewer-pdf-close {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f3f6fa;
+}
+html[data-theme='dark'] .cuaderno-viewer-pdf-newtab {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f3f6fa;
+}
+html[data-theme='dark'] .cuaderno-viewer-pdf-body {
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 html[data-theme='dark'] .entry-week,
