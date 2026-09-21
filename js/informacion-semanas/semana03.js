@@ -121,5 +121,35 @@ cuadernoWeeksData[3] = {
         tilt: 3,
       },
     },
+    {
+      title: '3. Guía Práctica Semana 03',
+      subtitle: 'Parte I. Setup, SEO, Navbar Híbrido y Hero Section',
+      text: 'Configuración del proyecto HTML5, metadatos SEO y vinculación de CDNs para Bootstrap 5.3.3 y Tailwind CSS. En la primera rama se creó una barra de navegación responsiva con menú desplegable y efecto backdrop-blur, junto a un Hero Section con tipografía adaptativa y fondos degradados para la temática de adopción y servicios para mascotas.',
+      image: {
+        src: 'assets/images/Semana03/Semana03Huellitas.png',
+        alt: 'Hero section creada para veterinaria desarrollado con Bootstrap 5 y Tailwind CSS',
+        side: 'right',
+        tilt: 2,
+      },
+    },
+    {
+      subtitle: 'Parte II. Grid de Servicios y formulario con validación de datos',
+      text: 'En la segunda rama, se creó el catálogo de servicios usando control de 12 columnas de Bootstrap con efectos hover de Tailwind. Asimismo, se agregó un formulario con validación de needs-validation, mensajes de error y vinculación de atributos ARIA.',
+      image: {
+        src: 'assets/images/Semana03/Semana03HuellitasGridFormulario.png',
+        alt: 'Catálogo de servicios con efecto hover y formulario de reserva',
+        side: 'right',
+        tilt: -3,
+      },
+    },
+    {
+      text: 'Resultados en Google Lighthouse. 98 en Rendimiento, 100 en Accesibilidad, 100 en Mejores Prácticas y 100 en SEO.',
+      image: {
+        src: 'assets/images/Semana03/Semana03GuiaPracticaParteII-Lighthouse.png',
+        alt: 'Resultados de Lighthouse aplicado a la página web de veterinara con diseño responsive',
+        side: 'left',
+        tilt: 4,
+      },
+    },
   ],
 };
