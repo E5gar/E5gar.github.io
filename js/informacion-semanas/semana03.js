@@ -181,5 +181,40 @@ cuadernoWeeksData[3] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron los conceptos de estilo CSS, librería Tailwind y Bootstrap, ello ha sido reforzado con el trabajo realizado en la práctica calificada grupal. Asimismo, se hizo uso de ramas de Git para gestionar el trabajo de cada integrante y así tener una mejor trazabilidad de cada uno. En la hora de práctica, se desarrolló el trabajo de crear una página web estilo tienda para la marca Huawei usando los conceptos aprendidos, para posteriormente desarrollar una página web de adopción y servicios para mascotas. Se validó la calidad de los resultados mediante despliegue en GitHub Pages y realizando pruebas con Google Lighthouse y la extensión WAVE.',
     },
+
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://goalkicker.com/CSSBook/" target="_blank">CSS Notes for Professionals</a> - Stack Overflow Contributors & GoalKicker',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://webstyleguide.com/" target="_blank">Web Style Guide: Foundations of User Experience Design (4th Edition)</a> - Patrick J. Lynch y Sarah Horton',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://inclusive-components.design/#components" target="_blank">Inclusive Components</a> - Heydon Pickering',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://ecss.benfrain.com/" target="_blank">Enduring CSS: Create robust and scalable CSS for any size web project</a> - Ben Frain',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://learn.shayhowe.com/" target="_blank">Learn to Code HTML & CSS</a> - Shay Howe',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
