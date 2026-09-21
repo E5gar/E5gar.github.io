@@ -94,5 +94,20 @@ cuadernoWeeksData[3] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Práctica Calificada Grupal 02',
+      subtitle: 'Interfaces con HTML y Tailwind',
+      text: 'Trabajo desarrollado en equipo de 4 integrantes, donde cada uno colaboró en su propia rama de GitHub para el desarrollo de una listas de mensajes responsivas, tarjetas de destinos con efectos hover, galería basada en media queries y un menú principal con tarjetas animadas en 3D con giro de 180°. Todo el proyecto ha sido creado utilizando HTML y Tailwind CSS.',
+      image: {
+        src: 'assets/images/Semana03/Semana03PracticaCalificada02.png',
+        alt: 'Página web desarrollada con HTML y Tailwind',
+        side: 'right',
+        tilt: -4,
+      },
+    },
+  ],
 };
