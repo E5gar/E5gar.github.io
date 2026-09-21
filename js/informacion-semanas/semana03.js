@@ -170,5 +170,16 @@ cuadernoWeeksData[3] = {
       title: '3. Guía Práctica Semana 03',
       text: 'Enlace en <a href="https://github.com/E5gar/grupo-Gago-Huamanlazo-semana3-web-mascotas" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/grupo-Gago-Huamanlazo-semana3-web-mascotas/" target="_blank">GitHub Pages</a>',
     },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí a diferenciar dos paradigmas del diseño frontend, siendo el primero el enfoque basado en componentes ya creados con Bootstrap 5, y el segundo enfoque de usar utilidades atómicas de Tailwind CSS. Entendí cómo Tailwind permite solucionar el problema de escribir los estilos CSS de manera convencional al emplear escala uniforme de espaciados, así como paleta de tonos de colores, variantes de estado y puntos de quiebre. Finalmente, he reforzado los conceptos de  accesibilidad en web al garantizar un contraste adecuado, labels asociados y atributos ARIA con estados de validación.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron los conceptos de estilo CSS, librería Tailwind y Bootstrap, ello ha sido reforzado con el trabajo realizado en la práctica calificada grupal. Asimismo, se hizo uso de ramas de Git para gestionar el trabajo de cada integrante y así tener una mejor trazabilidad de cada uno. En la hora de práctica, se desarrolló el trabajo de crear una página web estilo tienda para la marca Huawei usando los conceptos aprendidos, para posteriormente desarrollar una página web de adopción y servicios para mascotas. Se validó la calidad de los resultados mediante despliegue en GitHub Pages y realizando pruebas con Google Lighthouse y la extensión WAVE.',
+    },
   ],
 };
