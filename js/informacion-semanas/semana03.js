@@ -109,5 +109,17 @@ cuadernoWeeksData[3] = {
         tilt: -4,
       },
     },
+    {
+      title: '2. Práctica de Frameworks CSS Modernos - Bootstrap 5 y Tailwind CSS',
+      subtitle: 'Caso de una Tienda Online para Huawei',
+      text: 'Desarrollo de una tienda con catálogo de productos, usando sistema de 12 columnas de Bootstrap 5 con utilidades de diseño atómico y transiciones de Tailwind CSS. Se evaluaron metadatos SEO, navegación responsiva por pasos, tarjetas con animaciones de escala, aside con posicionamiento, formulario con mensajes de error y atributos ARIA. Revisado además con métricas de WAVE (0 Errores, 0 Alertas) y Google Lighthouse (81 Rendimiento, 100 Accesibilidad, 96 Mejores Prácticas, 91 SEO).',
+
+      image: {
+        src: 'assets/images/Semana03/Semana03HuaweiTienda.png',
+        alt: 'Página web desarrollada con Bootstrap 5 y Tailwind CSS',
+        side: 'left',
+        tilt: 3,
+      },
+    },
   ],
 };
