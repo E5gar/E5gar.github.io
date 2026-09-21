@@ -151,5 +151,24 @@ cuadernoWeeksData[3] = {
         tilt: 4,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Práctica Calificada Grupal 02',
+      text: 'Enlace en <a href="https://github.com/E5gar/Equipo_Semana03_DAW" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/Equipo_Semana03_DAW/" target="_blank">GitHub Pages</a>',
+    },
+    {
+      title:
+        '2. Práctica de Frameworks CSS Modernos - Bootstrap 5 y Tailwind CSS para Tienda Huawei',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana03" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/GuiaPracticaSemana03/" target="_blank">GitHub Pages</a>',
+      pdf: {
+        src: 'assets/files/Semana03/PRACTICA_SEMANA_03_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
+    {
+      title: '3. Guía Práctica Semana 03',
+      text: 'Enlace en <a href="https://github.com/E5gar/grupo-Gago-Huamanlazo-semana3-web-mascotas" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/grupo-Gago-Huamanlazo-semana3-web-mascotas/" target="_blank">GitHub Pages</a>',
+    },
   ],
 };
