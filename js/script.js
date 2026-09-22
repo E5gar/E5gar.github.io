@@ -218,3 +218,37 @@
   );
   sections.forEach((section) => spyObserver.observe(section));
 })();
+
+(function () {
+  const viewer = document.querySelector('#certViewer');
+  if (!viewer) return;
+  const frame = viewer.querySelector('.cert-viewer-frame');
+  const titleEl = viewer.querySelector('.cert-viewer-title');
+  const downloadLink = viewer.querySelector('.cert-viewer-download');
+  const newTabLink = viewer.querySelector('.cert-viewer-newtab');
+  const closeBtn = viewer.querySelector('.cert-viewer-close');
+
+  function openCert(src, title) {
+    frame.src = src;
+    titleEl.textContent = title || 'Certificado';
+    downloadLink.setAttribute('href', src);
+    newTabLink.setAttribute('href', src);
+    viewer.classList.add('active');
+  }
+  function closeCert() {
+    viewer.classList.remove('active');
+    frame.src = '';
+  }
+
+  document.querySelectorAll('.cert-badge').forEach((btn) => {
+    btn.addEventListener('click', () => openCert(btn.dataset.cert, btn.dataset.title));
+  });
+
+  closeBtn.addEventListener('click', closeCert);
+  viewer.addEventListener('click', (e) => {
+    if (e.target === viewer) closeCert();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCert();
+  });
+})();
