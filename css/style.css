@@ -1847,22 +1847,26 @@ html[data-theme='dark'] .theme-toggle {
   overflow: hidden;
   box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.55);
 }
+.cert-viewer-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
 .cert-viewer-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  z-index: 3;
-  width: 34px;
-  height: 34px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background-color: color-mix(in srgb, var(--default-color), transparent 88%);
   color: var(--default-color);
   font-size: 18px;
+  flex-shrink: 0;
   transition: 0.2s;
 }
+
 .cert-viewer-close:hover {
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -1874,8 +1878,7 @@ html[data-theme='dark'] .theme-toggle {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
-  padding: 22px 60px 16px 24px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 16px 24px;
 }
 .cert-viewer-title {
   font-family: var(--nav-font);
@@ -1910,6 +1913,14 @@ html[data-theme='dark'] .theme-toggle {
   background-color: color-mix(in srgb, var(--heading-color), transparent 92%);
   color: var(--heading-color);
 }
+.cert-viewer-download:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--contrast-color);
+}
+.cert-viewer-newtab:hover {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 80%);
+  color: var(--heading-color);
+}
 .cert-viewer-body {
   flex: 1;
   padding: 16px;
@@ -1930,7 +1941,7 @@ html[data-theme='dark'] .theme-toggle {
     border-radius: 0;
   }
   .cert-viewer-bar {
-    padding: 18px 50px 14px 16px;
+    padding: 14px 16px;
   }
   .cert-viewer-actions span {
     display: none;
