@@ -80,6 +80,18 @@ cuadernoWeeksData[4] = {
     {
       text: '<b>Animaciones y Gráficos con Canvas</b> <br> La generación de movimiento se implementa creando un bucle continuo de renderizado mediante la función window.requestAnimationFrame(), la cual sincroniza los cuadros de animación con la frecuencia de actualización del monitor, aplicando un ciclo de limpiar el lienzo con clearRect(), actualizar las variables de posición y redibujar los objetos.',
     },
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica calificada <br> 4. Realización de la práctica de laboratorio <br> 5. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana04/Semana04Teoria.jpeg',
+        alt: 'Desarrollo de clases teóricas',
+        side: 'right',
+        tilt: -6,
+      },
+    },
   ],
   right: [],
 };
