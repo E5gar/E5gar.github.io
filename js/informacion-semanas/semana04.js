@@ -108,5 +108,18 @@ cuadernoWeeksData[4] = {
         tilt: -4,
       },
     },
+    {
+      title:
+        '2. Práctica JavaScript y TypeScript, Manipulación del DOM, Funciones Avanzadas, Canvas API y Animaciones',
+      subtitle: 'Caso de una Tienda Online de Renta de Vehículos en Huancayo',
+      text: 'Desarrollo de una tienda con catálogo de vehículos, usando JavaScript y tipado estático con TypeScript. Se usaron funciones autoinvocadas IIFE para el scope y closures para encapsular el estado de los vehículos y la animación entre fotogramas. La interfaz gestiona el DOM mediante selectores querySelector, vinculación de eventos con funciones flecha y modificación de variables CSS. La simulación se desarrolló con la API Canvas 2D mediante un bucle de renderizado con window.requestAnimationFrame() y sincronizada con delta time (dt) para desplazamiento fluido a 60 FPS. Finalmente, se realizaron pruebas de perfilado en DevTools con Memory Snapshot y Performance.',
+
+      image: {
+        src: 'assets/images/Semana04/Semana04RentaTienda.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'left',
+        tilt: 3,
+      },
+    },
   ],
 };
