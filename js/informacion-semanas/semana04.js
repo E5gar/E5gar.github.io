@@ -93,5 +93,20 @@ cuadernoWeeksData[4] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Práctica Calificada Grupal 03',
+      subtitle: 'Ruleta Interactiva y Sorteador de Equipos con JavaScript',
+      text: 'Trabajo desarrollado en equipo de 4 integrantes, donde cada uno colaboró en su propia rama de GitHub para el desarrollo de una ruleta dividida en sectores con distribución cíclica de 5 colores y puntero triangular, con un textarea multifila y persistencia en localStorage, controlada mediante atajos de teclado, y el desarrollo de un sorteador aleatorio hasta de 100 participantes, parámetros de número de grupos, integrantes por equipo, renderizando a los miembros uno a uno en tarjetas, botones para exportar el resultado en formato JPG y copiar la lista al portapapeles. Desarrollados solo con HTML5, CSS3 y JavaScript.',
+      image: {
+        src: 'assets/images/Semana04/Semana04PracticaCalificada03.png',
+        alt: 'Aplicación de ruleta y sorteador de equipos con JavaScript',
+        side: 'right',
+        tilt: -4,
+      },
+    },
+  ],
 };
