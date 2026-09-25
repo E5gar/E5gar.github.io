@@ -146,5 +146,40 @@ cuadernoWeeksData[4] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron el ciclo de renderizado del navegador, motores JS y paradigmas funcionales. Este aprendizaje se puso en praxis durante la práctica calificada grupal, donde trabajamos en equipo usando ramas en GitHub para construir una ruleta y un sorteador de equipos con JavaScript. En la hora de práctica desarollamos paso a paso un lienzo con la API Canvas 2D usando closures, funciones flecha y bucles de animación. Finalmente, se validó el rendimiento utilizando las herramientas para desarrolladores de Chrome, analizando la cantidad de fotogramas en el panel Performance.',
     },
+
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript</a> - Marijn Haverbeke',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://ponyfoo.com/articles/standard" target="_blank">The JavaScript Standard</a> - Nicolás Bevacqua',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://sicp.sourceacademy.org/sicpjs.pdf" target="_blank">Structure and Interpretation of Computer Programs, JavaScript Edition</a> - Harold Abelson y Gerald Jay Sussman',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://goalkicker.com/JavaScriptBook/" target="_blank">JavaScript Notes for Professionals</a> - GoalKicker.com',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://goalkicker.com/TypeScriptBook2" target="_blank">TypeScript Notes for Professionals</a> - GoalKicker.com',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
