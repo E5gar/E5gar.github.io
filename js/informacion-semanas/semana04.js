@@ -135,5 +135,16 @@ cuadernoWeeksData[4] = {
         src: 'assets/files/Semana04/PRACTICA_SEMANA_04_GAGO_URIBE_EDGAR_ROBERT.pdf',
       },
     },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí los fundamentos del motor de ejecución de JavaScript V8, comprendiendo cómo funciona el Call Stack, Memory Heap y Event Loop para tareas asíncronas. Asimismo, profundicé en el manejo de variables con ámbito de bloque let y const, así como la importancia del tipado estático que aporta TypeScript frente a errores en tiempo de codificación. Entendí cómo una IIFE permite aislar el scope global y cómo los closures encapsulan y retienen estado privado entre ejecuciones. Asimismo, aprendí a manipular el DOM mediante selectores y clases dinámicas y a utilizar la API Canvas 2D con requestAnimationFrame y delta time (dt) para hacer animaciones fluidas a 60 FPS.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron el ciclo de renderizado del navegador, motores JS y paradigmas funcionales. Este aprendizaje se puso en praxis durante la práctica calificada grupal, donde trabajamos en equipo usando ramas en GitHub para construir una ruleta y un sorteador de equipos con JavaScript. En la hora de práctica desarollamos paso a paso un lienzo con la API Canvas 2D usando closures, funciones flecha y bucles de animación. Finalmente, se validó el rendimiento utilizando las herramientas para desarrolladores de Chrome, analizando la cantidad de fotogramas en el panel Performance.',
+    },
   ],
 };
