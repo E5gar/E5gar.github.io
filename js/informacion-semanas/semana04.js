@@ -121,5 +121,19 @@ cuadernoWeeksData[4] = {
         tilt: 3,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Práctica Calificada Grupal 03',
+      text: 'Enlace en <a href="https://github.com/E5gar/PracticaCalificada03" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/PracticaCalificada03/" target="_blank">GitHub Pages</a>',
+    },
+    {
+      title: '2. Práctica JavaScript y TypeScript para Tienda de Renta de Vehículos',
+      text: 'Enlace en <a href="https://github.com/E5gar/PracticaSemana04" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/PracticaSemana04/" target="_blank">GitHub Pages</a>',
+      pdf: {
+        src: 'assets/files/Semana04/PRACTICA_SEMANA_04_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
   ],
 };
