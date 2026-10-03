@@ -229,5 +229,16 @@ cuadernoWeeksData[5] = {
         tilt: -4,
       },
     },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí a diferenciar una librería de un framework a partir del principio de Inversión de Control, entendí que React es técnicamente una librería pero que enconjunto con sus herramientas se emplea como un framework. Asimismo, comprendí cómo funciona el Client Side Rendering, donde el navegador construye la interfaz a partir de un HTML con un único div root, y sus diferencias con el Server Side Rendering de Next.js. Conocí más sobre el rol de Node.js y NPM para la gestión de dependencias mediante el archivo package.json y la carpeta node_modules, así como en las herramientas de cada etapa del entorno de desarrollo como Babel para la transpilación, Webpack para la compilación y ESLint para la calidad del código. Entendí cómo el desarrollo basado en componentes permite dividir la interfaz en piezas reutilizables escritas en JSX, y cómo las props y children permiten pasar datos y contenido de un componente padre a uno hijo. Finalmente, aprendí a crear 3 proyectos con Create React App, Vite y Next.js, comparando la estructura que generó de cada uno de ellos. Asismimo aprendí las formas de aplicar estilos en React, sea con inline, style sheets, style modules, styled components o con frameworks CSS.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron los fundamentos de React, herramientas del entorno de desarrollo y conceptos de componentes, JSX, props, children y estilos. En la hora de práctica se instaló Node.js en su versión LTS y se comprobó que funcionara correctamente desde la terminal. Luego se crearon 3 proyectos con las herramientas Create React App, Vite y Next.js con sus respectivos comandos, se ejecutaron cada uno de ellos de manera local para verificar su funcionamiento. Finalmente, se vio el contenido de las carpetas y archivos generados por cada herramienta en Visual Studio Code.',
+    },
   ],
 };
