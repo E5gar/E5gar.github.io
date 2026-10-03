@@ -214,5 +214,20 @@ cuadernoWeeksData[5] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Práctica Individual',
+      subtitle: 'Creación de 3 proyectos React con diferentes herramientas',
+      text: 'Se crearon 3 proyectos React desde la terminal, cada uno con una herramienta distinta, siendo Create React App, Vite y Next.js. Se verificó que los tres se ejecutaran correctamente de manera local y se compararon las estructuras de carpetas que generó cada una de las herramientas. Create React App presentó las carpetas node_modules, public y src, y su index.html estaba dentro de public. Vite colocó el index.html en la raíz del proyecto y agregó los archivos vite.config.js y eslint.config.js. Next.js organizó la aplicación en la carpeta app, generó la carpeta .next al compilar y durante la instalación permitió elegir opciones como Tailwind CSS. Además, en el proyecto de Next.js se ejecutó el comando de compilación.',
+      image: {
+        src: 'assets/images/Semana05/Semana05CreacionProyectosReact.jpeg',
+        alt: 'Creación de Proyectos en React con Create React App, Vite y NextJS',
+        side: 'right',
+        tilt: -4,
+      },
+    },
+  ],
 };
