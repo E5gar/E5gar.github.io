@@ -1,5 +1,279 @@
 window.cuadernoWeeksData = window.cuadernoWeeksData || {};
 cuadernoWeeksData[5] = {
-  left: [],
-  right: [],
+  left: [
+    {
+      chip: 'Tema',
+      title: 'Desarrollar una Aplicación Frontend con Framework JavaScript',
+    },
+    {
+      subtitle: 'Definiciones',
+    },
+    {
+      text: '<b>React</b> <br> Es una librería de código JavaScript para crear interfaces de usuario, permite a su vez construir componentes de interfaz de tal manera que sean reutilizables. Ha sido creado por Jordan Walke y utilizada por primera vez en 2011 por Facebook. Se liberó en Julio de 2013 y cada cierto tiempo recibe actualizaciones.',
+    },
+    {
+      text: '<b>SPA - Aplicación de Página Única</b> <br> Es una aplicación web que carga una sola página con JavaScript y que actualiza el contenido sin necesidad de recargar el navegador, mejorando tanto rendimiento y uso. React es una herramienta que permite desarrollar SPA.',
+    },
+    {
+      text: '<b>Librería y Framework</b> <br> Una librería es un conjunto de funciones que el desarrollador agrega cuando necesita, mientras que un framework define la estructura de la aplicación, este mismo se encarga de usar el código indicado por el desarrollador. Dicho principio se conoce como Inversión de Control. React es técnicamente una librería, pero con todas sus herramientas se emplea como un framework.',
+      table: {
+        headers: ['Aspecto', 'Librería', 'Framework'],
+        rows: [
+          ['Control del flujo', 'Lo tiene el desarrollador', 'Lo tiene el framework'],
+          ['Estructura', 'Libre', 'Definida por el framework'],
+          ['Ejemplo', 'React', 'Next.js y Angular'],
+        ],
+        caption: 'Diferencia entre Librería y Framework',
+      },
+    },
+    {
+      text: '<b>Client Side Rendering</b> <br> Es el modelo donde el servidor presenta un HTML casi vacío y un archivo JavaScript, el navegador también se encarga de presentar la interfaz. Luego de una carga inicial, la navegación se vuelve más rápida, reduciendo así la carga del servidor a costa de que el primer acceso sea más lento y que también sea vea afectado el posicionamiento SEO. La contraparte es el Server Side Rendering, donde el HTML es construido por el servidor, como en Next.js.',
+    },
+    {
+      text: '<b>Node.js</b> <br> Es un entorno que permite ejecutar JavaScript fuera del navegador a nivel del sistema operativo. Se recomienda instalar la versión LTS. El proceso consiste en descargar, ejecutar el instalador y comprobar la instalación desde la terminal con node -v.',
+      image: {
+        src: 'assets/images/Semana05/Semana05NodeInstalacion.jpeg',
+        alt: 'Instalación de Node.js',
+        side: 'right',
+        tilt: -4,
+      },
+    },
+    {
+      text: '<b>NPM</b> <br> Es un gestor de paquetes incluido en Node.js que se emplea para instalar, actualizar y eliminar las dependencias de un proyecto. Las dependencias se registran en el archivo package.json y sus archivos se descargan en la carpeta node_modules.',
+    },
+    {
+      text: '<b>Gestión de Dependencias</b> <br> Es el control de las librerías de las cuales depende un proyecto. Una herramienta de creación de proyectos inicializa el package.json e instala las dependencias necesarias de tal manera que el entorno de desarrollo esté configurado desde el inicio.',
+    },
+    {
+      text: '<b>Herramientas del Entorno de Desarrollo</b> <br> Cada etapa del trabajo con React requiere de una herramienta.',
+      table: {
+        headers: ['Etapa', 'Función', 'Herramienta'],
+        rows: [
+          [
+            'Inicialización',
+            'Crea el package.json e instala las librerías',
+            'Create React App, Vite',
+          ],
+          [
+            'Compilación',
+            'Agrupa el código fuente en archivos listos para distribuir',
+            'Webpack, Turbopack, Rollup',
+          ],
+          [
+            'Transpilación',
+            'Transforma JS y JSX de última generación a código compatible con cualquier navegador',
+            'Babel, SWC',
+          ],
+          [
+            'Calidad de código',
+            'Analiza el código de forma estática y da formato',
+            'ESLint, Prettier',
+          ],
+          ['Control de versiones', 'Automatizar procesos', 'Git, Husky'],
+        ],
+        caption: 'Herramientas de React',
+      },
+    },
+    {
+      text: '<b>Compilador y Empaquetador</b> <br> Webpack, Turbopack y Rollup toman los archivos JSX, TSX, JS e imágenes y los combinan en archivos JS y CSS optimizado que forman de la SPA. Babel se encarga de la transpilación, permitiendo usar sintaxis moderna y JSX para garantizar la compatibilidad con navegadores antiguos.',
+    },
+    {
+      text: '<b>Linter</b> <br> ESLint es una herramienta que ausculta el código en busca tanto de errores como de malas prácticas. Se complementa con Prettier para formatear el código.',
+    },
+    {
+      text: '<b>SASS</b> <br> Syntactically Awesome Style Sheets. Es un metalenguaje de hojas de estilo que usa variables, anidamiento y reutiliza CSS, que posteriormente se compila a un CSS estándar.',
+    },
+    {
+      text: '<b>Herramientas Complementarias</b> <br> Favicon es el ícono de 32x32 o 16x16 píxeles que identifica la pestaña del navegador. Font Awesome ofrece íconos como fuente tipográfica que no requieren de JavaScript. Así también se emplean los servicios de Google como Maps, Fonts, Analytics, Trends y las herramientas para webmasters.',
+    },
+    {
+      text: '<b>Herramientas de Creación de Proyectos React</b> <br> Permiten generar la estructura de una aplicación con el entorno configurado.',
+      table: {
+        headers: ['Herramienta', 'Descripción'],
+        rows: [
+          ['Create React App', 'Herramienta actualmente obsoleta'],
+          ['Vite', 'Herramienta rápida siendo la más usada actualmente'],
+          ['Next.js', 'Framework con renderizado en servidor'],
+          ['Gatsby', 'Generador de sitios estáticos'],
+          ['Blitz.js', 'Framework full-stack basado en Next.js'],
+          ['Remix Run', 'Framework full-stack centrado en rutas y carga de datos'],
+          ['Hydrogen', 'Framework de Shopify para tiendas en línea'],
+        ],
+        caption: 'Herramientas de instalación de React',
+      },
+      image: {
+        src: 'assets/images/Semana05/Semana05CreateReactAppVite.jpeg',
+        alt: 'Descripción de las herramientas Create React App y Vite',
+        side: 'left',
+        tilt: 3,
+      },
+    },
+    {
+      text: '<b>Comandos de Instalación</b> <br> Cada herramienta tiene sus propios comandos para ser ejecutados en la terminal, se usa el término nombre-proyecto como nombre de la carpeta a crear.',
+      table: {
+        headers: ['Herramienta', 'Comandos'],
+        rows: [
+          [
+            'Create React App',
+            'npx create-react-app nombre-proyecto <br> cd nombre-proyecto <br> npm start',
+          ],
+          [
+            'Vite',
+            'npm create vite@latest nombre-proyecto <br> cd nombre-proyecto <br> npm install <br> npm run dev',
+          ],
+          [
+            'Next.js',
+            'npx create-next-app@latest nombre-proyecto <br> cd nombre-proyecto <br> npm run dev',
+          ],
+        ],
+        caption: 'Comandos para crear un proyecto en React',
+      },
+      image: {
+        src: 'assets/images/Semana05/Semana05ComandosInstalacion.jpeg',
+        alt: 'Creación de proyecto con create-next-app en terminal',
+        side: 'right',
+        tilt: -3,
+      },
+    },
+    {
+      text: '<b>Estructura de Archivos</b> <br> Un proyecto React creado con Vite cuenta con carpetas y archivos diferentes a otras herramientas de instalación. El archivo index.html presenta un único div con id root, y es allí donde React carga toda la aplicación, por lo que todo se ejecuta dentro del mismo root.',
+      table: {
+        headers: ['Elemento', 'Función'],
+        rows: [
+          ['node_modules', 'Carpeta donde están todos los archivos de las dependencias'],
+          ['package.json', 'Tiene nombre, scripts y dependencias del proyecto'],
+          ['index.html', 'Contiene el div con id root'],
+          ['src/main.jsx', 'Entrada que renderiza el componente App dentro del root'],
+          ['src/App.jsx', 'Componente principal de la aplicación'],
+        ],
+        caption: 'Estructura de un proyecto con Vite',
+      },
+    },
+    {
+      text: '<b>Desarrollo Basado en Componentes</b> <br> Es un enfoque donde la interfaz se divide en piezas independientes y reutilizables que son denominadas componentes. En React un componente es una función de JavaScript cuyo nombre empieza con mayúscula y que retorna un JSX. Los componentes se anidan entre sí formando un árbol que parte desde el componente App.',
+    },
+    {
+      text: '<b>JSX</b> <br> Es una extensión de sintaxis que permite escribir estructuras tipo HTML dentro de JavaScript. No es entendido directamente por el navegador, por lo que es transpilado por Babel o SWC. Todo componente debe retornar un único elemento raíz, y para insertar valores o expresiones de JavaScript se emplean llaves.',
+      table: {
+        headers: ['HTML', 'JSX'],
+        rows: [
+          ['class', 'className'],
+          ['for', 'htmlFor'],
+          ['onclick', 'onClick'],
+          ['style="color: red"', 'style={{ color: "red" }}'],
+          ['&lt;img&gt; sin cierre', '&lt;img /&gt; con cierre'],
+        ],
+        caption: 'Diferencias de sintaxis entre HTML y JSX',
+      },
+    },
+    {
+      text: '<b>Props</b> <br> Son los datos que un componente padre envía a un componente hijo, escritos como atributos en la etiqueta. El hijo los recibe como un objeto de solo lectura, por ende no puede modificarlos. Esto garantiza un flujo de datos de caracter unidireccional de padre a hijo, permitiendo reutilizar un mismo componente con distintos datos.',
+    },
+    {
+      text: '<b>Children</b> <br> Es una prop especial que contiene todo lo que se escribe entre la etiqueta de apertura y cierre de un componente. Permite crear componentes contenedores tales como tarjetas o layouts que envuelven contenido estructurado por el componente padre.',
+    },
+    {
+      text: '<b>Estilos en Framework JS</b> <br> React ofrece distintas formas de aplicar estilos, la elección de cada uno depende del alcance que se requiera.',
+    },
+    {
+      text: '<b>Styles Inline</b> <br> Se aplican con el atributo style, que recibe un objeto de JavaScript con propiedades en camelCase, afentando solo a un elemento. No permiten usar pseudoclases ni media queries.',
+    },
+    {
+      text: '<b>Style Sheets</b> <br> Son hojas de estilo CSS que se importan dentro del componente. Sus reglas son globales, por lo que existe el riesgo de que los nombres de clases de distintos componentes se solapen.',
+    },
+    {
+      text: '<b>Styles Modules</b> <br> Son archivos con extensión .module.css cuyas clases están limitadas al componente que los importa dado que el compilador les asigna nombres únicos. Se aplican con className={styles.nombreClase} evitando que se solapen entre sí',
+    },
+    {
+      text: '<b>Styled Components</b> <br> Es una librería de CSS-in-JS que permite escribir el CSS dentro del propio componente mediante plantillas de texto. Cada estilo se convierte en un componente y puede cambiar según las props.',
+    },
+    {
+      text: '<b>Framework CSS en React</b> <br> Las librerías Bootstrap y Tailwind CSS también pueden usarse en React, ya sea instalándolas como dependencias con NPM o con CDN.',
+      table: {
+        headers: ['Estilo', 'Alcance', 'Característica'],
+        rows: [
+          ['Inline', 'Un solo elemento', 'Objeto JS'],
+          ['Style Sheet', 'Global', 'CSS normal'],
+          ['Style Module', 'Local al componente', 'Clases con nombres únicos'],
+          ['Styled Components', 'Local al componente', 'CSS en JS'],
+          ['Framework CSS', 'Global por clases', 'Componentes ya creados'],
+        ],
+        caption: 'Comparación de formas de aplicar estilos en React',
+      },
+    },
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica calificada <br> 4. Realización de la práctica de laboratorio <br> 5. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana05/Semana05Teoria.jpeg',
+        alt: 'Desarrollo de clases teóricas',
+        side: 'right',
+        tilt: -6,
+      },
+    },
+  ],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Práctica Individual',
+      subtitle: 'Creación de 3 proyectos React con diferentes herramientas',
+      text: 'Se crearon 3 proyectos React desde la terminal, cada uno con una herramienta distinta, siendo Create React App, Vite y Next.js. Se verificó que los tres se ejecutaran correctamente de manera local y se compararon las estructuras de carpetas que generó cada una de las herramientas. Create React App presentó las carpetas node_modules, public y src, y su index.html estaba dentro de public. Vite colocó el index.html en la raíz del proyecto y agregó los archivos vite.config.js y eslint.config.js. Next.js organizó la aplicación en la carpeta app, generó la carpeta .next al compilar y durante la instalación permitió elegir opciones como Tailwind CSS. Además, en el proyecto de Next.js se ejecutó el comando de compilación.',
+      image: {
+        src: 'assets/images/Semana05/Semana05CreacionProyectosReact.jpeg',
+        alt: 'Creación de Proyectos en React con Create React App, Vite y NextJS',
+        side: 'right',
+        tilt: -4,
+      },
+    },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí a diferenciar una librería de un framework a partir del principio de Inversión de Control, entendí que React es técnicamente una librería pero que enconjunto con sus herramientas se emplea como un framework. Asimismo, comprendí cómo funciona el Client Side Rendering, donde el navegador construye la interfaz a partir de un HTML con un único div root, y sus diferencias con el Server Side Rendering de Next.js. Conocí más sobre el rol de Node.js y NPM para la gestión de dependencias mediante el archivo package.json y la carpeta node_modules, así como en las herramientas de cada etapa del entorno de desarrollo como Babel para la transpilación, Webpack para la compilación y ESLint para la calidad del código. Entendí cómo el desarrollo basado en componentes permite dividir la interfaz en piezas reutilizables escritas en JSX, y cómo las props y children permiten pasar datos y contenido de un componente padre a uno hijo. Finalmente, aprendí a crear 3 proyectos con Create React App, Vite y Next.js, comparando la estructura que generó de cada uno de ellos. Asismimo aprendí las formas de aplicar estilos en React, sea con inline, style sheets, style modules, styled components o con frameworks CSS.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron los fundamentos de React, herramientas del entorno de desarrollo y conceptos de componentes, JSX, props, children y estilos. En la hora de práctica se instaló Node.js en su versión LTS y se comprobó que funcionara correctamente desde la terminal. Luego se crearon 3 proyectos con las herramientas Create React App, Vite y Next.js con sus respectivos comandos, se ejecutaron cada uno de ellos de manera local para verificar su funcionamiento. Finalmente, se vio el contenido de las carpetas y archivos generados por cada herramienta en Visual Studio Code.',
+    },
+
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://goalkicker.com/ReactJSBook/" target="_blank">React JS Notes for Professionals</a> - GoalKicker.com',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://librosgratis.dev/books/react-aprendiz-maestro.pdf" target="_blank">SurviveJS - React: De aprendiz a maestro</a> - Juho Vepsäläinen y Raúl Expósito',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://github.com/krasimir/react-in-patterns/blob/master/book.pdf" target="_blank">React in Patterns</a> - Krasimir Tsonev',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://webpack.js.org" target="_blank">SurviveJS - Webpack 5</a> - Juho Vepsäläinen',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://goalkicker.com/NodeJSBook/" target="_blank">Node.js Notes for Professionals</a> - GoalKicker.com',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
+  ],
 };
