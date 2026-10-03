@@ -31,6 +31,12 @@ cuadernoWeeksData[5] = {
     },
     {
       text: '<b>Node.js</b> <br> Es un entorno que permite ejecutar JavaScript fuera del navegador a nivel del sistema operativo. Se recomienda instalar la versión LTS. El proceso consiste en descargar, ejecutar el instalador y comprobar la instalación desde la terminal con node -v.',
+      image: {
+        src: 'assets/images/Semana05/Semana05NodeInstalacion.jpeg',
+        alt: 'Instalación de Node.js',
+        side: 'right',
+        tilt: -4,
+      },
     },
     {
       text: '<b>NPM</b> <br> Es un gestor de paquetes incluido en Node.js que se emplea para instalar, actualizar y eliminar las dependencias de un proyecto. Las dependencias se registran en el archivo package.json y sus archivos se descargan en la carpeta node_modules.',
@@ -95,6 +101,12 @@ cuadernoWeeksData[5] = {
         ],
         caption: 'Herramientas de instalación de React',
       },
+      image: {
+        src: 'assets/images/Semana05/Semana05CreateReactAppVite.jpeg',
+        alt: 'Descripción de las herramientas Create React App y Vite',
+        side: 'left',
+        tilt: 3,
+      },
     },
     {
       text: '<b>Comandos de Instalación</b> <br> Cada herramienta tiene sus propios comandos para ser ejecutados en la terminal, se usa el término nombre-proyecto como nombre de la carpeta a crear.',
@@ -115,6 +127,12 @@ cuadernoWeeksData[5] = {
           ],
         ],
         caption: 'Comandos para crear un proyecto en React',
+      },
+      image: {
+        src: 'assets/images/Semana05/Semana05ComandosInstalacion.jpeg',
+        alt: 'Creación de proyecto con create-next-app en terminal',
+        side: 'right',
+        tilt: -3,
       },
     },
     {
