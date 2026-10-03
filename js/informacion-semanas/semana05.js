@@ -96,6 +96,93 @@ cuadernoWeeksData[5] = {
         caption: 'Herramientas de instalación de React',
       },
     },
+    {
+      text: '<b>Comandos de Instalación</b> <br> Cada herramienta tiene sus propios comandos para ser ejecutados en la terminal, se usa el término nombre-proyecto como nombre de la carpeta a crear.',
+      table: {
+        headers: ['Herramienta', 'Comandos'],
+        rows: [
+          [
+            'Create React App',
+            'npx create-react-app nombre-proyecto <br> cd nombre-proyecto <br> npm start',
+          ],
+          [
+            'Vite',
+            'npm create vite@latest nombre-proyecto <br> cd nombre-proyecto <br> npm install <br> npm run dev',
+          ],
+          [
+            'Next.js',
+            'npx create-next-app@latest nombre-proyecto <br> cd nombre-proyecto <br> npm run dev',
+          ],
+        ],
+        caption: 'Comandos para crear un proyecto en React',
+      },
+    },
+    {
+      text: '<b>Estructura de Archivos</b> <br> Un proyecto React creado con Vite cuenta con carpetas y archivos diferentes a otras herramientas de instalación. El archivo index.html presenta un único div con id root, y es allí donde React carga toda la aplicación, por lo que todo se ejecuta dentro del mismo root.',
+      table: {
+        headers: ['Elemento', 'Función'],
+        rows: [
+          ['node_modules', 'Carpeta donde están todos los archivos de las dependencias'],
+          ['package.json', 'Tiene nombre, scripts y dependencias del proyecto'],
+          ['index.html', 'Contiene el div con id root'],
+          ['src/main.jsx', 'Entrada que renderiza el componente App dentro del root'],
+          ['src/App.jsx', 'Componente principal de la aplicación'],
+        ],
+        caption: 'Estructura de un proyecto con Vite',
+      },
+    },
+    {
+      text: '<b>Desarrollo Basado en Componentes</b> <br> Es un enfoque donde la interfaz se divide en piezas independientes y reutilizables que son denominadas componentes. En React un componente es una función de JavaScript cuyo nombre empieza con mayúscula y que retorna un JSX. Los componentes se anidan entre sí formando un árbol que parte desde el componente App.',
+    },
+    {
+      text: '<b>JSX</b> <br> Es una extensión de sintaxis que permite escribir estructuras tipo HTML dentro de JavaScript. No es entendido directamente por el navegador, por lo que es transpilado por Babel o SWC. Todo componente debe retornar un único elemento raíz, y para insertar valores o expresiones de JavaScript se emplean llaves.',
+      table: {
+        headers: ['HTML', 'JSX'],
+        rows: [
+          ['class', 'className'],
+          ['for', 'htmlFor'],
+          ['onclick', 'onClick'],
+          ['style="color: red"', 'style={{ color: "red" }}'],
+          ['&lt;img&gt; sin cierre', '&lt;img /&gt; con cierre'],
+        ],
+        caption: 'Diferencias de sintaxis entre HTML y JSX',
+      },
+    },
+    {
+      text: '<b>Props</b> <br> Son los datos que un componente padre envía a un componente hijo, escritos como atributos en la etiqueta. El hijo los recibe como un objeto de solo lectura, por ende no puede modificarlos. Esto garantiza un flujo de datos de caracter unidireccional de padre a hijo, permitiendo reutilizar un mismo componente con distintos datos.',
+    },
+    {
+      text: '<b>Children</b> <br> Es una prop especial que contiene todo lo que se escribe entre la etiqueta de apertura y cierre de un componente. Permite crear componentes contenedores tales como tarjetas o layouts que envuelven contenido estructurado por el componente padre.',
+    },
+    {
+      text: '<b>Estilos en Framework JS</b> <br> React ofrece distintas formas de aplicar estilos, la elección de cada uno depende del alcance que se requiera.',
+    },
+    {
+      text: '<b>Styles Inline</b> <br> Se aplican con el atributo style, que recibe un objeto de JavaScript con propiedades en camelCase, afentando solo a un elemento. No permiten usar pseudoclases ni media queries.',
+    },
+    {
+      text: '<b>Style Sheets</b> <br> Son hojas de estilo CSS que se importan dentro del componente. Sus reglas son globales, por lo que existe el riesgo de que los nombres de clases de distintos componentes se solapen.',
+    },
+    {
+      text: '<b>Styles Modules</b> <br> Son archivos con extensión .module.css cuyas clases están limitadas al componente que los importa dado que el compilador les asigna nombres únicos. Se aplican con className={styles.nombreClase} evitando que se solapen entre sí',
+    },
+    {
+      text: '<b>Styled Components</b> <br> Es una librería de CSS-in-JS que permite escribir el CSS dentro del propio componente mediante plantillas de texto. Cada estilo se convierte en un componente y puede cambiar según las props.',
+    },
+    {
+      text: '<b>Framework CSS en React</b> <br> Las librerías Bootstrap y Tailwind CSS también pueden usarse en React, ya sea instalándolas como dependencias con NPM o con CDN.',
+      table: {
+        headers: ['Estilo', 'Alcance', 'Característica'],
+        rows: [
+          ['Inline', 'Un solo elemento', 'Objeto JS'],
+          ['Style Sheet', 'Global', 'CSS normal'],
+          ['Style Module', 'Local al componente', 'Clases con nombres únicos'],
+          ['Styled Components', 'Local al componente', 'CSS en JS'],
+          ['Framework CSS', 'Global por clases', 'Componentes ya creados'],
+        ],
+        caption: 'Comparación de formas de aplicar estilos en React',
+      },
+    },
   ],
   right: [],
 };
