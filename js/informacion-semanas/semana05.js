@@ -240,5 +240,40 @@ cuadernoWeeksData[5] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron los fundamentos de React, herramientas del entorno de desarrollo y conceptos de componentes, JSX, props, children y estilos. En la hora de práctica se instaló Node.js en su versión LTS y se comprobó que funcionara correctamente desde la terminal. Luego se crearon 3 proyectos con las herramientas Create React App, Vite y Next.js con sus respectivos comandos, se ejecutaron cada uno de ellos de manera local para verificar su funcionamiento. Finalmente, se vio el contenido de las carpetas y archivos generados por cada herramienta en Visual Studio Code.',
     },
+
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://goalkicker.com/ReactJSBook/" target="_blank">React JS Notes for Professionals</a> - GoalKicker.com',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://librosgratis.dev/books/react-aprendiz-maestro.pdf" target="_blank">SurviveJS - React: De aprendiz a maestro</a> - Juho Vepsäläinen y Raúl Expósito',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://github.com/krasimir/react-in-patterns/blob/master/book.pdf" target="_blank">React in Patterns</a> - Krasimir Tsonev',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://webpack.js.org" target="_blank">SurviveJS - Webpack 5</a> - Juho Vepsäläinen',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://goalkicker.com/NodeJSBook/" target="_blank">Node.js Notes for Professionals</a> - GoalKicker.com',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
