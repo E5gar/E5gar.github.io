@@ -306,5 +306,16 @@ cuadernoWeeksData[6] = {
         src: 'assets/files/Semana06/PRACTICA_SEMANA_06_GAGO_URIBE_EDGAR_ROBERT.pdf',
       },
     },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí cómo React actualiza la interfaz a partir de la función de renderizado y el proceso de DOM virtual, donde solo se modifican en el DOM real las partes que cambiaron. Asimismo, comprendí la diferencia entre componentes de función y de clase, el uso de llaves para insertar variables, atributos y código JavaScript dentro del JSX, y cómo traducir un componente a TypeScript con la extensión .tsx. Asimismo, el cómo los props permiten enviar datos de padre a hijo, incluso a través de componentes anidados con prop drilling, y cómo mediante una función enviada como prop el hijo puede devolver un dato al padre y comunicarse incluso con un hermano. También aprendí a manejar eventos de onClick, onChange y onSubmit junto con el hook useState para que la interfaz responde según las acciones del usuario, comprendí qué información presentar con renderizado condicional con if, ternario y operador &&, y a recorrer datos con map usando key. De igual manera, la creación de formularios e incorporación entre vistas de una SPA con React Router sin recargar la página. Finalmente, entendí el consumo de APIs con promesas y async/await dentro de useEffect, diferenciando Fetch de Axios y manejando los estados de loading, data y error.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron los conceptos de función de renderizado, DOM virtual, componentes, JSX, props y children, además de los eventos, el renderizado condicional e iterativo, el routing y el consumo de APIs. Ello se reforzó con la realización de los 5 ejercicios de componentes, donde se practicó el diseño responsivo con CSS, componentes anidados, comunicación entre padre, hijo y hermanos, así como el renderizado de una tabla de estudiantes con map. En la hora de práctica se desarrolló la guía práctica para crear un sitio web de reserva de sitios turísticos, partiendo de la creación del proyecto con Vite, instalación de react-router-dom y axios, enrutamiento de páginas, consumo de la API y creación de un formulario. Finalmente, se validó el funcionamiento auditando las peticiones de red en las DevTools del navegador y el estado de los componentes con la extensión React DevTools.',
+    },
   ],
 };
