@@ -209,4 +209,36 @@ cuadernoWeeksData[6] = {
       },
     },
   ],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Ejercicios de la Práctica Componentes, JSX, TypeScript y Estilos en React',
+      subtitle:
+        'Resolución de 5 ejercicios sobre componentes, props, children y renderizado de datos',
+      text: 'Se desarrollaron 5 ejercicios en React aplicando la creación de componentes en archivos JSX y la transferencia de datos mediante props. En el 1ro se maquetó una aplicación con diseño responsivo para PC, tablet y móvil, creando 7 componentes, uno por cada sección, con estilos en CSS y media queries. En el 2do se anidaron 4 componentes, donde el componente 1 contiene al 2 hasta llegar al 4, y se envió un objeto con nombre, dirección y ciudad a través de cada nivel mediante props para visualizarlo en un card en el último componente. En el 3ro se creó un componente padre y un hijo, donde el padre envió una función como prop para que el hijo transfiriera un dato hacia él y este fuera renderizado por el padre. En el 4to se crearon un componente padre y dos hijos, donde el nombre y apellido del hermano 1 se enviaron al padre y desde allí hacia el hermano 2. Finalmente, en el 5to se renderizaron los datos de un arreglo de 4 estudiantes con id, name y city recorridos con map, presentándolos en una tabla con estilos CSS.',
+      image: {
+        src: 'assets/images/Semana06/Semana06React5Ejercicios.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'right',
+        tilt: -3,
+      },
+      pdf: {
+        src: 'assets/files/Semana06/Semana06A Jsx Components React.pdf',
+      },
+    },
+    {
+      title:
+        '2. Práctica Framework JS: Eventos, Renderizado Condicional/Iterativo, Formularios, Routing y Consumo de APIs (Async/Await, Axios)',
+      subtitle: 'Caso de una Página Web de Reserva de Sitios Turísticos',
+      text: 'Desarrollo de una SPA con React y Vite para la reserva de sitios turísticos. Se instalaron las librerías react-router-dom y axios, y se organizó el proyecto en src/pages, src/components, src/services y src/hooks. El enrutamiento se agregó con BrowserRouter, Routes, Route y NavLink, creando las páginas Home, List, Form y NotFound para las rutas no existentes. El consumo de la API se realizó con axios y async/await dentro de un useEffect, controlando estados de loading, data y error. Los datos se presentaron con renderizado iterativo mediante map con key y renderizado condicional con el operador && y ternario, mientras que la reserva se registró a través de un formulario con useState. Finalmente, se validó el flujo de datos y auditaron las peticiones de red en las DevTools del navegador y el estado de la interfaz con la extensión React DevTools.',
+      image: {
+        src: 'assets/images/Semana06/Semana06ReservaTurismo.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'left',
+        tilt: 3,
+      },
+    },
+  ],
 };
