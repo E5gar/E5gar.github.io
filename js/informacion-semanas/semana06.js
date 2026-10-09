@@ -240,5 +240,57 @@ cuadernoWeeksData[6] = {
         tilt: 3,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Ejercicios de la Práctica Componentes, JSX, TypeScript y Estilos en React',
+      text: 'Enlace en <a href="https://github.com/E5gar/Ejercicio01React" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/Ejercicio01React/" target="_blank">GitHub Pages</a>',
+    },
+    {
+      text: 'A. Aplicación Web con Diseño Responsive',
+      image: {
+        src: 'assets/images/Semana06/Semana06Ejercicio01.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'right',
+        tilt: -3,
+      },
+    },
+    {
+      text: 'B. Aplicación Web con Componentes Anidados',
+      image: {
+        src: 'assets/images/Semana06/Semana06Ejercicio02.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'left',
+        tilt: 3,
+      },
+    },
+    {
+      text: 'C. Aplicación Web con Componente Padre e Hijo',
+      image: {
+        src: 'assets/images/Semana06/Semana06Ejercicio03.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'right',
+        tilt: -3,
+      },
+    },
+    {
+      text: 'D. Aplicación Web con Componentes 1 Padre y 2 Hijos',
+      image: {
+        src: 'assets/images/Semana06/Semana06Ejercicio04.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'left',
+        tilt: 3,
+      },
+    },
+    {
+      text: 'E. Aplicación Web de Datos de Estudiantes',
+      image: {
+        src: 'assets/images/Semana06/Semana06Ejercicio05.png',
+        alt: 'Página web desarrollada con JavaScript',
+        side: 'right',
+        tilt: -3,
+      },
+    },
   ],
 };
