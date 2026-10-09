@@ -317,5 +317,40 @@ cuadernoWeeksData[6] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron los conceptos de función de renderizado, DOM virtual, componentes, JSX, props y children, además de los eventos, el renderizado condicional e iterativo, el routing y el consumo de APIs. Ello se reforzó con la realización de los 5 ejercicios de componentes, donde se practicó el diseño responsivo con CSS, componentes anidados, comunicación entre padre, hijo y hermanos, así como el renderizado de una tabla de estudiantes con map. En la hora de práctica se desarrolló la guía práctica para crear un sitio web de reserva de sitios turísticos, partiendo de la creación del proyecto con Vite, instalación de react-router-dom y axios, enrutamiento de páginas, consumo de la API y creación de un formulario. Finalmente, se validó el funcionamiento auditando las peticiones de red en las DevTools del navegador y el estado de los componentes con la extensión React DevTools.',
     },
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+
+        rows: [
+          [
+            '01',
+            '<a href="https://paadopt.org/bookshelf/building-user-interfaces-for-modern-web-applications-react-programming/" target="_blank">Building User Interfaces for Modern Web Applications: React Programming</a> - Cheer-Sun Yang (2024)',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://schoolofweb.net/en/books/modern-react/" target="_blank">React: From Basics to Next.js, TypeScript, Fullstack</a> - School of Web (2026)',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://flaviocopes.com/ebooks/react-handbook/" target="_blank">React Handbook</a> - Flavio Copes',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://www.reactenlightenment.com/index.html" target="_blank">React Enlightenment</a> - Cody Lindley',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://softchris.github.io/books/react/" target="_blank">React Book</a> - Chris Noring',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
