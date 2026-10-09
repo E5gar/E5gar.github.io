@@ -3,8 +3,7 @@ cuadernoWeeksData[6] = {
   left: [
     {
       chip: 'Tema',
-      title:
-        'Desarrollar Aplicaciones con Eventos, Condicionales y Bucles con Framework JS',
+      title: 'Desarrollar Aplicaciones con Eventos, Condicionales y Bucles con Framework JS',
     },
     {
       subtitle: 'Definiciones',
@@ -196,6 +195,18 @@ cuadernoWeeksData[6] = {
     },
     {
       text: '<b>Estados de Carga y Error</b> <br> Al consumir una API los datos no llegan de inmediato, por lo que se manejan tres estados, uno para datos, otro para carga y otro para error. Gracias al renderizado condicional se presenta un mensaje de carga mientras se espera, un mensaje de error si falla, y finalmente los datos recorridos con map.',
+    },
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica calificada <br> 4. Realización de la práctica de laboratorio <br> 5. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana06/Semana06Teoria.jpeg',
+        alt: 'Desarrollo de clases teóricas',
+        side: 'right',
+        tilt: -6,
+      },
     },
   ],
 };
