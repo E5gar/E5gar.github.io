@@ -235,7 +235,7 @@ cuadernoWeeksData[6] = {
       text: 'Desarrollo de una SPA con React y Vite para la reserva de sitios turísticos. Se instalaron las librerías react-router-dom y axios, y se organizó el proyecto en src/pages, src/components, src/services y src/hooks. El enrutamiento se agregó con BrowserRouter, Routes, Route y NavLink, creando las páginas Home, List, Form y NotFound para las rutas no existentes. El consumo de la API se realizó con axios y async/await dentro de un useEffect, controlando estados de loading, data y error. Los datos se presentaron con renderizado iterativo mediante map con key y renderizado condicional con el operador && y ternario, mientras que la reserva se registró a través de un formulario con useState. Finalmente, se validó el flujo de datos y auditaron las peticiones de red en las DevTools del navegador y el estado de la interfaz con la extensión React DevTools.',
       image: {
         src: 'assets/images/Semana06/Semana06ReservaTurismo.png',
-        alt: 'Página web desarrollada con JavaScript',
+        alt: 'Página web de turismo desarrollada con React',
         side: 'left',
         tilt: 3,
       },
@@ -251,7 +251,7 @@ cuadernoWeeksData[6] = {
       text: 'A. Aplicación Web con Diseño Responsive',
       image: {
         src: 'assets/images/Semana06/Semana06Ejercicio01.png',
-        alt: 'Página web desarrollada con JavaScript',
+        alt: 'Página web React con Diseño Responsive',
         side: 'right',
         tilt: -3,
       },
@@ -260,7 +260,7 @@ cuadernoWeeksData[6] = {
       text: 'B. Aplicación Web con Componentes Anidados',
       image: {
         src: 'assets/images/Semana06/Semana06Ejercicio02.png',
-        alt: 'Página web desarrollada con JavaScript',
+        alt: 'Página web React con Componentes Anidados',
         side: 'left',
         tilt: 3,
       },
@@ -269,7 +269,7 @@ cuadernoWeeksData[6] = {
       text: 'C. Aplicación Web con Componente Padre e Hijo',
       image: {
         src: 'assets/images/Semana06/Semana06Ejercicio03.png',
-        alt: 'Página web desarrollada con JavaScript',
+        alt: 'Página web React con Componente Padre e Hijo',
         side: 'right',
         tilt: -3,
       },
@@ -278,7 +278,7 @@ cuadernoWeeksData[6] = {
       text: 'D. Aplicación Web con Componentes 1 Padre y 2 Hijos',
       image: {
         src: 'assets/images/Semana06/Semana06Ejercicio04.png',
-        alt: 'Página web desarrollada con JavaScript',
+        alt: 'Página web React con Componentes 1 Padre y 2 Hijos',
         side: 'left',
         tilt: 3,
       },
@@ -287,9 +287,23 @@ cuadernoWeeksData[6] = {
       text: 'E. Aplicación Web de Datos de Estudiantes',
       image: {
         src: 'assets/images/Semana06/Semana06Ejercicio05.png',
-        alt: 'Página web desarrollada con JavaScript',
+        alt: 'Página web React con Datos de Estudiantes',
         side: 'right',
         tilt: -3,
+      },
+    },
+    {
+      title:
+        '2. Práctica Framework JS: Eventos, Renderizado Condicional/Iterativo, Formularios, Routing y Consumo de APIs (Async/Await, Axios)',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana06" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/GuiaPracticaSemana06/" target="_blank">GitHub Pages</a>',
+      image: {
+        src: 'assets/images/Semana06/Semana06ReservaTurismo02.png',
+        alt: 'Página web de turismo desarrollada con React',
+        side: 'left',
+        tilt: 3,
+      },
+      pdf: {
+        src: 'assets/files/Semana06/PRACTICA_SEMANA_06_GAGO_URIBE_EDGAR_ROBERT.pdf',
       },
     },
   ],
