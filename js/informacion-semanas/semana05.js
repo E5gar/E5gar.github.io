@@ -222,11 +222,46 @@ cuadernoWeeksData[5] = {
       title: '1. Práctica Individual',
       subtitle: 'Creación de 3 proyectos React con diferentes herramientas',
       text: 'Se crearon 3 proyectos React desde la terminal, cada uno con una herramienta distinta, siendo Create React App, Vite y Next.js. Se verificó que los tres se ejecutaran correctamente de manera local y se compararon las estructuras de carpetas que generó cada una de las herramientas. Create React App presentó las carpetas node_modules, public y src, y su index.html estaba dentro de public. Vite colocó el index.html en la raíz del proyecto y agregó los archivos vite.config.js y eslint.config.js. Next.js organizó la aplicación en la carpeta app, generó la carpeta .next al compilar y durante la instalación permitió elegir opciones como Tailwind CSS. Además, en el proyecto de Next.js se ejecutó el comando de compilación.',
+    },
+    {
+      title: '1. Guía Práctica Semana 05',
+      subtitle: 'Parte I. Setup con Vite, Arquitectura de Componentes, Props y Children',
+      text: 'Creación de una SPA con el comando npm create vite@latest, seleccionando React con JavaScript, instalando las dependencias y ejecutando el servidor con npm run dev. Luego se limpió el boilerplate eliminando App.css y la carpeta src/assets, se crearon las carpetas src/components y src/styles, y se configuró App.jsx como componente orquestador. Asimismo, se implementó el patrón de props y children con los componentes &lt;Dashboard&gt; y &lt;MetricCard&gt;, enviando datos y contenido anidado.',
+      image: {
+        src: 'assets/images/Semana05/Semana05DashboardMetricas.png',
+        alt: 'Aplicación en React con componentes Dashboard y MetricCard',
+        side: 'right',
+        tilt: 2,
+      },
+    },
+    {
+      subtitle: 'Parte II. Estrategias de Estilado y Validación de CSR',
+      text: 'Se aplicó CSS Modules al componente &lt;MetricCard&gt; mediante un archivo .module.css para aislar el alcance de los estilos, y se comparó con utilidades de Tailwind CSS para el manejo de scope y las colisiones de clases. Finalmente, se validó el comportamiento de Client-Side Rendering inspeccionando el código fuente con View Page Source, donde el div root del HTML original se encuentra vacío, y se revisó el árbol de componentes en React DevTools, así como los chunks de JavaScript en el panel Network.',
+      image: {
+        src: 'assets/images/Semana05/Semana05ValidacionSource.png',
+        alt: 'Validación de CSR con View Page Source',
+        side: 'left',
+        tilt: -3,
+      },
+    },
+    {
+      chip: 'Resultados',
+    },
+    {
+      text: 'Creación de Proyectos en React con Create React App, Vite y NextJS.',
+      title: '1. Práctica Individual',
       image: {
         src: 'assets/images/Semana05/Semana05CreacionProyectosReact.jpeg',
         alt: 'Creación de Proyectos en React con Create React App, Vite y NextJS',
         side: 'right',
         tilt: -4,
+      },
+    },
+    {
+      title: '2. Guía Práctica Semana 05',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana05" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/GuiaPracticaSemana05/" target="_blank">GitHub Pages</a>',
+      pdf: {
+        src: 'assets/files/Semana05/PRACTICA_SEMANA_05_GAGO_URIBE_EDGAR_ROBERT.pdf',
       },
     },
     {
