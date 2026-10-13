@@ -9,7 +9,7 @@ cuadernoWeeksData[2] = {
       subtitle: 'Definiciones',
     },
     {
-      text: '<b>Estructura HTML</b> <br> El HTML permite presentar el contenido de una página web a través del uso de etiquetas nidadas entre sí, formando a su vez una jerarquía.',
+      text: '<b>Estructura HTML</b> <br> El HTML permite presentar el contenido de una página web a través del uso de etiquetas anidadas entre sí, formando a su vez una jerarquía.',
     },
     {
       text: '<b>Estructura XML</b> <br> El XML es también un lenguaje de marcado pero centrado en la funcionalidad de transportar datos, permitiendo que diferentes programas puedan compartir información.',
@@ -27,7 +27,7 @@ cuadernoWeeksData[2] = {
       text: '<b>Ciclo de Vida de una Página Web</b> <br> Son las etapas por las que el navegador solicita el HTML, construye el DOM, descarga el CSS y JS, hasta presentarlo en pantalla para que el usuario pueda interactuar con la página web.',
     },
     {
-      text: '<b>Optimización en Motores de Búsqueda</b> <br> Conjunto de métodos que permiten mejorar el posicionamiento de la página web a nivel de resultados de búsqueda con un mejor etiqueta del contenido del HTML.',
+      text: '<b>Optimización en Motores de Búsqueda</b> <br> Conjunto de métodos que permiten mejorar el posicionamiento de la página web a nivel de resultados de búsqueda con un mejor etiquetado del contenido del HTML.',
     },
     {
       text: '<b>Compatibilidad entre Navegadores</b> <br> Capacidad de una Página Web para poder ser presentada correctamente en diferentes navegadores, sea Chrome, Firefox, Safari, Edge, Brave, Opera, etc.',
@@ -103,7 +103,7 @@ cuadernoWeeksData[2] = {
     {
       title: '2. Práctica de Elicitación y Análisis de Requerimientos',
       subtitle: 'Caso de un Sistema de Gestión de Citas para la Clínica MediSalud',
-      text: 'Comprensión de las técnicas usadas para la elicitación o recolección de requerimientos a partir de entrevistas, encuestas, observación y talleres JAD realizados en conjunto con el cliente, usuarios y personas interesadas. Asimismo, se identificaron los principales 7 stakeholders, con un resultado de 11 requerimientos funcionales, 13 no funcionales y categorizados por prioridad. Finalmente, se contruyó la matriz de elicitación.',
+      text: 'Comprensión de las técnicas usadas para la elicitación o recolección de requerimientos a partir de entrevistas, encuestas, observación y talleres JAD realizados en conjunto con el cliente, usuarios y personas interesadas. Asimismo, se identificaron los principales 7 stakeholders, con un resultado de 11 requerimientos funcionales, 13 no funcionales y categorizados por prioridad. Finalmente, se construyó la matriz de elicitación.',
       image: {
         src: 'assets/images/Semana02/Semana02Elicitacion.png',
         alt: 'Matriz de requerimientos funcionales y no funcionales',
@@ -167,7 +167,7 @@ cuadernoWeeksData[2] = {
     },
     {
       title: '¿Cómo aprendió?',
-      text: 'En la hora de teoría se explicaron aún más los estándares HTML, XML y CSS, ello ha sido reforzado con el trabajo realizado en la práctica calificada grupal. Asimismo, se hizo uso de ramas de Git para gestionar el trabajo de cada integrante y así tener una mejor trazabilidad de cada uno. En la hora de práctica, se desarrolló el trabajo de elicitación y análisis de requerimientos, para posteriormente desarrollar una galería de productos técnicos de caracter responsive usando unidades relativas y flexbox. Gracias a las herramietnas de Google Lighthouse y WAVE Tool, se validó que el trabajo desarrollado no tuviera problemas a nivel de rendimiento, accesibilidad e indexación en SEO.',
+      text: 'En la hora de teoría se explicaron aún más los estándares HTML, XML y CSS, ello ha sido reforzado con el trabajo realizado en la práctica calificada grupal. Asimismo, se hizo uso de ramas de Git para gestionar el trabajo de cada integrante y así tener una mejor trazabilidad de cada uno. En la hora de práctica, se desarrolló el trabajo de elicitación y análisis de requerimientos, para posteriormente desarrollar una galería de productos técnicos de caracter responsive usando unidades relativas y flexbox. Gracias a las herramientas de Google Lighthouse y WAVE Tool, se validó que el trabajo desarrollado no tuviera problemas a nivel de rendimiento, accesibilidad e indexación en SEO.',
     },
     {
       title: 'Bibliografía',
