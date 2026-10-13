@@ -224,7 +224,7 @@ cuadernoWeeksData[5] = {
       text: 'Se crearon 3 proyectos React desde la terminal, cada uno con una herramienta distinta, siendo Create React App, Vite y Next.js. Se verificó que los tres se ejecutaran correctamente de manera local y se compararon las estructuras de carpetas que generó cada una de las herramientas. Create React App presentó las carpetas node_modules, public y src, y su index.html estaba dentro de public. Vite colocó el index.html en la raíz del proyecto y agregó los archivos vite.config.js y eslint.config.js. Next.js organizó la aplicación en la carpeta app, generó la carpeta .next al compilar y durante la instalación permitió elegir opciones como Tailwind CSS. Además, en el proyecto de Next.js se ejecutó el comando de compilación.',
     },
     {
-      title: '1. Guía Práctica Semana 05',
+      title: '2. Guía Práctica Semana 05',
       subtitle: 'Parte I. Setup con Vite, Arquitectura de Componentes, Props y Children',
       text: 'Creación de una SPA con el comando npm create vite@latest, seleccionando React con JavaScript, instalando las dependencias y ejecutando el servidor con npm run dev. Luego se limpió el boilerplate eliminando App.css y la carpeta src/assets, se crearon las carpetas src/components y src/styles, y se configuró App.jsx como componente orquestador. Asimismo, se implementó el patrón de props y children con los componentes &lt;Dashboard&gt; y &lt;MetricCard&gt;, enviando datos y contenido anidado.',
       image: {
