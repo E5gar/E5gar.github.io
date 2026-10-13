@@ -1116,64 +1116,154 @@
           <p>Reflexión metacognitiva de fin de curso</p>
         </div>
         <div class="container">
-          <div class="reflection-grid">
-            <article class="reflection-card reveal" data-delay="100">
-              <div class="reflection-head">
-                <span class="reflection-icon"><i class="ri-lightbulb-line"></i></span>
-                <h3>¿Qué aprendió?</h3>
-              </div>
-              <p class="reflection-text">
-                Durante la asignatura aprendí cómo funciona la web desde la base. Comprendí la
-                diferencia entre tecnologías nativas y tecnologías web, cómo viaja la información
-                por Internet mediante los protocolos TCP e IP, así como la importancia de estándares
-                como HTTP, HTML, CSS y JavaScript. Asimismo, entendí el rol del desarrollador
-                Front-end, Back-end y Full-Stack, y aprendí a usar Git y GitHub para el trabajo
-                colaborativo teniendo también trazabilidad del código.
-              </p>
-              <p class="reflection-text">
-                En cuanto al diseño de interfaces, aprendí a estructurar páginas con HTML5 y a dar
-                estilo con CSS3, empleando modelo de caja, unidades relativas, Flexbox y Grid para
-                lograr diseños responsivos. Luego conocí dos enfoques de trabajo con librerías, el
-                de componentes ya creados con Bootstrap y el de utilidades atómicas con Tailwind
-                CSS. Asismimo, reforcé conceptos de accesibilidad y SEO, validándolos con Google
-                Lighthouse y WAVE.
-              </p>
-              <p class="reflection-text">
-                En programación, comprendí cómo funciona JavaScript con las variables de ámbito de
-                bloque, funciones flecha, closures y manipulación del DOM, además de las ventajas
-                del tipado estático de TypeScript y el uso de la API Canvas para animaciones.
-                Finalmente, aprendimos sobre React, entendiendo las Aplicaciones de Página Única, el
-                Client Side Rendering, desarrollo basado en componentes con JSX, props y children,
-                el renderizado condicional e iterativo, así como el enrutamiento con React Router y
-                el consumo de APIs con async/await y Axios.
-              </p>
-            </article>
-            <article class="reflection-card reveal" data-delay="200">
-              <div class="reflection-head">
-                <span class="reflection-icon"><i class="ri-route-line"></i></span>
-                <h3>¿Cómo aprendió?</h3>
-              </div>
-              <p class="reflection-text">
-                El aprendizaje se ha ido desarrollando en cada semana. En la hora de teoría se
-                explicaron los fundamentos y definiciones del tema. En la hora de práctica se
-                aplicaron dichos conceptos con ejercicios y luego se reforzaron con las prácticas de
-                laboratorio y prácticas calificadas. En cada semana se ha ido actualizando el
-                cuaderno de la asignatura.
-              </p>
-              <p class="reflection-text">
-                Las prácticas calificadas grupales también han sido fundamentales, pues se con ramas
-                de GitHub por integrante, lo que permitió practicar el cómo los desarrolladores
-                trabajan en la vida real teniendo una mejor trazabilidad del aporte de cada uno.
-                Asimismo, se publicaron los proyectos en GitHub Pages para verlos en funcionamiento.
-              </p>
-              <p class="reflection-text">
-                También se validó la calidad mediante las herramientas de Google Lighthouse y WAVE
-                para rendimiento, accesibilidad y SEO, DevTools del navegador para visualizar
-                peticiones de red, así como React DevTools para revisar el estado de los
-                componentes. Finalmente, la construcción de este portafolio permitió consildar lo
-                aprendido semana a semana aplicando los conceptos de la asignatura.
-              </p>
-            </article>
+          <div class="reflection-block">
+            <div class="reflection-block-head reveal">
+              <span class="reflection-icon"><i class="ri-lightbulb-line"></i></span>
+              <h3>¿Qué aprendió?</h3>
+              <span class="reflection-line"></span>
+            </div>
+            <div class="reflection-cols">
+              <article class="reflection-item reveal" data-delay="100">
+                <span class="reflection-num">01</span>
+                <span class="reflection-tag"
+                  ><i class="ri-global-line"></i> Fundamentos de Web</span
+                >
+                <p class="reflection-text">
+                  Durante la asignatura aprendí cómo funciona la web desde la base. Comprendí la
+                  diferencia entre tecnologías nativas y tecnologías web, cómo viaja la información
+                  por Internet mediante los protocolos TCP e IP, así como la importancia de
+                  estándares como HTTP, HTML, CSS y JavaScript. Asimismo, entendí el rol del
+                  desarrollador Front-end, Back-end y Full-Stack, y aprendí a usar Git y GitHub para
+                  el trabajo colaborativo teniendo también trazabilidad del código.
+                </p>
+                <ul class="reflection-chips">
+                  <li>TCP e IP</li>
+                  <li>HTTP</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Front-end</li>
+                  <li>Back-end</li>
+                  <li>Full-Stack</li>
+                  <li>Git y GitHub</li>
+                </ul>
+              </article>
+              <article class="reflection-item reveal" data-delay="200">
+                <span class="reflection-num">02</span>
+                <span class="reflection-tag"
+                  ><i class="ri-layout-4-line"></i> Diseño de Interfaces</span
+                >
+                <p class="reflection-text">
+                  En cuanto al diseño de interfaces, aprendí a estructurar páginas con HTML5 y a dar
+                  estilo con CSS3, empleando modelo de caja, unidades relativas, Flexbox y Grid para
+                  lograr diseños responsivos. Luego conocí dos enfoques de trabajo con librerías, el
+                  de componentes ya creados con Bootstrap y el de utilidades atómicas con Tailwind
+                  CSS. Asismimo, reforcé conceptos de accesibilidad y SEO, validándolos con Google
+                  Lighthouse y WAVE.
+                </p>
+                <ul class="reflection-chips">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Flexbox</li>
+                  <li>Grid</li>
+                  <li>Bootstrap</li>
+                  <li>Tailwind CSS</li>
+                  <li>Accesibilidad</li>
+                  <li>SEO</li>
+                </ul>
+              </article>
+              <article class="reflection-item reveal" data-delay="300">
+                <span class="reflection-num">03</span>
+                <span class="reflection-tag"
+                  ><i class="ri-code-s-slash-line"></i> Programación</span
+                >
+                <p class="reflection-text">
+                  En programación, comprendí cómo funciona JavaScript con las variables de ámbito de
+                  bloque, funciones flecha, closures y manipulación del DOM, además de las ventajas
+                  del tipado estático de TypeScript y el uso de la API Canvas para animaciones.
+                  Finalmente, aprendimos sobre React, entendiendo las Aplicaciones de Página Única,
+                  el Client Side Rendering, desarrollo basado en componentes con JSX, props y
+                  children, el renderizado condicional e iterativo, así como el enrutamiento con
+                  React Router y el consumo de APIs con async/await y Axios.
+                </p>
+                <ul class="reflection-chips">
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>API Canvas</li>
+                  <li>React</li>
+                  <li>JSX</li>
+                  <li>React Router</li>
+                  <li>async/await</li>
+                  <li>Axios</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="reflection-block">
+            <div class="reflection-block-head reveal">
+              <span class="reflection-icon"><i class="ri-route-line"></i></span>
+              <h3>¿Cómo aprendió?</h3>
+              <span class="reflection-line"></span>
+            </div>
+            <div class="reflection-steps">
+              <article class="reflection-item reveal" data-delay="100">
+                <span class="reflection-num">01</span>
+                <span class="reflection-tag"
+                  ><i class="ri-calendar-check-line"></i> Trabajo Semanal</span
+                >
+                <p class="reflection-text">
+                  El aprendizaje se ha ido desarrollando en cada semana. En la hora de teoría se
+                  explicaron los fundamentos y definiciones del tema. En la hora de práctica se
+                  aplicaron dichos conceptos con ejercicios y luego se reforzaron con las prácticas
+                  de laboratorio y prácticas calificadas. En cada semana se ha ido actualizando el
+                  cuaderno de la asignatura.
+                </p>
+                <ul class="reflection-chips">
+                  <li>Teoría</li>
+                  <li>Práctica</li>
+                  <li>Laboratorio</li>
+                  <li>Prácticas calificadas</li>
+                  <li>Cuaderno</li>
+                </ul>
+              </article>
+              <article class="reflection-item reveal" data-delay="200">
+                <span class="reflection-num">02</span>
+                <span class="reflection-tag"><i class="ri-team-line"></i> Trabajo en equipo</span>
+                <p class="reflection-text">
+                  Las prácticas calificadas grupales también han sido fundamentales, pues se con
+                  ramas de GitHub por integrante, lo que permitió practicar el cómo los
+                  desarrolladores trabajan en la vida real teniendo una mejor trazabilidad del
+                  aporte de cada uno. Asimismo, se publicaron los proyectos en GitHub Pages para
+                  verlos en funcionamiento.
+                </p>
+                <ul class="reflection-chips">
+                  <li>Ramas de GitHub</li>
+                  <li>Trazabilidad</li>
+                  <li>GitHub Pages</li>
+                </ul>
+              </article>
+              <article class="reflection-item reveal" data-delay="300">
+                <span class="reflection-num">03</span>
+                <span class="reflection-tag"
+                  ><i class="ri-shield-check-line"></i> Portafolio</span
+                >
+                <p class="reflection-text">
+                  También se validó la calidad mediante las herramientas de Google Lighthouse y WAVE
+                  para rendimiento, accesibilidad y SEO, DevTools del navegador para visualizar
+                  peticiones de red, así como React DevTools para revisar el estado de los
+                  componentes. Finalmente, la construcción de este portafolio permitió consildar lo
+                  aprendido semana a semana aplicando los conceptos de la asignatura.
+                </p>
+                <ul class="reflection-chips">
+                  <li>Google Lighthouse</li>
+                  <li>WAVE</li>
+                  <li>DevTools</li>
+                  <li>React DevTools</li>
+                  <li>Portafolio</li>
+                </ul>
+              </article>
+            </div>
           </div>
         </div>
       </section>
