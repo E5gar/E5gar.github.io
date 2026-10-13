@@ -41,7 +41,9 @@
             <li><a href="#about">Sobre mí</a></li>
             <li><a href="#resume">Currículum</a></li>
             <li><a href="#portfolio">Proyectos Concluidos</a></li>
-
+            <li><a href="#reflection">Reflexión Final</a></li>
+            <li><a href="#bibliography">Bibliografía</a></li>
+            s
             <li><a href="#contact">Contacto</a></li>
             <li><a href="cuaderno.html">Cuaderno</a></li>
           </ul>
@@ -1099,6 +1101,73 @@
         </div>
       </section>
 
+      <section id="reflection" class="reflection section light-background">
+        <div class="container section-title reveal">
+          <h2>Reflexión Final</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>Reflexión metacognitiva de fin de curso</p>
+        </div>
+        <div class="container">
+          <div class="reflection-grid">
+            <article class="reflection-card reveal" data-delay="100">
+              <div class="reflection-head">
+                <span class="reflection-icon"><i class="ri-lightbulb-line"></i></span>
+                <h3>¿Qué aprendió?</h3>
+              </div>
+              <p class="reflection-text"></p>
+            </article>
+            <article class="reflection-card reveal" data-delay="200">
+              <div class="reflection-head">
+                <span class="reflection-icon"><i class="ri-route-line"></i></span>
+                <h3>¿Cómo aprendió?</h3>
+              </div>
+              <p class="reflection-text"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="bibliography" class="bibliography section">
+        <div class="container section-title reveal">
+          <h2>Bibliografía</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <p>Libros consultados a lo largo de la asignatura</p>
+        </div>
+        <div class="container">
+          <div class="libros-carousel reveal" data-delay="200">
+            <div class="libros-viewport" id="librosViewport">
+              <div class="libros-container" id="librosContainer"></div>
+            </div>
+            <div class="libros-nav">
+              <button type="button" class="libros-btn" id="librosPrev" aria-label="Anterior">
+                <i class="ri-arrow-left-s-line"></i>
+              </button>
+              <button type="button" class="libros-btn" id="librosNext" aria-label="Siguiente">
+                <i class="ri-arrow-right-s-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="contact section light-background">
         <div class="container">
           <div class="contact-grid">
@@ -1245,5 +1314,8 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/embla-carousel@8.6.0/embla-carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/embla-carousel-autoplay@8.6.0/embla-carousel-autoplay.umd.js"></script>
+    <script src="js/bibliografia.js"></script>
   </body>
 </html>
