@@ -1622,6 +1622,11 @@ html[data-theme='dark'] .hero-image .shape-2 {
   transform: translateY(-1px);
 }
 
+a.btn-submit,
+a.btn-submit:hover {
+  color: var(--contrast-color);
+}
+
 @media (max-width: 991px) {
   .contact-grid {
     grid-template-columns: 1fr;
