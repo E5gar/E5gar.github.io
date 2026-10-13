@@ -27,7 +27,7 @@ cuadernoWeeksData[5] = {
       },
     },
     {
-      text: '<b>Client Side Rendering</b> <br> Es el modelo donde el servidor presenta un HTML casi vacío y un archivo JavaScript, el navegador también se encarga de presentar la interfaz. Luego de una carga inicial, la navegación se vuelve más rápida, reduciendo así la carga del servidor a costa de que el primer acceso sea más lento y que también sea vea afectado el posicionamiento SEO. La contraparte es el Server Side Rendering, donde el HTML es construido por el servidor, como en Next.js.',
+      text: '<b>Client Side Rendering</b> <br> Es el modelo donde el servidor presenta un HTML casi vacío y un archivo JavaScript, el navegador también se encarga de presentar la interfaz. Luego de una carga inicial, la navegación se vuelve más rápida, reduciendo así la carga del servidor a costa de que el primer acceso sea más lento y que también se vea afectado el posicionamiento SEO. La contraparte es el Server Side Rendering, donde el HTML es construido por el servidor, como en Next.js.',
     },
     {
       text: '<b>Node.js</b> <br> Es un entorno que permite ejecutar JavaScript fuera del navegador a nivel del sistema operativo. Se recomienda instalar la versión LTS. El proceso consiste en descargar, ejecutar el instalador y comprobar la instalación desde la terminal con node -v.',
@@ -176,7 +176,7 @@ cuadernoWeeksData[5] = {
       text: '<b>Estilos en Framework JS</b> <br> React ofrece distintas formas de aplicar estilos, la elección de cada uno depende del alcance que se requiera.',
     },
     {
-      text: '<b>Styles Inline</b> <br> Se aplican con el atributo style, que recibe un objeto de JavaScript con propiedades en camelCase, afentando solo a un elemento. No permiten usar pseudoclases ni media queries.',
+      text: '<b>Styles Inline</b> <br> Se aplican con el atributo style, que recibe un objeto de JavaScript con propiedades en camelCase, afectando solo a un elemento. No permiten usar pseudoclases ni media queries.',
     },
     {
       text: '<b>Style Sheets</b> <br> Son hojas de estilo CSS que se importan dentro del componente. Sus reglas son globales, por lo que existe el riesgo de que los nombres de clases de distintos componentes se solapen.',
@@ -269,7 +269,7 @@ cuadernoWeeksData[5] = {
     },
     {
       title: '¿Qué aprendió?',
-      text: 'En esta semana aprendí a diferenciar una librería de un framework a partir del principio de Inversión de Control, entendí que React es técnicamente una librería pero que enconjunto con sus herramientas se emplea como un framework. Asimismo, comprendí cómo funciona el Client Side Rendering, donde el navegador construye la interfaz a partir de un HTML con un único div root, y sus diferencias con el Server Side Rendering de Next.js. Conocí más sobre el rol de Node.js y NPM para la gestión de dependencias mediante el archivo package.json y la carpeta node_modules, así como en las herramientas de cada etapa del entorno de desarrollo como Babel para la transpilación, Webpack para la compilación y ESLint para la calidad del código. Entendí cómo el desarrollo basado en componentes permite dividir la interfaz en piezas reutilizables escritas en JSX, y cómo las props y children permiten pasar datos y contenido de un componente padre a uno hijo. Finalmente, aprendí a crear 3 proyectos con Create React App, Vite y Next.js, comparando la estructura que generó de cada uno de ellos. Asismimo aprendí las formas de aplicar estilos en React, sea con inline, style sheets, style modules, styled components o con frameworks CSS.',
+      text: 'En esta semana aprendí a diferenciar una librería de un framework a partir del principio de Inversión de Control, entendí que React es técnicamente una librería pero que en conjunto con sus herramientas se emplea como un framework. Asimismo, comprendí cómo funciona el Client Side Rendering, donde el navegador construye la interfaz a partir de un HTML con un único div root, y sus diferencias con el Server Side Rendering de Next.js. Conocí más sobre el rol de Node.js y NPM para la gestión de dependencias mediante el archivo package.json y la carpeta node_modules, así como en las herramientas de cada etapa del entorno de desarrollo como Babel para la transpilación, Webpack para la compilación y ESLint para la calidad del código. Entendí cómo el desarrollo basado en componentes permite dividir la interfaz en piezas reutilizables escritas en JSX, y cómo las props y children permiten pasar datos y contenido de un componente padre a uno hijo. Finalmente, aprendí a crear 3 proyectos con Create React App, Vite y Next.js, comparando la estructura que generó de cada uno de ellos. Asimimo aprendí las formas de aplicar estilos en React, sea con inline, style sheets, style modules, styled components o con frameworks CSS.',
     },
     {
       title: '¿Cómo aprendió?',
