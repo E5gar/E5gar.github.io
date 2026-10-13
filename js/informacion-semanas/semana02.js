@@ -125,10 +125,12 @@ cuadernoWeeksData[2] = {
     {
       subtitle: 'Parte II. HTML5 Semántico, ARIA, Grid, Flexbox Híbrido y SEO',
       text: 'Desarrollo de una galería de proyectos técnicos empleando etiquetas semánticas de atributos ARIA y flexbox al layout para el escalamiento de tarjetas, fuente y espaciado entre elementos. Se validó con las herramientas Google Lighthouse, extensión WAVE Evaluation Tool y W3C Validator para corroborar optimización de SEO',
-      src: 'assets/images/Semana02/Semana02GuiaPracticaParteII-WAVE.png',
-      alt: 'Resultados de WAVE aplicado a la página web de proyectos técnicas con diseño responsive',
-      side: 'right',
-      tilt: -3,
+      image: {
+        src: 'assets/images/Semana02/Semana02GuiaPracticaParteII-WAVE.png',
+        alt: 'Resultados de WAVE aplicado a la página web de proyectos técnicas con diseño responsive',
+        side: 'right',
+        tilt: -3,
+      },
     },
     {
       text: 'Resultados en Google Lighthouse. 98 en Rendimiento, 100 en Accesibilidad, 100 en Mejores Prácticas y 100 en SEO.',
