@@ -34,15 +34,55 @@
     }
     toggleBtn.addEventListener('click', function () {
       var nextTheme = isDark() ? 'light' : 'dark';
-      applyTheme(nextTheme);
 
-      try {
-        localStorage.setItem('theme', nextTheme);
-      } catch (e) {}
+      function commit() {
+        applyTheme(nextTheme);
+        try {
+          localStorage.setItem('theme', nextTheme);
+        } catch (e) {}
+        syncButton();
+      }
 
-      syncButton();
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!document.startViewTransition || reduceMotion) {
+        commit();
+        return;
+      }
+
+      var rect = toggleBtn.getBoundingClientRect();
+      var x = rect.left + rect.width / 2;
+      var y = rect.top + rect.height / 2;
+      var radius = Math.hypot(
+        Math.max(x, window.innerWidth - x),
+        Math.max(y, window.innerHeight - y)
+      );
+
+      root.classList.add('theme-switching');
+
+      var transition = document.startViewTransition(commit);
+
+      transition.ready
+        .then(function () {
+          root.animate(
+            {
+              clipPath: [
+                'circle(0px at ' + x + 'px ' + y + 'px)',
+                'circle(' + radius + 'px at ' + x + 'px ' + y + 'px)',
+              ],
+            },
+            {
+              duration: 600,
+              easing: 'ease-in-out',
+              pseudoElement: '::view-transition-new(root)',
+            }
+          );
+        })
+        .catch(function () {});
+
+      transition.finished.finally(function () {
+        root.classList.remove('theme-switching');
+      });
     });
-    syncButton();
   }
 
   if (document.readyState === 'loading') {
