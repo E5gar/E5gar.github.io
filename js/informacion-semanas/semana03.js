@@ -79,7 +79,7 @@ cuadernoWeeksData[3] = {
       text: '<b>Variantes de Estado</b> <br> Prefijos que aplican un estilo cuando se realiza una acción, por ejemplo hover al pasar el cursor, focus al seleccionar un campo o dark cuando se reconoce que el SO utiliza un tema oscuro',
     },
     {
-      text: '<b>Application UI</b> <br> Grupo de componentes de Tailwind organizados en botones, menús, encabezados, formularios, vetanas, entre otros',
+      text: '<b>Application UI</b> <br> Grupo de componentes de Tailwind organizados en botones, menús, encabezados, formularios, ventanas, entre otros',
     },
     {
       subtitle: 'Procedimiento',
