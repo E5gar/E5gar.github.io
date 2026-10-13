@@ -9,7 +9,7 @@ cuadernoWeeksData[6] = {
       subtitle: 'Definiciones',
     },
     {
-      text: '<b>Función de Renderizado</b> <br> Función que se encargada de modificar el DOM con el código HTML de un componente, sobre un elemento con id root o main en la mayoría de las veces. ReactDOM.render() recibe dos argumentos, siendo el primero el componente a presentar y el segundo el elemento HTML que será modificado. En las versiones recientes de React se emplea createRoot().render() con el mismo objetivo.',
+      text: '<b>Función de Renderizado</b> <br> Función que se encarga de modificar el DOM con el código HTML de un componente, sobre un elemento con id root o main en la mayoría de las veces. ReactDOM.render() recibe dos argumentos, siendo el primero el componente a presentar y el segundo el elemento HTML que será modificado. En las versiones recientes de React se emplea createRoot().render() con el mismo objetivo.',
     },
     {
       text: '<b>Web Components</b> <br> Elementos personalizados y reutilizables que tienen su propio HTML, CSS y JavaScript bajo una etiqueta propia. React adopta esta idea a través del uso de componentes que permiten renderizar DOM en una página web.',
@@ -33,7 +33,7 @@ cuadernoWeeksData[6] = {
       text: '<b>Estructura de un Componente</b> <br> Todo componente está conformado por tres partes, código HTML que define aquello que se presenta, código JavaScript que contiene la lógica y el código CSS para estilo.',
     },
     {
-      text: '<b>Componentes de Clase y de Función</b> <br> Existen dos formas de escribir un componente. Los componentes de función requieren usan menos código y son más fáciles de entender, por lo que son los más usados hoy en día.',
+      text: '<b>Componentes de Clase y de Función</b> <br> Existen dos formas de escribir un componente. Los componentes de función requieren menos código y son más fáciles de entender, por lo que son los más usados hoy en día.',
       table: {
         headers: ['Tipo', 'Sintaxis', 'Característica'],
         rows: [
@@ -151,7 +151,7 @@ cuadernoWeeksData[6] = {
       },
     },
     {
-      text: '<b>Consumo de APIs</b> <br> Una API es una interfaz que permite que dos aplicaciones intercambien datos. Consumirla es que la aplicación frontend envíe una petición HTTP a una dirección y luega reciba una respuesta en formato JSON la mayoría de las veces.',
+      text: '<b>Consumo de APIs</b> <br> Una API es una interfaz que permite que dos aplicaciones intercambien datos. Consumirla es que la aplicación frontend envíe una petición HTTP a una dirección y luego reciba una respuesta en formato JSON la mayoría de las veces.',
       table: {
         headers: ['Método HTTP', 'Función'],
         rows: [
@@ -182,7 +182,7 @@ cuadernoWeeksData[6] = {
       text: '<b>Obtención de Datos Fetch</b> <br> Fetch es la función nativa del navegador para realizar peticiones HTTP y devuelve una promesa. La respuesta debe ser convertida con response.json() y no es considerado error cuando el servidor responde códigos como 404, por lo que se debe verificar con response.ok.',
     },
     {
-      text: '<b>Librería Axios</b> <br> Librería cliente HTTP basada en promesas que se instala con npm install axios. Permite simplicar el consumo de APIs dado que convierte automáticamente la respuesta a JSON, entregando datos en response.data y además considera el error a códigos de fallo que responda el servidor.',
+      text: '<b>Librería Axios</b> <br> Librería cliente HTTP basada en promesas que se instala con npm install axios. Permite simplificar el consumo de APIs dado que convierte automáticamente la respuesta a JSON, entregando datos en response.data y además considera el error a códigos de fallo que responda el servidor.',
       table: {
         headers: ['Aspecto', 'Fetch', 'Axios'],
         rows: [
