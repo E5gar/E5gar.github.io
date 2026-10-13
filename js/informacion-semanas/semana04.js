@@ -24,7 +24,7 @@ cuadernoWeeksData[4] = {
       },
     },
     {
-      text: '<b>Tipos de Datos</b> <br> JavaScript es de tipado dinámico. Los datos se clasifican en tipos primitivos inmutables como Number, String, Boolean, Undefined, Null, Symbol, BigInt, y tipos referenciales como Objetos, Arreglos y Funciones. Los operadores permiten transformar dichos datos, asimismo existe diferencias al usar el comparador de estricta igualdad === y el de igualdad laxa ==, ya que este último realiza una coerción de tipos.',
+      text: '<b>Tipos de Datos</b> <br> JavaScript es de tipado dinámico. Los datos se clasifican en tipos primitivos inmutables como Number, String, Boolean, Undefined, Null, Symbol, BigInt, y tipos referenciales como Objetos, Arreglos y Funciones. Los operadores permiten transformar dichos datos, asimismo existen diferencias al usar el comparador de estricta igualdad === y el de igualdad laxa ==, ya que este último realiza una coerción de tipos.',
     },
     {
       text: '<b>TypeScript</b> <br> Es un superconjunto tipado de código abierto desarrollado sobre JavaScript. Agrega tipado estático, interfaces y verificación de tipos en tiempo de desarrollo. Requiere de un compilador para llevarse a JavaScript que sea ejecutable por los navegadores.',
@@ -75,7 +75,7 @@ cuadernoWeeksData[4] = {
       },
     },
     {
-      text: '<b>API Canvas de HTML5</b> <br> Elemento gráfico que proporciona una superficie de dibujo rasterizada en mapa de bits. A través de del contexto bidimensional getContext("2d"), JavaScript proporciona métodos para trazar líneas, arcos, curvas, rectángulos y degradados.',
+      text: '<b>API Canvas de HTML5</b> <br> Elemento gráfico que proporciona una superficie de dibujo rasterizada en mapa de bits. A través del contexto bidimensional getContext("2d"), JavaScript proporciona métodos para trazar líneas, arcos, curvas, rectángulos y degradados.',
     },
     {
       text: '<b>Animaciones y Gráficos con Canvas</b> <br> La generación de movimiento se implementa creando un bucle continuo de renderizado mediante la función window.requestAnimationFrame(), la cual sincroniza los cuadros de animación con la frecuencia de actualización del monitor, aplicando un ciclo de limpiar el lienzo con clearRect(), actualizar las variables de posición y redibujar los objetos.',
@@ -144,7 +144,7 @@ cuadernoWeeksData[4] = {
     },
     {
       title: '¿Cómo aprendió?',
-      text: 'En la hora de teoría se explicaron el ciclo de renderizado del navegador, motores JS y paradigmas funcionales. Este aprendizaje se puso en praxis durante la práctica calificada grupal, donde trabajamos en equipo usando ramas en GitHub para construir una ruleta y un sorteador de equipos con JavaScript. En la hora de práctica desarollamos paso a paso un lienzo con la API Canvas 2D usando closures, funciones flecha y bucles de animación. Finalmente, se validó el rendimiento utilizando las herramientas para desarrolladores de Chrome, analizando la cantidad de fotogramas en el panel Performance.',
+      text: 'En la hora de teoría se explicaron el ciclo de renderizado del navegador, motores JS y paradigmas funcionales. Este aprendizaje se puso en praxis durante la práctica calificada grupal, donde trabajamos en equipo usando ramas en GitHub para construir una ruleta y un sorteador de equipos con JavaScript. En la hora de práctica desarrollamos paso a paso un lienzo con la API Canvas 2D usando closures, funciones flecha y bucles de animación. Finalmente, se validó el rendimiento utilizando las herramientas para desarrolladores de Chrome, analizando la cantidad de fotogramas en el panel Performance.',
     },
 
     {
