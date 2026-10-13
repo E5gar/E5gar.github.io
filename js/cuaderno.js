@@ -15,6 +15,13 @@
   const totalWeeks = 16;
   let currentWeek = 1;
 
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const UNIT_SELECTOR = '.entry-week, .entry-image-wrap, .entry-pdf-wrap, .entry-table-wrap';
+  const WP_STEP = 0.022;
+  const WP_BUDGET = 1;
+  let renderToken = 0;
+  let firstRender = true;
+
   function openImageViewer(src, alt) {
     if (!viewer || !viewerImg || !viewerImageBox || !viewerPdfBox) return;
     viewerImg.src = src;
@@ -135,19 +142,75 @@
     return list.map(buildEntryHTML).join('');
   }
 
+  function prepareReveal(root) {
+    const items = [];
+    (function walk(node) {
+      Array.from(node.childNodes).forEach((child) => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          if (!child.nodeValue.trim()) return;
+          const frag = document.createDocumentFragment();
+          child.nodeValue.split(/(\s+)/).forEach((part) => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) {
+              frag.appendChild(document.createTextNode(part));
+              return;
+            }
+            const span = document.createElement('span');
+            span.className = 'wp-word';
+            span.textContent = part;
+            frag.appendChild(span);
+            items.push({ el: span, weight: 1 });
+          });
+          node.replaceChild(frag, child);
+        } else if (child.nodeType === Node.ELEMENT_NODE) {
+          if (child.matches(UNIT_SELECTOR)) {
+            child.classList.add('wp-unit');
+            items.push({ el: child, weight: child.matches('.entry-week') ? 4 : 8 });
+          } else if (child.tagName !== 'BR') {
+            walk(child);
+          }
+        }
+      });
+    })(root);
+    return items;
+  }
+
+  function applyReveal(containers, startDelay) {
+    containers.forEach((container, index) => {
+      let cursor = startDelay + index * 0.15;
+      const items = prepareReveal(container);
+      const total = items.reduce((sum, item) => sum + item.weight, 0);
+      const step = total ? Math.min(WP_STEP, WP_BUDGET / total) : 0;
+      items.forEach((item) => {
+        item.el.style.setProperty('--wp-delay', cursor.toFixed(3) + 's');
+        cursor += item.weight * step;
+      });
+    });
+  }
+
   function renderNotebookWeek(weekNumber) {
     const data = cuadernoWeeksData && cuadernoWeeksData[weekNumber];
     if (!data || !leftContainer || !rightContainer) return;
-    [leftContainer, rightContainer].forEach((el) => el.classList.add('is-loading'));
-    setTimeout(() => {
-      leftContainer.innerHTML = buildPageHTML(data.left);
-      rightContainer.innerHTML = buildPageHTML(data.right);
-      bindEntryImages(leftContainer);
-      bindEntryImages(rightContainer);
-      bindEntryPdfs(leftContainer);
-      bindEntryPdfs(rightContainer);
-      [leftContainer, rightContainer].forEach((el) => el.classList.remove('is-loading'));
-    }, 250);
+    const isFirst = firstRender;
+    firstRender = false;
+    const token = ++renderToken;
+    if (!isFirst) {
+      [leftContainer, rightContainer].forEach((el) => el.classList.add('is-loading'));
+    }
+    setTimeout(
+      () => {
+        if (token !== renderToken) return;
+        leftContainer.innerHTML = buildPageHTML(data.left);
+        rightContainer.innerHTML = buildPageHTML(data.right);
+        bindEntryImages(leftContainer);
+        bindEntryImages(rightContainer);
+        bindEntryPdfs(leftContainer);
+        bindEntryPdfs(rightContainer);
+        [leftContainer, rightContainer].forEach((el) => el.classList.remove('is-loading'));
+        if (!reduceMotion) applyReveal([leftContainer, rightContainer], isFirst ? 0.6 : 0.05);
+      },
+      isFirst ? 0 : 250
+    );
   }
 
   if (viewer) {

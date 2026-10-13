@@ -57,13 +57,45 @@
 .page-content {
   position: relative;
   z-index: 1;
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
 }
 .page-content.is-loading {
   opacity: 0;
   transform: translateY(8px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.wp-word {
+  display: inline-block;
+  animation: wpWord 0.55s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  animation-delay: var(--wp-delay, 0s);
+}
+
+.wp-unit {
+  animation: wpUnit 0.7s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  animation-delay: var(--wp-delay, 0s);
+}
+
+@keyframes wpWord {
+  from {
+    opacity: 0;
+    transform: translateY(0.65em);
+  }
+}
+
+@keyframes wpUnit {
+  from {
+    opacity: 0;
+    transform: translateY(26px) scale(0.97);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wp-word,
+  .wp-unit {
+    animation: none;
+  }
 }
 
 .entry {
