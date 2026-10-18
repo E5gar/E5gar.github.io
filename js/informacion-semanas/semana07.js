@@ -222,5 +222,16 @@ cuadernoWeeksData[7] = {
         src: 'assets/files/Semana07/PRACTICA_SEMANA_07_PARTE_2_GAGO_URIBE_EDGAR_ROBERT.pdf',
       },
     },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí que los hooks permiten a los componentes de función acceder al estado y a otras características de React. Profundicé en useState con la actualización funcional, inmutabilidad del estado en objetos y arreglos, así como las actualizaciones por lotes. En useEffect comprendí el comportamiento del arreglo de dependencias, la importancia de la función de limpieza para evitar fugas de memoria y por qué StrictMode ejecuta dos veces los efectos en desarrollo. Aprendí a compartir datos globales sin prop drilling mediante la Context API con createContext, Provider y useContext, entendiendo que todos los consumidores se renderizan nuevamente cuando cambia el valor. Asimismo, entendí la igualdad referencial como causa de renderizados innecesarios y cómo React.memo, useCallback y useMemo permiten memorizar componentes, funciones y cálculos. Finalmente, aprendí a encapsular lógica reutilizable en hooks personalizados y a validar el uso correcto de los mismos con ESLint.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron los hooks incorporados de React, reglas y criterios para elegir cada uno según la necesidad del componente, además de los hooks personalizados. Ello se puso a prueba en la evaluación parcial, donde en equipo se desarrolló un sistema de gestión de biblioteca universitaria con React, Vite y TypeScript, aplicando formularios validados, componentes reutilizables, persistencia en Local Storage y navegación con React Router. En la hora de práctica se desarrolló la primera parte de la guía paso a paso, partiendo del análisis del ciclo de renderizado con el Profiler, refactorización del consumo de una API con async/await y limpieza con AbortController. Finalmente, se validó el trabajo verificando que ESLint no mostrara advertencias de dependencias, comprobando con el Profiler la reducción de commits y probando la función de limpieza de los efectos.',
+    },
   ],
 };
