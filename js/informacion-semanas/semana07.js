@@ -198,5 +198,29 @@ cuadernoWeeksData[7] = {
         tilt: -3,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Evaluación Parcial',
+      text: 'Enlace en <a href="https://github.com/E5gar/EvaluacionParcialSemana7" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/EvaluacionParcialSemana7" target="_blank">GitHub Pages</a>',
+    },
+    {
+      title: '2. Guía Práctica Semana 07',
+    },
+    {
+      subtitle: 'Parte I. Ciclo de Render, Efectos, Contexto, Memoización y Hook Personalizado',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana07" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/GuiaPracticaSemana07/" target="_blank">GitHub Pages</a>',
+      pdf: {
+        src: 'assets/files/Semana07/PRACTICA_SEMANA_07_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
+    {
+      subtitle: 'Parte II. Dashboard de Gestión',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana07Parte2" target="_blank">GitHub</a> <br> Enlace en <a href="https://e5gar.github.io/GuiaPracticaSemana07Parte2/" target="_blank">GitHub Pages</a>',
+      pdf: {
+        src: 'assets/files/Semana07/PRACTICA_SEMANA_07_PARTE_2_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
   ],
 };
