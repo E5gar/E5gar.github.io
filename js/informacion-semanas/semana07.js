@@ -148,6 +148,19 @@ cuadernoWeeksData[7] = {
         caption: 'Diferencia entre useState y useRef',
       },
     },
+
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de la evaluación parcial en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica de laboratorio <br> 4. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana07/Semana07Teoria.jpeg',
+        alt: 'Desarrollo de clases virtuales',
+        side: 'right',
+        tilt: -6,
+      },
+    },
   ],
   right: [],
 };
