@@ -162,5 +162,41 @@ cuadernoWeeksData[7] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Evaluación Parcial',
+      subtitle: 'Caso de un Sistema de Gestión de Biblioteca Universitaria',
+      text: 'Se desarrolló en equipo de 2 integrantes una aplicación web para administrar el préstamo de libros a estudiantes y docentes de la Biblioteca Central, usando React, Vite y TypeScript. Toda la información se almacenó en Local Storage, simulando un sistema empresarial sin base de datos externa. En el módulo de administrador se implementó el control de categorías, libros con título, autor, ISBN, categoría y stock disponible, formularios validados, componentes reutilizables y opciones para editar y eliminar registros. Se desarrolló el registro de usuarios con nombres y apellidos, código, correo electrónico y tipo de usuario. En el módulo de préstamos se implementó la búsqueda de libros por título o categoría, visualización de disponibilidad y solicitud de préstamos. Al registrar un préstamo se generó un comprobante digital con el nombre del usuario, libro prestado, fecha de préstamo, fecha límite de devolución y un código único que se visualiza en pantalla, se almacena en Local Storage y puede descargarse en PDF. Finalmente, se creó una vista de historial por usuario con los libros prestados actualmente, fechas de devolución y estado del préstamo entre Activo o Devuelto, con navegación mediante React Router y diseño responsive.',
+      image: {
+        src: 'assets/images/Semana07/Semana07EvaluacionParcial.png',
+        alt: 'Sistema de gestión de biblioteca universitaria desarrollado con React',
+        side: 'right',
+        tilt: -3,
+      },
+    },
+    {
+      title: '2. Guía Práctica Semana 07',
+      subtitle: 'Parte I. Ciclo de Render, Efectos, Contexto, Memoización y Hook Personalizado',
+      text: 'Desarrollo de un proyecto Vite con React para el ciclo de renderizado mediante el uso de hooks. En el 1er paso se identificó qué dispara un nuevo renderizado según el cambio de estado o de props, configurando React.StrictMode y el Profiler de React DevTools para medir en lugar de usar console.log. En el 2do paso se refactorizó el consumo de una API, migrando de .then() a async/await dentro de un useEffect con arreglo de dependencias y función de limpieza con AbortController. En el 3er paso se implementó useContext para un tema global, creando el Provider y consumiéndolo sin prop drilling, separando los contextos por dominio. En el 4to paso se optimizó el renderizado envolviendo un filtro en useMemo, estabilizando handlers con useCallback y usando useRef para enfocar un input sin renderizar nuevamente, documentando las métricas con los commits del Profiler. Finalmente, en el 5to paso se extrajo la lógica a un hook personalizado, verificando el cumplimiento de las reglas de los hooks mediante ESLint y su reutilización en más de un componente.',
+      image: {
+        src: 'assets/images/Semana07/Semana07GuiaPracticaParteI.png',
+        alt: 'Aplicación en React con hooks',
+        side: 'left',
+        tilt: 2,
+      },
+    },
+    {
+      subtitle: 'Parte II. Dashboard de Gestión',
+      text: 'Desarrollo de un dashboard de gestión de tareas. Se refactorizó el código base organizado en src/contexts, src/hooks y src/components. El estado de la lista se gestionó con useReducer mediante las acciones de agregar, eliminar, filtrar y ordenar, manteniendo la inmutabilidad en el reducer, mientras que useState se reservó para el estado local de la interfaz. Se implementó un ThemeContext con tema claro y oscuro, y las preferencias se sincronizaron con el localStorage mediante useEffect con su limpieza. La lista filtrada y ordenada se memorizó con useMemo, los handlers de los botones con useCallback, mientras que useRef se empleó para enfocar automáticamente el input de nuevas tareas. Además, se creó el hook personalizado useLocalStorage para reutilizar la persistencia.',
+      image: {
+        src: 'assets/images/Semana07/Semana07GuiaPracticaParteII.png',
+        alt: 'Dashboard de gestión de tareas',
+        side: 'right',
+        tilt: -3,
+      },
+    },
+  ],
 };
