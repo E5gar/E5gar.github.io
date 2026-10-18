@@ -201,6 +201,41 @@
       autor: 'Chris Noring',
       url: 'https://softchris.github.io/books/react/',
     },
+    {
+      semana: 7,
+      n: 1,
+      titulo: 'React Hooks Manual Desde Cero',
+      autor: 'Juan Correa (Developero)',
+      url: 'https://developero.io/ebooks/react-hooks-manual-desde-cero',
+    },
+    {
+      semana: 7,
+      n: 2,
+      titulo: 'React Succinctly',
+      autor: 'Samer Buna (Syncfusion)',
+      url: 'https://static.boldsign.com/assets/free-ebooks/react-succinctly.pdf',
+    },
+    {
+      semana: 7,
+      n: 3,
+      titulo: 'Learning Patterns',
+      autor: 'Lydia Hallie y Addy Osmani',
+      url: 'https://www.patterns.dev/',
+    },
+    {
+      semana: 7,
+      n: 4,
+      titulo: 'A Guide to React Hooks',
+      autor: 'Sébastien Castiel',
+      url: 'https://scastiel.gumroad.com/l/use-hooks',
+    },
+    {
+      semana: 7,
+      n: 5,
+      titulo: 'React Hooks Illustrated: Understand React through hooks',
+      autor: 'CodeSketched',
+      url: 'https://codesketched.gumroad.com/l/hooks',
+    },
   ];
 
   const viewport = document.querySelector('#librosViewport');
