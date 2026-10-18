@@ -233,5 +233,39 @@ cuadernoWeeksData[7] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron los hooks incorporados de React, reglas y criterios para elegir cada uno según la necesidad del componente, además de los hooks personalizados. Ello se puso a prueba en la evaluación parcial, donde en equipo se desarrolló un sistema de gestión de biblioteca universitaria con React, Vite y TypeScript, aplicando formularios validados, componentes reutilizables, persistencia en Local Storage y navegación con React Router. En la hora de práctica se desarrolló la primera parte de la guía paso a paso, partiendo del análisis del ciclo de renderizado con el Profiler, refactorización del consumo de una API con async/await y limpieza con AbortController. Finalmente, se validó el trabajo verificando que ESLint no mostrara advertencias de dependencias, comprobando con el Profiler la reducción de commits y probando la función de limpieza de los efectos.',
     },
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://developero.io/ebooks/react-hooks-manual-desde-cero" target="_blank">React Hooks Manual Desde Cero</a> - Juan Correa (Developero)',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://static.boldsign.com/assets/free-ebooks/react-succinctly.pdf" target="_blank">React Succinctly</a> - Samer Buna (Syncfusion)',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://www.patterns.dev/" target="_blank">Learning Patterns</a> - Lydia Hallie y Addy Osmani',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://scastiel.gumroad.com/l/use-hooks" target="_blank">A Guide to React Hooks</a> - Sébastien Castiel',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://codesketched.gumroad.com/l/hooks" target="_blank">React Hooks Illustrated: Understand React through hooks</a> - CodeSketched',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
