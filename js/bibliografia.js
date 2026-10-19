@@ -9,7 +9,7 @@
       semana: 1,
       n: 1,
       titulo: 'Manual de HTML',
-      autor: 'Universidade Nacional Autônoma do México',
+      autor: 'Universidad Nacional Autónoma de México',
       url: 'https://infolibros.org/pdfview/manual-de-html-universidade-nacional-autonoma-do-mexico-613/',
     },
     {

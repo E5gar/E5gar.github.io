@@ -152,7 +152,7 @@ cuadernoWeeksData[1] = {
         rows: [
           [
             '01',
-            '<a href="https://infolibros.org/pdfview/manual-de-html-universidade-nacional-autonoma-do-mexico-613/" target="_blank">Manual de HTML</a> - Universidade Nacional Autônoma do México',
+            '<a href="https://infolibros.org/pdfview/manual-de-html-universidade-nacional-autonoma-do-mexico-613/" target="_blank">Manual de HTML</a> - Universidad Nacional Autónoma de México',
             'Libro',
           ],
           [
