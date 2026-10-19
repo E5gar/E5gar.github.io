@@ -12,9 +12,12 @@
 
   const mobileNavToggleBtn = document.querySelector('#mobileNavToggle');
   function mobileNavToggle() {
-    body.classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('ri-menu-line');
-    mobileNavToggleBtn.classList.toggle('ri-close-line');
+    const open = body.classList.toggle('mobile-nav-active');
+    const icon = mobileNavToggleBtn.querySelector('i');
+    icon.classList.toggle('ri-menu-line', !open);
+    icon.classList.toggle('ri-close-line', open);
+    mobileNavToggleBtn.setAttribute('aria-expanded', String(open));
+    mobileNavToggleBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
   }
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToggle);

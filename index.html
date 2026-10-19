@@ -46,7 +46,15 @@
             <li><a href="#contact">Contacto</a></li>
             <li><a href="cuaderno.html">Cuaderno</a></li>
           </ul>
-          <i id="mobileNavToggle" class="mobile-nav-toggle ri-menu-line"></i>
+          <button
+            type="button"
+            id="mobileNavToggle"
+            class="mobile-nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <i class="ri-menu-line" aria-hidden="true"></i>
+          </button>
         </nav>
         <div class="header-social-links">
           <a
@@ -1404,7 +1412,9 @@
       </div>
     </footer>
 
-    <a href="#" id="scrollTop" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
+    <a href="#" id="scrollTop" class="scroll-top" aria-label="Volver arriba">
+      <i class="ri-arrow-up-line" aria-hidden="true"></i>
+    </a>
 
     <div id="lightbox" class="lightbox">
       <div class="lightbox-content">
