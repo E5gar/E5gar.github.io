@@ -171,7 +171,7 @@
   bottom: 16px;
   font-family: var(--nav-font);
   font-size: 0.8rem;
-  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 .notebook-page-left .page-number {
   right: 26px;

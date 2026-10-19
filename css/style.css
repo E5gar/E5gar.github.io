@@ -1801,9 +1801,6 @@ html[data-theme='dark'] .light-background {
   --surface-color: #141e2a;
 }
 html[data-theme='dark'] .chip {
-  background-color: #0f2943;
-}
-html[data-theme='dark'] .chip {
   color: #ffffff;
 }
 html[data-theme='dark'] .form-control {
