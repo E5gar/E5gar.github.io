@@ -116,16 +116,20 @@
   });
 
   document.querySelectorAll('.isotope-layout, .portfolio').forEach(() => {});
-  const filterButtons = document.querySelectorAll('.portfolio-filters li');
+  const filterButtons = document.querySelectorAll('.portfolio-filters button');
   const portfolioItems = document.querySelectorAll('.portfolio-item');
   filterButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      document.querySelector('.portfolio-filters .filter-active').classList.remove('filter-active');
+      filterButtons.forEach((b) => {
+        b.classList.remove('filter-active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('filter-active');
-      const filter = btn.getAttribute('data-filter');
+      btn.setAttribute('aria-pressed', 'true');
+      const filter = btn.dataset.filter;
       portfolioItems.forEach((item) => {
-        const matches = filter === '*' || item.getAttribute('data-category') === filter;
-        item.classList.toggle('is-hidden', !matches);
+        const cats = item.dataset.category.split(' ');
+        item.classList.toggle('is-hidden', !(filter === '*' || cats.includes(filter)));
       });
     });
   });
