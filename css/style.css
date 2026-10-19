@@ -8,20 +8,19 @@
   --background-color: #ffffff;
   --default-color: #0a0f14;
   --heading-color: #0f2943;
-  --accent-color: #e87532;
+  --accent-color: #c2410c;
   --surface-color: #ffffff;
   --contrast-color: #ffffff;
 }
 
 :root {
   --nav-color: #0a0f14;
-  --nav-hover-color: #e87532;
+  --nav-hover-color: #c2410c;
   --nav-mobile-background-color: #ffffff;
   --nav-dropdown-background-color: #ffffff;
   --nav-dropdown-color: #0a0f14;
-  --nav-dropdown-hover-color: #e87532;
+  --nav-dropdown-hover-color: #c2410c;
 }
-
 .light-background {
   --background-color: #faf9fb;
   --surface-color: #ffffff;
@@ -879,7 +878,7 @@ html[data-theme='dark'] .hero-image .shape-2 {
 .skill-box p {
   font-size: 0.9rem;
   margin-bottom: 0.8rem;
-  opacity: 0.6;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
 .skill-box .progress-value {
@@ -1052,8 +1051,7 @@ html[data-theme='dark'] .hero-image .shape-2 {
   gap: 15px;
   flex-wrap: wrap;
 }
-
-.portfolio-filters li {
+.portfolio-filters button {
   font-size: 15px;
   font-weight: 500;
   padding: 8px 20px;
@@ -1064,17 +1062,21 @@ html[data-theme='dark'] .hero-image .shape-2 {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio-filters li:hover {
+.portfolio-filters button:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
   color: var(--accent-color);
   transform: translateY(-2px);
 }
 
-.portfolio-filters li.filter-active {
+.portfolio-filters button.filter-active {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
+.portfolio-filters button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1098,15 +1100,6 @@ html[data-theme='dark'] .hero-image .shape-2 {
   box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-card:hover .portfolio-overlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-.portfolio-card:hover .portfolio-overlay .portfolio-actions {
-  transform: translateY(0);
-}
-
 .portfolio-image {
   position: relative;
   overflow: hidden;
@@ -1118,11 +1111,17 @@ html[data-theme='dark'] .hero-image .shape-2 {
   inset: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   opacity: 0;
-  visibility: hidden;
+  pointer-events: none;
   transition: all 0.4s ease-in-out;
   display: flex;
   align-items: flex-end;
   padding: 20px;
+}
+
+.portfolio-card:hover .portfolio-overlay,
+.portfolio-card:focus-within .portfolio-overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .portfolio-actions {
@@ -1130,6 +1129,11 @@ html[data-theme='dark'] .hero-image .shape-2 {
   transition: all 0.4s ease-in-out;
   display: flex;
   gap: 15px;
+}
+
+.portfolio-card:hover .portfolio-overlay .portfolio-actions,
+.portfolio-card:focus-within .portfolio-overlay .portfolio-actions {
+  transform: translateY(0);
 }
 
 .portfolio-actions a {
@@ -1183,7 +1187,7 @@ html[data-theme='dark'] .hero-image .shape-2 {
     grid-template-columns: 1fr;
   }
 
-  .portfolio-filters li {
+  .portfolio-filters button {
     font-size: 14px;
     padding: 6px 15px;
   }
