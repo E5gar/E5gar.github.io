@@ -29,13 +29,13 @@ Mi CV y certificados completos se encuentran en mi [portafolio](https://e5gar.gi
 
 <br>
 
-### 🏆 Destacado
+### <img src="https://api.iconify.design/lucide:trophy.svg?color=%23ff6b93" height="24" align="absmiddle" /> Destacado
 
-🥇 Uno de los Ganadores del _Concurso de Proyectos de Innovación Tecnológica UNCP 2025_ con un sistema IoT de monitoreo en tiempo real de reactivos corrosivos.
+<img src="https://api.iconify.design/lucide:medal.svg?color=%23f5c518" height="18" align="absmiddle" /> Uno de los Ganadores del _Concurso de Proyectos de Innovación Tecnológica UNCP 2025_ con un sistema IoT de monitoreo en tiempo real de reactivos corrosivos.
 
 <br>
 
-### 🚀 Proyectos Destacados
+### <img src="https://api.iconify.design/lucide:rocket.svg?color=%23ff6b93" height="24" align="absmiddle" /> Proyectos Destacados
 
 <div align="center">
   <a href="https://github.com/E5gar/restaiuranteboard-backend">
@@ -48,7 +48,7 @@ Mi CV y certificados completos se encuentran en mi [portafolio](https://e5gar.gi
 
 <br>
 
-### 🛠️ Stack Tecnológico
+### <img src="https://api.iconify.design/lucide:wrench.svg?color=%23ff6b93" height="24" align="absmiddle" /> Stack Tecnológico
 
 **Lenguajes**
 
@@ -101,13 +101,13 @@ Mi CV y certificados completos se encuentran en mi [portafolio](https://e5gar.gi
 <br>
 
 
-### 📚 Certificaciones destacadas
+### <img src="https://api.iconify.design/lucide:graduation-cap.svg?color=%23ff6b93" height="24" align="absmiddle" /> Certificaciones destacadas
 
-- 🔵 Cisco · Analista Junior en Ciberseguridad (120 h)
-- 🔵 Cisco · Fundamentos de Python 1 y 2 (70 h)
-- 🔵 Cisco · Fundamentos de Linux (70 h)
-- 🟣 Fundación Telefónica del Perú · Programación con Java Standard (40 h)
-- 🟢 Santander Open Academy · Fundamentos de Power BI
+- <img src="https://api.iconify.design/simple-icons:cisco.svg?color=%231BA0D7" height="16" align="absmiddle" /> Cisco · Analista Junior en Ciberseguridad (120 h)
+- <img src="https://api.iconify.design/simple-icons:cisco.svg?color=%231BA0D7" height="16" align="absmiddle" /> Cisco · Fundamentos de Python 1 y 2 (70 h)
+- <img src="https://api.iconify.design/simple-icons:cisco.svg?color=%231BA0D7" height="16" align="absmiddle" /> Cisco · Fundamentos de Linux (70 h)
+- <img src="https://api.iconify.design/simple-icons:telefonica.svg?color=%23019DF4" height="16" align="absmiddle" /> Fundación Telefónica del Perú · Programación con Java Standard (40 h)
+- <img src="https://api.iconify.design/simple-icons:santander.svg?color=%23EC0000" height="16" align="absmiddle" /> Santander Open Academy · Fundamentos de Power BI
 
 _Certificados completos en mi [portafolio](https://e5gar.github.io)._
 
@@ -118,7 +118,7 @@ _Certificados completos en mi [portafolio](https://e5gar.github.io)._
 <br>
 
 
-### 📊 GitHub Stats
+### <img src="https://api.iconify.design/lucide:activity.svg?color=%23ff6b93" height="24" align="absmiddle" /> GitHub Stats
 
 <div align="center">
 
