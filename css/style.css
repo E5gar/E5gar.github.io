@@ -1801,6 +1801,7 @@ html[data-theme='dark'] .light-background {
   --surface-color: #141e2a;
 }
 html[data-theme='dark'] .chip {
+  background-color: #0f2943;
   color: #ffffff;
 }
 html[data-theme='dark'] .form-control {
@@ -2105,6 +2106,10 @@ html.theme-switching *::after {
   color: var(--accent-color);
   opacity: 0.16;
   pointer-events: none;
+}
+
+.reflection-num::before {
+  content: attr(data-num);
 }
 
 .reflection-tag {
