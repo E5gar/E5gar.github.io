@@ -171,6 +171,7 @@
 
   function openCert(src, title) {
     frame.src = src;
+    frame.title = title || 'Certificado';
     titleEl.textContent = title || 'Certificado';
     downloadLink.setAttribute('href', src);
     newTabLink.setAttribute('href', src);

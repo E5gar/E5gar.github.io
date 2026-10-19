@@ -470,9 +470,9 @@ textarea.form-control {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
   transition: 0.3s;
 }
 
@@ -834,7 +834,7 @@ html[data-theme='dark'] .hero-image .shape-2 {
   background-color: #c1c1c1;
 }
 
-.signature-info h4 {
+.signature-info h3 {
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
 }
@@ -1788,7 +1788,7 @@ html[data-theme='dark'] {
   --heading-color: #f5f8fb;
   --accent-color: #ff8a4c;
   --surface-color: #111a24;
-  --contrast-color: #ffffff;
+  --contrast-color: #0a0f14;
   --nav-color: #eef2f6;
   --nav-hover-color: #ff8a4c;
   --nav-mobile-background-color: #111a24;
@@ -1802,6 +1802,9 @@ html[data-theme='dark'] .light-background {
 }
 html[data-theme='dark'] .chip {
   background-color: #0f2943;
+}
+html[data-theme='dark'] .chip {
+  color: #ffffff;
 }
 html[data-theme='dark'] .form-control {
   border-color: rgba(255, 255, 255, 0.15);
@@ -2120,7 +2123,7 @@ html.theme-switching *::after {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 88%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 94%);
 }
 
 .reflection-tag i {
