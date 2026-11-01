@@ -180,5 +180,31 @@ cuadernoWeeksData[9] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Guía Práctica Semana 09',
+      subtitle: 'Despliegue Local de Aplicaciones Web Backend con PHP y JSP',
+      text: 'Se instalaron e iniciaron los servidores XAMPP con Apache, MySQL y Apache Tomcat mediante startup.bat, verificando su funcionamiento en localhost y localhost:8080. En PHP se creó la carpeta htdocs/lab09 con los archivos index.html, procesar.php y config.php, implementando el envío del formulario por POST con validación mediante filter_input() y sanitización de la salida con htmlspecialchars(). En JSP se creó la carpeta webapps/lab09 con index.jsp y procesar.jsp, empleando la directiva page, request.getParameter() para recibir los datos y session.setAttribute() para guardar la reserva en la sesión. Luego se desplegó y probó el formulario, inspeccionando los headers de la respuesta en  DevTools, revisando los logs de acceso y error de ambos servidores, y comprobando tanto el error 405 al ingresar sin el método POST como el 200 OK en el envío correcto. Finalmente, se documentó la comparación entre PHP y JSP en cuanto a ciclo de vida, gestión de memoria, despliegue y escalabilidad.',
+      image: {
+        src: 'assets/images/Semana09/Semana09GuiaPractica.png',
+        alt: 'Formulario enviado correctamente con respuesta 200 OK en el servidor',
+        side: 'right',
+        tilt: 2,
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 09',
+      subtitle: 'Sistema de Registro de Contacto con PHP y JSP',
+      text: 'Trabajo desarrollado en equipo de 2, cada uno trabajando en su propia rama de Git, se refactorizó el código base para construir un Sistema de Registro de Contacto en dos versiones. En la versión PHP, un formulario HTML envía los datos por POST para su validación, sanitización y almacenamiento en $_SESSION, respondiendo con una tabla de los registros guardados. En la versión JSP, el formulario recibe los datos con request, los almacena en session y presenta los registros recorriéndolos con c:forEach. En seguridad se previno el XSS con htmlspecialchars y c:out, se validó que solo se aceptara el método POST devolviendo el error 405 en caso contrario, y se controlaron los errores de la serie 400 y 500. Asimismo, se documentó el flujo HTTP desde el cliente hasta el render en el navegador y se elaboró la matriz comparativa entre PHP y JSP en el README.md, junto con las capturas de logs, headers de respuesta y estructura de carpetas.',
+      image: {
+        src: 'assets/images/Semana09/Semana09GuiaPracticaGrupal.png',
+        alt: 'Sistema de Registro de Contacto con PHP y JSP',
+        side: 'left',
+        tilt: -3,
+      },
+    },
+  ],
 };
