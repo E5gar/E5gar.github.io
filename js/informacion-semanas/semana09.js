@@ -235,6 +235,17 @@ cuadernoWeeksData[9] = {
         src: 'assets/files/Semana09/Guía Práctica Grupal - Semana 09.pdf',
       },
     },
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí cómo funciona una aplicación web desde el lado del servidor, partiendo de la arquitectura cliente-servidor y la organización en capas con el patrón MVC. Comprendí el ciclo de petición y respuesta, así como el carácter stateless del protocolo, que indica usar cookies y sesiones para recordar al usuario, aprendí a interpretar los códigos de estado como el 200 y el 405. Asimismo, diferencié el servidor web Apache del contenedor de servlets Tomcat, y cómo el código se ejecuta en el servidor entregando al navegador solo el resultado. En PHP trabajé con las superglobales $_POST y $_SESSION, validando con filter_input() y sanitizando la salida con htmlspecialchars() para prevenir XSS. En JSP entendí que cada página se traduce a un servlet que el contenedor compila y mantiene como una única instancia, aprendí a usar request.getParameter() y session.setAttribute(). Finalmente, comparé ambas tecnologías en ciclo de vida, gestión de memoria, despliegue y escalabilidad, entendiendo que PHP libera todo al terminar cada solicitud mientras que JSP aprovecha la JVM con un heap compartido que requiere vigilar en sí la concurrencia.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron la arquitectura de las aplicaciones web, funcionamiento de  servidores, ciclo del lado del servidor y las características de PHP y JSP. En la hora de práctica se desarrolló la guía paso a paso, instalando XAMPP y Tomcat, creando las estructuras de ambos proyectos y probando el formulario con envío por POST. Luego se inspeccionaron los headers de la respuesta en las DevTools, se revisaron los logs de acceso y error de los servidores, se provocó el error 405 para compararlo con el 200 de un envío correcto. Ello se reforzó en la práctica grupal, donde en equipo de 2 con su propia rama de Git se refactorizó el código base de la práctica grupal para construir un Sistema de Registro de Contacto en PHP y en JSP, aplicando validación, sesiones y prevención de XSS. Finalmente, se documentó el trabajo en un README.md con el flujo HTTP, matriz comparativa entre PHP y JSP así como las capturas de logs, respuestas y estructura de carpetas.',
+    },
     
   ],
 };
