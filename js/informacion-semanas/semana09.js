@@ -254,7 +254,7 @@ cuadernoWeeksData[9] = {
         rows: [
           [
             '01',
-            '<a href="https://downloads.goalkicker.com/PHPBook/PHPNotesForProfessionals.pdf" target="_blank">PHP Notes for Professionals</a> - GoalKicker.com (2018)',
+            '<a href="https://books.goalkicker.com/PHPBook/" target="_blank">PHP Notes for Professionals</a> - GoalKicker.com (2018)',
             'Libro',
           ],
           [
