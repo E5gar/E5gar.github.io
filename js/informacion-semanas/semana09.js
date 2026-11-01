@@ -246,6 +246,40 @@ cuadernoWeeksData[9] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron la arquitectura de las aplicaciones web, funcionamiento de  servidores, ciclo del lado del servidor y las características de PHP y JSP. En la hora de práctica se desarrolló la guía paso a paso, instalando XAMPP y Tomcat, creando las estructuras de ambos proyectos y probando el formulario con envío por POST. Luego se inspeccionaron los headers de la respuesta en las DevTools, se revisaron los logs de acceso y error de los servidores, se provocó el error 405 para compararlo con el 200 de un envío correcto. Ello se reforzó en la práctica grupal, donde en equipo de 2 con su propia rama de Git se refactorizó el código base de la práctica grupal para construir un Sistema de Registro de Contacto en PHP y en JSP, aplicando validación, sesiones y prevención de XSS. Finalmente, se documentó el trabajo en un README.md con el flujo HTTP, matriz comparativa entre PHP y JSP así como las capturas de logs, respuestas y estructura de carpetas.',
     },
-    
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+
+        rows: [
+          [
+            '01',
+            '<a href="https://downloads.goalkicker.com/PHPBook/PHPNotesForProfessionals.pdf" target="_blank">PHP Notes for Professionals</a> - GoalKicker.com (2018)',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://upload.wikimedia.org/wikipedia/commons/7/73/PHP_Programming.pdf" target="_blank">PHP Programming</a> - Wikibooks Contributors (2024)',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://leanpub.com/s/DC42EC2731414428AABC750F64A17E34.pdf" target="_blank">PHP: The Right Way</a> - Phil Sturgeon y Josh Lockhart (2025)',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://www.icid.org/Falkner_0321136497.pdf" target="_blank">Servlets and JavaServer Pages: The J2EE Technology Web Tier</a> - Jayson Falkner y Kevin W. Jones (2003)',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://docs.oracle.com/javaee/5/tutorial/doc/javaeetutorial5.pdf" target="_blank">The Java EE 5 Tutorial</a> - Sun Microsystems (2010)',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
