@@ -206,5 +206,35 @@ cuadernoWeeksData[9] = {
         tilt: -3,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Guía Práctica Semana 09',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana09" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana09/Semana09ReservaMesa.png',
+        alt: 'Aplicación Web de Reserva de Mesas en PHP y JSP',
+        side: 'right',
+        tilt: 4,
+      },
+      pdf: {
+        src: 'assets/files/Semana09/PRACTICA_SEMANA_09_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 09',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaGrupalSemana09" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana09/Semana09RegistroContacto.png',
+        alt: 'Aplicación Web de Registro de Contacto en PHP y JSP',
+        side: 'left',
+        tilt: -4,
+      },
+      pdf: {
+        src: 'assets/files/Semana09/Guía Práctica Grupal - Semana 09.pdf',
+      },
+    },
+    
   ],
 };
