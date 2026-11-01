@@ -236,6 +236,41 @@
       autor: 'CodeSketched',
       url: 'https://codesketched.gumroad.com/l/hooks',
     },
+    {
+      semana: 9,
+      n: 1,
+      titulo: 'PHP Notes for Professionals',
+      autor: 'GoalKicker.com',
+      url: 'https://books.goalkicker.com/PHPBook/',
+    },
+    {
+      semana: 9,
+      n: 2,
+      titulo: 'PHP Programming',
+      autor: 'Wikibooks Contributors',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/7/73/PHP_Programming.pdf',
+    },
+    {
+      semana: 9,
+      n: 3,
+      titulo: 'PHP: The Right Way',
+      autor: 'Phil Sturgeon y Josh Lockhart',
+      url: 'https://leanpub.com/s/DC42EC2731414428AABC750F64A17E34.pdf',
+    },
+    {
+      semana: 9,
+      n: 4,
+      titulo: 'Servlets and JavaServer Pages: The J2EE Technology Web Tier',
+      autor: 'Jayson Falkner y Kevin W. Jones',
+      url: 'https://www.icid.org/Falkner_0321136497.pdf',
+    },
+    {
+      semana: 9,
+      n: 5,
+      titulo: 'The Java EE 5 Tutorial',
+      autor: 'Sun Microsystems',
+      url: 'https://docs.oracle.com/javaee/5/tutorial/doc/javaeetutorial5.pdf',
+    },
   ];
 
   const viewport = document.querySelector('#librosViewport');
