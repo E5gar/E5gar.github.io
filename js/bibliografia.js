@@ -271,6 +271,41 @@
       autor: 'Sun Microsystems',
       url: 'https://docs.oracle.com/javaee/5/tutorial/doc/javaeetutorial5.pdf',
     },
+    {
+      semana: 10,
+      n: 1,
+      titulo: 'Textbook of Python',
+      autor: 'Chris Paton',
+      url: 'https://www.textbookofpython.com/',
+    },
+    {
+      semana: 10,
+      n: 2,
+      titulo: 'Object-oriented Programming in Python for Mathematicians',
+      autor: 'David A. Ham',
+      url: 'https://object-oriented-python.github.io/index.html',
+    },
+    {
+      semana: 10,
+      n: 3,
+      titulo: 'Introduction to Python Programming',
+      autor: 'Udayan Das, Aubrey Lawson, Chris Mayfield y Narges Norouzi',
+      url: 'https://openstax.org/books/introduction-python-programming/pages/1-introduction',
+    },
+    {
+      semana: 10,
+      n: 4,
+      titulo: 'An Introduction to Programming and Computer Science with Python (Second Edition)',
+      autor: 'Clayton Cafiero',
+      url: 'https://www.uvm.edu/~cbcafier/assets/itpacs/itpacs_2ed_cafiero.pdf',
+    },
+    {
+      semana: 10,
+      n: 5,
+      titulo: 'Python para todos: Explorando la información con Python 3',
+      autor: 'Charles R. Severance',
+      url: 'https://do1.dr-chuck.com/pythonlearn/ES_es/pythonlearn.pdf',
+    },
   ];
 
   const viewport = document.querySelector('#librosViewport');

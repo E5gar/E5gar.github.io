@@ -272,13 +272,47 @@ cuadernoWeeksData[10] = {
     {
       chip: 'Reflexión',
     },
-        {
+    {
       title: '¿Qué aprendió?',
       text: 'En esta semana aprendí los fundamentos del lenguaje Python, partiendo de la sintaxis basada en indentación, convenciones de PEP 8, uso de variables, cadenas y números. Diferencié los tipos de datos mutables e inmutables, trabajé con listas, tuplas y diccionarios, comprendiendo cuándo conviene usar cada uno. Asimismo, aprendí a controlar el flujo del programa con condicionales,  bucles y a organizar el código en funciones imperativas con parámetros por defecto, *args, **kwargs y retorno de múltiples valores mediante tuplas. En programación orientada a objetos comprendí cómo definir clases, atributos e instancias, el rol de __init__ como constructor y de __del__ como destructor no determinista. Entendí el encapsulamiento con atributos tanto protegidos como privados junto a @property para validar valores en los setters, la herencia con super(), la herencia múltiple con Mixins y el orden de resolución de métodos MRO calculado con C3. También aprendí que el polimorfismo en Python se apoya en duck typing y en la sobrescritura de métodos como calcular_precio_final(). En el manejo de excepciones aprendí a emplear try, except, else y finally, así como a crear una jerarquía propia con ValidationError y NotFoundError. Finalmente, comprendí la modularización con módulos y paquetes, en la práctica individual aprendí a construir una API RESTful con Node.js y Express, conectada a MySQL mediante un pool de conexiones de mysql2/promise, protegiendo las credenciales con dotenv y validando los verbos HTTP con códigos de estado 200, 201, 404, 500 mediante Postman.',
     },
     {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron la sintaxis de Python, tipos de datos, estructuras de control, funciones, pilares de la programación orientada a objetos, manejo de excepciones y modularización. En la hora de práctica se desarrolló la guía paso a paso, inicializando el proyecto con npm init, instalando express, mysql2, cors y dotenv, y organizando la estructura MVC en carpetas de rutas, controladores y configuración. Luego se creó la base de datos db_lab10 con la tabla productos, se configuró el pool de conexiones y se implementaron los endpoints GET, POST, PUT y DELETE con bloques try/catch para devolver los errores 400, 404 y 500. Ello se validó creando una Collection en Postman para probar los 4 verbos HTTP y revisar headers, body y códigos de estado. Lo aprendido se reforzó en la práctica grupal, donde en equipo de 2 integrantes se refactorizó el código base para construir un Sistema de Gestión de Productos en Python, aplicando herencia, encapsulamiento con @property, polimorfismo, excepciones personalizadas y modularización en main.py. Finalmente, se documentó el trabajo en un README.md con el diagrama de clases, la explicación del MRO, capturas de ejecución del caso exitoso y de las excepciones capturadas.',
+    },
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://www.textbookofpython.com/" target="_blank">Textbook of Python</a> - Chris Paton',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://object-oriented-python.github.io/index.html" target="_blank">Object-oriented Programming in Python for Mathematicians</a> - David A. Ham',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://openstax.org/books/introduction-python-programming/pages/1-introduction" target="_blank">Introduction to Python Programming</a> - Udayan Das, Aubrey Lawson, Chris Mayfield y Narges Norouzi (2024)',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://www.uvm.edu/~cbcafier/assets/itpacs/itpacs_2ed_cafiero.pdf" target="_blank">An Introduction to Programming and Computer Science with Python (Second Edition)</a> - Clayton Cafiero (2025)',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://do1.dr-chuck.com/pythonlearn/ES_es/pythonlearn.pdf" target="_blank">Python para todos: Explorando la información con Python 3</a> - Charles R. Severance',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
     },
   ],
 };
