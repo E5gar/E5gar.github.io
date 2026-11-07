@@ -1,5 +1,206 @@
 window.cuadernoWeeksData = window.cuadernoWeeksData || {};
 cuadernoWeeksData[10] = {
-  left: [],
+  left: [
+    {
+      chip: 'Tema',
+      title: 'Desarrollar Aplicaciones Web con Python',
+    },
+    {
+      subtitle: 'Definiciones',
+    },
+    {
+      text: '<b>Python</b> <br> Lenguaje de programación de alto nivel, interpretado, de tipado dinámico y multiparadigma, creado por Guido van Rossum en 1991. Su sintaxis es cercana al lenguaje natural, por lo que se usa en desarrollo backend, automatización, análisis de datos e inteligencia artificial. En web destacan los frameworks Django y Flask.',
+    },
+    {
+      text: '<b>Intérprete y Ejecución</b> <br> La implementación CPython compila el código fuente a bytecode, que luego es ejecutado por la Máquina Virtual de Python. El código puede ejecutarse de forma interactiva con el modo REPL escribiendo python en la terminal, o como script con python archivo.py. Una versión instalada se verifica con python --version.',
+    },
+    {
+      text: '<b>Indentación</b> <br> A diferencia de otros lenguajes que usan llaves, Python define los bloques de código mediante la indentación. Se emplean 4 espacios por nivel, por lo que no deben mezclarse tabulaciones con espacios, de lo contrario se produce un IndentationError.',
+    },
+    {
+      text: '<b>PEP 8</b> <br> Guía de estilo de código de Python para uniformidad y legibilidad. Herramientas como black formatean el código automáticamente y pylint detecta malas prácticas.',
+      table: {
+        headers: ['Elemento', 'Convención', 'Ejemplo'],
+        rows: [
+          ['Variables y funciones', 'snake_case', 'precio_final'],
+          ['Clases', 'PascalCase', 'ProductoElectronico'],
+          ['Constantes', 'MAYUSCULAS', 'IGV'],
+          ['Longitud de línea', 'Máximo 79 caracteres', '-'],
+        ],
+        caption: 'Convenciones de nombres según PEP 8',
+      },
+    },
+    {
+      text: '<b>Comentarios</b> <br> El comentario de una línea inicia con #. El docstring se escribe entre triple comillas al inicio de una función, clase o módulo para documentarlo, y puede consultarse en ejecución con help().',
+    },
+    {
+      text: '<b>Variables</b> <br> Una variable es un nombre que referencia a un objeto en memoria. No se declara el tipo, dado que este se determina por el valor asignado y puede cambiar durante la ejecución. El nombre se distingue entre mayúsculas y minúsculas, no puede iniciar con número ni usar palabras reservadas. El tipo se consulta con type().',
+    },
+    {
+      text: '<b>Tipos de Datos</b> <br> Los tipos se clasifican en inmutables, cuyo valor no puede modificarse una vez creado, y mutables, que sí permiten cambios sobre el mismo objeto.',
+      table: {
+        headers: ['Tipo', 'Descripción', 'Mutable'],
+        rows: [
+          ['int', 'Número entero de tamaño ilimitado', 'No'],
+          ['float', 'Número decimal', 'No'],
+          ['str', 'Cadena de texto', 'No'],
+          ['bool', 'True o False', 'No'],
+          ['NoneType', 'Ausencia de valor, None', 'No'],
+          ['tuple', 'Colección ordenada fija', 'No'],
+          ['list', 'Colección ordenada modificable', 'Sí'],
+          ['dict', 'Pares clave-valor', 'Sí'],
+        ],
+        caption: 'Principales tipos de datos en Python',
+      },
+    },
+    {
+      text: '<b>Números y Operadores</b> <br> Además de los operadores aritméticos comunes, Python incluye la división entera, módulo y potencia. La división con / siempre devuelve un float.',
+      table: {
+        headers: ['Operador', 'Función', 'Ejemplo'],
+        rows: [
+          ['/', 'División con decimales', '7 / 2 devuelve 3.5'],
+          ['//', 'División entera', '7 // 2 devuelve 3'],
+          ['%', 'Residuo de la división', '7 % 2 devuelve 1'],
+          ['**', 'Potencia', '2 ** 3 devuelve 8'],
+        ],
+        caption: 'Operadores aritméticos propios de Python',
+      },
+    },
+    {
+      text: '<b>Cadenas</b> <br> Son secuencias de caracteres inmutables que se escriben con comillas simples, dobles o triples para varias líneas. Se accede a los caracteres por índice y se extraen fragmentos con slicing cadena[inicio:fin]. Las f-strings permiten insertar variables dentro del texto, como f"Hola {nombre}". Los métodos más usados son upper(), lower(), strip(), split() y replace().',
+    },
+    {
+      text: '<b>Listas</b> <br> Colección ordenada y mutable de elementos, que pueden ser de distintos tipos, escrita entre corchetes. Permite acceso por índice tanto positivo como negativo, y slicing.',
+      table: {
+        headers: ['Método', 'Función'],
+        rows: [
+          ['append(x)', 'Agrega un elemento al final'],
+          ['insert(i, x)', 'Inserta un elemento en la posición i'],
+          ['remove(x)', 'Elimina la primera aparición de x'],
+          ['pop(i)', 'Elimina y devuelve el elemento de la posición i'],
+          ['sort()', 'Ordena la lista'],
+        ],
+        caption: 'Métodos principales de las listas',
+      },
+    },
+    {
+      text: '<b>Tuplas</b> <br> Colección ordenada e inmutable escrita entre paréntesis. Se utiliza para datos que no deben modificarse, como coordenadas, y es la forma en que una función devuelve varios valores.',
+      table: {
+        headers: ['Aspecto', 'Lista', 'Tupla'],
+        rows: [
+          ['Sintaxis', '[1, 2, 3]', '(1, 2, 3)'],
+          ['Modificable', 'Sí', 'No'],
+          ['Uso', 'Datos que cambian', 'Datos fijos'],
+        ],
+        caption: 'Diferencia entre lista y tupla',
+      },
+    },
+    {
+      text: '<b>Diccionarios</b> <br> Colección de pares clave-valor escrita entre llaves. Las claves son únicas e inmutables y, desde Python 3.7, se conserva el orden de inserción. Se accede al valor con dic["clave"], que lanza KeyError si no existe, o con dic.get("clave"), que devuelve None. Los métodos keys(), values() e items() permiten recorrerlo.',
+    },
+    {
+      text: '<b>Condicionales</b> <br> Las sentencias if, elif y else ejecutan un bloque según se cumpla una condición. Se combinan con los operadores lógicos and, or y not, y los operadores de comparación. Además existe el operador ternario valor_a if condicion else valor_b. Valores como 0, cadena vacía, lista vacía y None se evalúan como False.',
+    },
+    {
+      text: '<b>Estructuras de Control</b> <br> El bucle for recorre cualquier iterable, y con range() repite un número definido de veces. El bucle while se repite mientras la condición sea verdadera. Dentro de ambos, break termina el bucle y continue salta a la siguiente iteración. Las comprensiones de lista permiten crear una lista en una sola línea como por ejemplo [x * 2 for x in numeros].',
+    },
+    {
+      text: '<b>Funciones Imperativas</b> <br> Se definen con la palabra def y agrupan instrucciones reutilizables. Admiten parámetros con valor por defecto, argumentos con nombre, *args para recibir una cantidad variable de argumentos posicionales y **kwargs para argumentos con nombre.',
+    },
+    {
+      text: '<b>Retorno de Valores</b> <br> La sentencia return finaliza la función y devuelve un resultado. Si la función no incluye return, devuelve None. Para devolver varios valores se separan por comas, y Python los entrega empaquetados en una tupla.',
+    },
+    {
+      text: '<b>API Imperativa</b> <br> Conjunto de funciones que se invocan una tras otra para realizar una tarea paso a paso, sin objetos que mantengan estado interno. Es la contraparte de una API orientada a objetos, donde el estado y el comportamiento se agrupan en clases.',
+    },
+    {
+      text: '<b>Programación Orientada a Objetos</b> <br> Paradigma que organiza el código en clases y objetos, modelando entidades del mundo real con sus datos y comportamientos. Facilita tanto la reutilización como el mantenimiento del código.',
+      table: {
+        headers: ['Pilar', 'Función'],
+        rows: [
+          ['Encapsulamiento', 'Protege los datos internos y controla su acceso'],
+          ['Herencia', 'Una clase reutiliza atributos y métodos de otra'],
+          ['Polimorfismo', 'Un mismo método se comporta distinto según el objeto'],
+        ],
+        caption: 'Pilares de la POO',
+      },
+    },
+    {
+      text: '<b>Clases, Atributos e Instancias</b> <br> Una clase es el molde que define atributos y métodos, que se declara con la palabra class. Una instancia es el objeto concreto creado a partir de la clase, por ejemplo p = Producto("abcd", 10). Los atributos de instancia pertenecen a cada objeto y se definen con self, mientras que los atributos de clase se comparten entre todas las instancias.',
+    },
+    {
+      text: '<b>Métodos y Objetos</b> <br> Un método es una función definida dentro de una clase. El primer parámetro del método de instancia es self, que representa al objeto que lo invoca.',
+      table: {
+        headers: ['Tipo', 'Decorador', 'Primer parámetro'],
+        rows: [
+          ['De instancia', 'Ninguno', 'self, el objeto'],
+          ['De clase', '@classmethod', 'cls, la clase'],
+          ['Estático', '@staticmethod', 'Ninguno'],
+        ],
+        caption: 'Tipos de métodos en Python',
+      },
+    },
+    {
+      text: '<b>Constructores y Destructores</b> <br> El método __init__ es el constructor, el cual se ejecuta al crear la instancia para inicializar su estado. El método __del__ es el destructor, invocado cuando el recolector de basura elimina el objeto, por lo que el momento exacto no es determinista. Para liberar recursos generalmente se recomienda usar with o try/finally.',
+    },
+    {
+      text: '<b>Encapsulamiento</b> <br> Python no tiene modificadores de acceso estrictos, por lo que se basa en convenciones de nombres. El decorador @property permite acceder a un atributo como si fuera público, validando el valor al asignarlo sin cambiar la forma de uso.',
+      table: {
+        headers: ['Notación', 'Nivel', 'Comportamiento'],
+        rows: [
+          ['atributo', 'Público', 'Accesible desde cualquier lugar'],
+          ['_atributo', 'Protegido', 'Convención para uso interno y subclases'],
+          ['__atributo', 'Privado', 'Name mangling, Python cambia su nombre internamente'],
+        ],
+        caption: 'Niveles de acceso en Python',
+      },
+    },
+    {
+      text: '<b>Herencia</b> <br> Permite que una clase hija reutilice los atributos y métodos de una clase padre, escribiendo el padre entre paréntesis, como por ejemplo class Libro(Producto). La función super() llama a métodos de la clase padre, se usar en el __init__ de la clase hija.',
+    },
+    {
+      text: '<b>Herencia Múltiple</b> <br> Python permite que una clase herede de varias clases a la vez. El orden en que se buscan los métodos se denomina MRO y se calcula con el algoritmo de linealización C3, pudiendo verse con Clase.__mro__. super() sigue este orden y no solo a la clase padre directa. Un Mixin es una clase pequeña que aporta una funcionalidad concreta como puede ser un DescuentoMixin, para combinarse con otras.',
+    },
+    {
+      text: '<b>Polimorfismo</b> <br> Una clase hija puede sobrescribir un método del padre para darle un comportamiento propio, de modo que calcular() devuelva un resultado distinto en cada clase. Python usa duck typing, donde basta que un objeto tenga el método para ejecutarlo sin requerir una interfaz. El método  __str__ define cómo se representa el objeto como texto.',
+    },
+    {
+      text: '<b>Excepciones</b> <br> Son errores detectados durante la ejecución que interrumpen el flujo normal del programa si no se manejan. Se controlan con el bloque try, cada parte tiene una función distinta.',
+      table: {
+        headers: ['Bloque', 'Se ejecuta cuando'],
+        rows: [
+          ['try', 'Contiene el código que puede fallar'],
+          ['except', 'Ocurre la excepción indicada'],
+          ['else', 'No ocurrió ninguna excepción'],
+          ['finally', 'Siempre, haya o no error'],
+        ],
+        caption: 'Bloques de manejo de excepciones',
+      },
+    },
+    {
+      text: '<b>Excepciones Comunes</b> <br> Python incluye excepciones incorporadas que indican la causa del error.',
+      table: {
+        headers: ['Excepción', 'Causa'],
+        rows: [
+          ['ValueError', 'Valor con tipo correcto pero contenido inválido'],
+          ['TypeError', 'Operación sobre un tipo no compatible'],
+          ['KeyError', 'Clave inexistente en un diccionario'],
+          ['IndexError', 'Índice fuera de rango en una lista'],
+          ['ZeroDivisionError', 'División entre cero'],
+          ['FileNotFoundError', 'Archivo que no existe'],
+        ],
+        caption: 'Excepciones más frecuentes',
+      },
+    },
+    {
+      text: '<b>Excepciones Personalizadas</b> <br> Se crean heredando de Exception, y permiten formar una jerarquía del dominio, como ValidationError y NotFoundError. Se lanzan con raise. No se debe capturar Exception de forma genérica sin relanzar o registrar el error.',
+    },
+    {
+      text: '<b>Módulos</b> <br> Un módulo es un archivo .py cuyas funciones y clases se reutilizan con import o from modulo import nombre. Un paquete es una carpeta con un archivo __init__.py que agrupa varios módulos como por ejemplo models/ y utils/. La condición if __name__ == "__main__" permite que un archivo se ejecute solo cuando es el programa principal y no cuando es importado. Python incluye una librería estándar con módulos como math, datetime y json.',
+    },
+    {
+      text: '<b>Entornos Virtuales</b> <br> pip es el gestor de paquetes que instala librerías externas desde el repositorio PyPI. Un entorno virtual, creado con python -m venv, aísla las dependencias de cada proyecto. Las librerías se listan en el archivo requirements.txt para poder reproducir el entorno.',
+    },
+  ],
   right: [],
 };
