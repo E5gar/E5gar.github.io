@@ -201,6 +201,18 @@ cuadernoWeeksData[10] = {
     {
       text: '<b>Entornos Virtuales</b> <br> pip es el gestor de paquetes que instala librerías externas desde el repositorio PyPI. Un entorno virtual, creado con python -m venv, aísla las dependencias de cada proyecto. Las librerías se listan en el archivo requirements.txt para poder reproducir el entorno.',
     },
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica calificada <br> 4. Realización de la práctica de laboratorio <br> 5. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana10/Semana10Teoria.jpeg',
+        alt: 'Desarrollo de clases teóricas',
+        side: 'right',
+        tilt: -6,
+      },
+    },
   ],
   right: [],
 };
