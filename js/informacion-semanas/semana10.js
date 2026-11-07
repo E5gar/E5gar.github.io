@@ -240,5 +240,34 @@ cuadernoWeeksData[10] = {
         tilt: -3,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Guía Práctica Semana 10',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana10" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana10/Semana10ProductosElectronicos.png',
+        alt: 'Aplicación Web de Tienda de Reparación de Productos Electrónicos con Python',
+        side: 'right',
+        tilt: 4,
+      },
+      pdf: {
+        src: 'assets/files/Semana10/PRACTICA_SEMANA_10_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 10',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaGrupalSemana10" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana10/Semana10LibreriaPython.png',
+        alt: 'Aplicación Web de Librería con Python',
+        side: 'left',
+        tilt: -4,
+      },
+      pdf: {
+        src: 'assets/files/Semana10/Guía Práctica Grupal - Semana 10.pdf',
+      },
+    },
   ],
 };
