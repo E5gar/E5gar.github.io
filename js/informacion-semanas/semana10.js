@@ -214,5 +214,31 @@ cuadernoWeeksData[10] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Guía Práctica Semana 10',
+      subtitle: 'API RESTful con Node.js, Express y MySQL',
+      text: 'Se inicializó el proyecto con npm init y se instalaron las dependencias express, mysql2, cors y dotenv, organizando la estructura MVC en las carpetas src/routes, src/controllers y src/config, guardando las credenciales en variables de entorno con dotenv. Luego se creó en MySQL la base de datos db_lab10 con la tabla productos, se realizó la configuración en config/db.js con un pool de conexiones de mysql2/promise usando async/await. Se desarrollaron productosController.js y productosRoutes.js con los endpoints GET para listar, POST para crear, devolviendo respuestas en application/json con los códigos de estado 200 y 201, y posteriormente se completó el CRUD con los endpoints PUT y DELETE. El manejo de errores se implementó con bloques try/catch, devolviendo los códigos 400, 404 y 500 con mensajes mediante res.status(codigo).json. Finalmente, se creó una Collection en Postman para probar los 4 verbos HTTP, validando headers, body y status codes tanto en respuestas exitosas como de error.',
+      image: {
+        src: 'assets/images/Semana10/Semana10GuiaPractica.png',
+        alt: 'Prueba del endpoint GET de productos en Postman con respuesta 200 OK',
+        side: 'right',
+        tilt: 2,
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 10',
+      subtitle: 'Sistema de Gestión de Productos con Python',
+      text: 'Trabajo desarrollado en equipo de 2 integrantes cada uno en su propia rama de Git, se refactorizó el código base para construir un Sistema de Gestión de Productos por línea de comandos con programación orientada a objetos. Se diseñó una clase base Producto con las clases derivadas Electronico y Libro, aplicando herencia con super() y un DescuentoMixin para la herencia múltiple, analizando el orden de resolución de métodos MRO. El encapsulamiento se logró con atributos protegidos y privados, accediendo mediante @property y validando rangos en los setters. El polimorfismo se aplicó sobrescribiendo el método calcular_precio_final() en cada clase y empleando __str__ para una representación uniforme. Se definieron excepciones ValidationError y NotFoundError controladas con bloques try/except/else/finally en el flujo del usuario. Se modularizó en main.py como orquestador, junto con los paquetes models/ y utils/ con su __init__.py. Finalmente, se elaboró el README.md con el diagrama de clases, la explicación del MRO, capturas de ejecución del caso exitoso y de las 2 excepciones capturadas.',
+      image: {
+        src: 'assets/images/Semana10/Semana10GuiaPracticaGrupal.png',
+        alt: 'Sistema de Gestión de Productos en Python ejecutándose por línea de comandos',
+        side: 'left',
+        tilt: -3,
+      },
+    },
+  ],
 };
