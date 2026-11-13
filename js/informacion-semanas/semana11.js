@@ -371,6 +371,16 @@ cuadernoWeeksData[11] = {
         src: 'assets/files/Semana11/Guía Práctica Grupal - Semana 11.pdf',
       },
     },
-    
+    {
+      chip: 'Reflexión',
+    },
+    {
+      title: '¿Qué aprendió?',
+      text: 'En esta semana aprendí los fundamentos del framework Django y el concepto de baterías incluidas, comprendiendo el patrón MTV y su equivalencia con MVC, donde el Model gestiona los datos, el Template la presentación y la View la lógica de la petición. Entendí el ciclo de solicitud y respuesta, desde que el archivo de URLs resuelve la ruta hasta que se devuelve un HttpResponse al navegador. Aprendí a crear un entorno virtual, instalar Django, diferenciar un proyecto de una aplicación y reconocer la función de manage.py, settings.py, INSTALLED_APPS y de los archivos tanto wsgi.py como asgi.py, así como la forma en que Apache se integra mediante mod_wsgi. En el enrutamiento comprendí el uso de path(), include() y name para evitar escribir direcciones estáticas en las plantillas con la etiqueta url. Diferencié las vistas basadas en funciones de las basadas en clases, entendiendo que ListView entrega automáticamente object_list al contexto, que get_queryset() y get_context_data() permiten personalizarlo. En las plantillas aprendí a usar la herencia con extends y block, las etiquetas for, if, include y csrf_token, y filtros como title, date, floatformat, además del escape automático que previene XSS. Finalmente, comprendí cómo el ORM traduce las clases a tablas, el uso de tipos, opciones de campo y cómo tanto makemigrations como migrate trasladan los cambios a SQLite. También aprendí a consultar con all(), filter(), exclude() y lookups como __gt, asimismo que los QuerySets son perezosos, dado que solo consultan la base de datos cuando se evalúan, junto con las buenas prácticas de no subir db.sqlite3 ni la SECRET_KEY al repositorio.',
+    },
+    {
+      title: '¿Cómo aprendió?',
+      text: 'En la hora de teoría se explicaron la arquitectura MTV de Django, la gestión de URLs, vistas basadas en funciones y clases, plantillas con herencia, etiquetas y filtros, así como el modelo de datos con el ORM. En la hora de práctica se desarrolló la guía paso a paso, creando el entorno virtual, instalando Django 5.2, generando el proyecto config y la aplicación incidencias. Luego se configuraron las rutas con include() y name, se construyeron las plantillas a partir de un base.html con bloques, se definió el modelo, se aplicaron las migraciones, cargando datos de ejemplo para implementar el listado con búsqueda, filtros, paginación y el detalle de cada incidencia. Se validó el trabajo con python manage.py check y las pruebas de python manage.py test, revisando además el funcionamiento en el panel de administración. Lo aprendido se reforzó en la práctica grupal, donde en equipo de 2 integrantes cada uno trabajando en su propia rama de Git, se refactorizó el código base para construir un catálogo de productos de red con una vista basada en función, una basada en clase con ListView, plantillas con herencia, el modelo Producto y 2 QuerySets filtrados. Finalmente, se verificó el proyecto con check, makemigrations --check, runserver sin errores 404 o 500, y se documentó en un README.md con el diagrama MTV, explicación de la evaluación perezosa y las capturas de la aplicación web.',
+    },
   ],
 };
