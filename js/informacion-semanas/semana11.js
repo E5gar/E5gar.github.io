@@ -342,6 +342,35 @@ cuadernoWeeksData[11] = {
         tilt: -3,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Guía Práctica Semana 11',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana11" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana11/Semana11TicketsAbiertos.png',
+        alt: 'Filtrando tickets abiertos en sistema web de atención de incidencias con Django',
+        side: 'right',
+        tilt: 4,
+      },
+      pdf: {
+        src: 'assets/files/Semana11/PRACTICA_SEMANA_11_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 11',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaGrupalSemana11" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana11/Semana11RoutersFiltro.png',
+        alt: 'Filtrando equipos routers en catálogo de productos con Django',
+        side: 'left',
+        tilt: -4,
+      },
+      pdf: {
+        src: 'assets/files/Semana11/Guía Práctica Grupal - Semana 11.pdf',
+      },
+    },
     
   ],
 };
