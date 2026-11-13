@@ -303,6 +303,17 @@ cuadernoWeeksData[11] = {
     {
       text: '<b>Shell de Django</b> <br> Consola que se abre con python manage.py shell y que tiene cargada la configuración del proyecto. Se usa para probar consultas del ORM y poblar datos sin necesidad de crear vistas.',
     },
-    
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica calificada <br> 4. Realización de la práctica de laboratorio <br> 5. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana10/Semana10Teoria.jpeg',
+        alt: 'Desarrollo de clases teóricas',
+        side: 'right',
+        tilt: -6,
+      },
+    },
   ],
 };
