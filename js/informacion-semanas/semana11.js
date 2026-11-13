@@ -316,4 +316,32 @@ cuadernoWeeksData[11] = {
       },
     },
   ],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Guía Práctica Semana 11',
+      subtitle: 'Sistema Web de Atención de Incidencias Técnicas con Django',
+      text: 'Se creó un entorno virtual con venv, se instaló Django 5.2 con pip registrando las versiones en requirements.txt, y se inició el proyecto con startproject en la carpeta config y la aplicación incidencias con startapp, verificando su registro en INSTALLED_APPS y el servidor con runserver. Se configuró el enrutamiento con un urls.py de la aplicación incluido en el proyecto mediante include(), nombrando cada ruta con name para referenciarla en las plantillas con la etiqueta url en lugar de escribir direcciones estáticas. Las plantillas se organizaron con herencia, partiendo de un base.html con bloques y fragmentos reutilizables en la carpeta partials, de la que extienden las páginas de inicio, catálogo, detalle, servicios, contacto, estilos y scripts. Se definió el modelo de incidencias y se aplicaron las migraciones con makemigrations y migrate, se cargando los datos de ejemplo desde el shell con un módulo de datos iniciales. Con el ORM se implementó el listado con búsqueda, filtros por estado, categoría y prioridad y paginación, el detalle de cada incidencia con su ficha, línea de tiempo e incidencias relacionadas, y el panel de inicio con cifras de resumen. Además, se registró el modelo en el panel de administración de Django, se incorporó una paleta de comandos con Ctrl+K, tema claro, tema oscuro y se validó el proyecto con python manage.py check con las pruebas de python manage.py test.',
+      image: {
+        src: 'assets/images/Semana11/Semana11GuiaPractica.png',
+        alt: 'Sistema web de atención de incidencias desarrollado con Django',
+        side: 'right',
+        tilt: 2,
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 11',
+      subtitle: 'Catálogo de Productos de Arquitectura de Red con Django',
+      text: 'Trabajo desarrollado en equipo de 2 integrantes, cada uno en su propia rama de Git. Se refactorizó el código base para construir TechHuancaTI, un catálogo de routers, firewalls, switches y access points con Django aplicando el patrón MTV. Se separó el proyecto config de la aplicación catalogo con la estructura estándar de carpetas, y se definieron 2 rutas con name, siendo la raíz una vista basada en función home con la bienvenida y /catalogo/ una vista basada en clase ProductoListView que hereda de ListView. Las plantillas se construyeron con herencia a partir de base.html con encabezado, pie de página y bloque content, mientras que home.html y catalogo.html recorren los productos con for, usan filtros y un condicional if, elif y else sobre el stock para marcar Agotado, Quedan N o Disponible. Se definió el modelo Producto con nombre, precio, categoría y stock, se aplicaron las migraciones y se cargó un fixture con 15 productos en 5 categorías mediante loaddata. Se emplearon 2 QuerySets, filter(stock__gt=0) en la vista home, reutilizado con order_by, slicing para los últimos ingresos, count para las estadísticas y order_by(precio) en el catálogo, al que se encadena filter por categoría cuando la URL incluye el parámetro categoria. Se validó con check y makemigrations --check sin errores, con runserver respondiendo 200 en todas las rutas. Finalmente, se elaboró el README.md con el diagrama MTV, la explicación de los QuerySets, evaluación perezosa, capturas del catálogo renderizado, filtrado, estados de stock, validación técnica y estructura de carpetas.',
+      image: {
+        src: 'assets/images/Semana11/Semana11GuiaPracticaGrupal.png',
+        alt: 'Catálogo de productos de arquitectura de red desarrollado con Django',
+        side: 'left',
+        tilt: -3,
+      },
+    },
+    
+  ],
 };
