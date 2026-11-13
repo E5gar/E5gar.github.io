@@ -306,6 +306,41 @@
       autor: 'Charles R. Severance',
       url: 'https://do1.dr-chuck.com/pythonlearn/ES_es/pythonlearn.pdf',
     },
+    {
+      semana: 11,
+      n: 1,
+      titulo: 'Django ORM Cookbook',
+      autor: 'Agiliq',
+      url: 'https://books.agiliq.com/_/downloads/django-orm-cookbook/en/latest/pdf/',
+    },
+    {
+      semana: 11,
+      n: 2,
+      titulo: 'The Definitive Guide to Django: Web Development Done Right',
+      autor: 'Adrian Holovaty y Jacob Kaplan-Moss',
+      url: 'http://slav0nic.org.ua/static/books/python/The%20Definitive%20Guide%20to%20Django%20-%20Apress.pdf',
+    },
+    {
+      semana: 11,
+      n: 3,
+      titulo: 'Django Tutorial',
+      autor: 'Tutorialspoint',
+      url: 'https://www.tutorialspoint.com/django/django_tutorial.pdf',
+    },
+    {
+      semana: 11,
+      n: 4,
+      titulo: 'How to Tango with Django',
+      autor: 'Leif Azzopardi y David Maxwell',
+      url: 'https://tango-with-django.readthedocs.io/_/downloads/en/latest/pdf/',
+    },
+    {
+      semana: 11,
+      n: 5,
+      titulo: 'Django Documentation',
+      autor: 'Django Software Foundation',
+      url: 'https://app.readthedocs.org/projects/django/downloads/pdf/6.1.x/',
+    },
   ];
 
   const viewport = document.querySelector('#librosViewport');
