@@ -1,5 +1,9 @@
 window.cuadernoWeeksData = window.cuadernoWeeksData || {};
 cuadernoWeeksData[11] = {
-  left: [],
-  right: [],
+  left: [
+    {
+      chip: 'Tema',
+      title: 'Desarrollar Aplicaciones Web con Django',
+    },
+  ]
 };
