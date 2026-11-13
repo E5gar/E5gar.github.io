@@ -382,5 +382,39 @@ cuadernoWeeksData[11] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron la arquitectura MTV de Django, la gestión de URLs, vistas basadas en funciones y clases, plantillas con herencia, etiquetas y filtros, así como el modelo de datos con el ORM. En la hora de práctica se desarrolló la guía paso a paso, creando el entorno virtual, instalando Django 5.2, generando el proyecto config y la aplicación incidencias. Luego se configuraron las rutas con include() y name, se construyeron las plantillas a partir de un base.html con bloques, se definió el modelo, se aplicaron las migraciones, cargando datos de ejemplo para implementar el listado con búsqueda, filtros, paginación y el detalle de cada incidencia. Se validó el trabajo con python manage.py check y las pruebas de python manage.py test, revisando además el funcionamiento en el panel de administración. Lo aprendido se reforzó en la práctica grupal, donde en equipo de 2 integrantes cada uno trabajando en su propia rama de Git, se refactorizó el código base para construir un catálogo de productos de red con una vista basada en función, una basada en clase con ListView, plantillas con herencia, el modelo Producto y 2 QuerySets filtrados. Finalmente, se verificó el proyecto con check, makemigrations --check, runserver sin errores 404 o 500, y se documentó en un README.md con el diagrama MTV, explicación de la evaluación perezosa y las capturas de la aplicación web.',
     },
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://books.agiliq.com/_/downloads/django-orm-cookbook/en/latest/pdf/" target="_blank">Django ORM Cookbook</a> - Agiliq (2018)',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="http://slav0nic.org.ua/static/books/python/The%20Definitive%20Guide%20to%20Django%20-%20Apress.pdf" target="_blank">The Definitive Guide to Django: Web Development Done Right</a> - Adrian Holovaty y Jacob Kaplan-Moss (2008)',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://www.tutorialspoint.com/django/django_tutorial.pdf" target="_blank">Django Tutorial</a> - Tutorialspoint (2015)',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://tango-with-django.readthedocs.io/_/downloads/en/latest/pdf/" target="_blank">How to Tango with Django</a> - Leif Azzopardi y David Maxwell',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://app.readthedocs.org/projects/django/downloads/pdf/6.1.x/" target="_blank">Django Documentation</a> - Django Software Foundation',
+            'Manual',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
