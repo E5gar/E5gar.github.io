@@ -336,7 +336,18 @@ cuadernoWeeksData[12] = {
         caption: 'Ataques web y defensas en Django',
       },
     },
-   
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica calificada <br> 4. Realización de la práctica de laboratorio <br> 5. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana12/Semana12Teoria.jpeg',
+        alt: 'Desarrollo de clases teóricas',
+        side: 'right',
+        tilt: -6,
+      },
+    },
   ],
   right: [],
 };
