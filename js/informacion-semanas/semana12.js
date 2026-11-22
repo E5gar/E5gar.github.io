@@ -395,5 +395,61 @@ cuadernoWeeksData[12] = {
         tilt: -4,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Guía Práctica Semana 12',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana12" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana12/Semana12FormularioEventos.png',
+        alt: 'Formulario de creación de eventos',
+        side: 'right',
+        tilt: 4,
+      },
+      pdf: {
+        src: 'assets/files/Semana12/PRACTICA_SEMANA_12_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 12',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaGrupalSemana12" target="_blank">GitHub</a>',
+      pdf: {
+        src: 'assets/files/Semana12/Guía Práctica Grupal - Semana 12.pdf',
+      },
+    },
+    {
+      subtitle: 'Caso 1. Sistema de Gestión de Préstamos de Equipos de Laboratorio con Django',
+    },
+    {
+      image: {
+        src: 'assets/images/Semana12/Semana12HistorialPrestamos.png',
+        alt: 'Historial de préstamos de equipos con Django',
+        side: 'left',
+        tilt: -4,
+      },
+    },
+    {
+      subtitle: 'Caso 2. Plataforma de Gestión de Consultas Médicas',
+    },
+    {
+      image: {
+        src: 'assets/images/Semana12/Semana12RegistrosAuditoria.png',
+        alt: 'Registros de auditoría de consultas médicas con Django',
+        side: 'right',
+        tilt: 4,
+      },
+    },
+    {
+      subtitle: 'Caso 3. Sistema de Control de Asistencia y Permisos de Empleados',
+    },
+    {
+      image: {
+        src: 'assets/images/Semana12/Semana12FormularioPermisos.png',
+        alt: 'Formulario de solicitud de permiso con Django',
+        side: 'left',
+        tilt: -4,
+      },
+    },
   ],
 };
