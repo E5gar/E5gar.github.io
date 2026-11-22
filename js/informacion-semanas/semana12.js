@@ -462,5 +462,39 @@ cuadernoWeeksData[12] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron los formularios de Django, validación y sanitización, la personalización del panel de administración, el funcionamiento del middleware, gestión de sesiones y sistema de autenticación. En la hora de práctica se desarrolló la guía paso a paso, creando forms.py con un formulario clásico y un ModelForm, implementando las validaciones con clean_&lt;campo&gt;(), clean() y validadores, registrando los modelos en el admin con campos calculados, acciones, creando un middleware propio y configurando las sesiones, para luego proteger las vistas con @login_required y PermissionRequiredMixin. Se probó el flujo completo de registro, login, acceso restringido, admin y logout, verificando las cookies en las DevTools, las cabeceras de seguridad y los logs del middleware. Lo aprendido se reforzó en la práctica grupal, donde en equipo de 2 integrantes donde cada uno trabajó en su propia rama se desarrollaron los 3 casos probando tanto entradas válidas como los inválidas de cada formulario, revisando los logs de auditoría en consola, errores 403 al faltar permisos, cookies de sesión con tiempo de expiración y el cierre automático de la sesión por inactividad. Finalmente, se documentó el trabajo en un README.md por ejercicio con las cuentas de prueba, datos de prueba, capturas de cada evidencia y los diagramas tanto de roles como de permisos.',
     },
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://books.agiliq.com/projects/django-admin-cookbook/" target="_blank">Django Admin Cookbook</a> - Agiliq (2018)',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://books.agiliq.com/projects/djenofdjango/" target="_blank">Django Projects Cookbook</a> - Agiliq (2018)',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://www.obeythetestinggoat.com/pages/book.html" target="_blank">Test-Driven Development with Python (3rd Edition)</a> - Harry J. W. Percival (2025)',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://www.cl.cam.ac.uk/~rja14/book.html" target="_blank">Security Engineering: A Guide to Building Dependable Distributed Systems</a> - Ross Anderson',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google: Lessons Learned from Programming Over Time</a> - Titus Winters, Tom Manshreck y Hyrum Wright (2020)',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };

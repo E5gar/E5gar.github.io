@@ -341,6 +341,41 @@
       autor: 'Django Software Foundation',
       url: 'https://app.readthedocs.org/projects/django/downloads/pdf/6.1.x/',
     },
+    {
+      semana: 12,
+      n: 1,
+      titulo: 'Django Admin Cookbook',
+      autor: 'Agiliq',
+      url: 'https://books.agiliq.com/projects/django-admin-cookbook/',
+    },
+    {
+      semana: 12,
+      n: 2,
+      titulo: 'Django Projects Cookbook',
+      autor: 'Agiliq',
+      url: 'https://books.agiliq.com/projects/djenofdjango/',
+    },
+    {
+      semana: 12,
+      n: 3,
+      titulo: 'Test-Driven Development with Python (3rd Edition)',
+      autor: 'Harry J. W. Percival',
+      url: 'https://www.obeythetestinggoat.com/pages/book.html',
+    },
+    {
+      semana: 12,
+      n: 4,
+      titulo: 'Security Engineering: A Guide to Building Dependable Distributed Systems',
+      autor: 'Ross Anderson',
+      url: 'https://www.cl.cam.ac.uk/~rja14/book.html',
+    },
+    {
+      semana: 12,
+      n: 5,
+      titulo: 'Software Engineering at Google: Lessons Learned from Programming Over Time',
+      autor: 'Titus Winters, Tom Manshreck y Hyrum Wright',
+      url: 'https://abseil.io/resources/swe-book',
+    },
   ];
 
   const viewport = document.querySelector('#librosViewport');
