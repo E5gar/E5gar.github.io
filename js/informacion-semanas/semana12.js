@@ -349,5 +349,51 @@ cuadernoWeeksData[12] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Guía Práctica Semana 12',
+      subtitle: 'Aplicación Web de Gestión de Eventos con Django',
+      text: 'Se desarrolló una aplicación web con Django para la gestión de eventos aplicando los 5 pasos de la guía. En formularios y plantillas se creó forms.py con un formulario para el inicio de sesión y ModelForm para el registro tanto de usuarios como de eventos, renderizados con form.as_p, form.errors y la etiqueta csrf_token, procesados por una ruta POST donde se instanció el formulario con request.POST y se validó con is_valid() antes de guardar. En validación y sanitización se implementaron clean_&lt;campo&gt;(), clean() para la validación cruzada entre campos, validadores con expresiones regulares y una función sanitize_input() con strip() y escape, diferenciando en pantalla los errores por campo de los del grupo __all__. En el Django Admin se registraron los modelos con ModelAdmin, personalizando list_display, list_filter, search_fields, readonly_fields y actions, además de un campo calculado con @admin.display. En middleware y sesiones se creó un middleware propio con __init__ y __call__ para registrar las peticiones, se configuraron SESSION_ENGINE, SESSION_COOKIE_AGE y CSRF_COOKIE_SECURE, y se protegieron las vistas con @login_required y PermissionRequiredMixin. La aplicación cuenta con inicio, login, registro, pantalla principal con la sesión iniciada, sección de amigos, registro de eventos, listado de eventos creados por el usuario y búsqueda de eventos. Finalmente, se probó el flujo completo de registro, login, acceso restringido, admin y logout, verificando las cookies en las DevTools, las cabeceras X-Frame-Options, Content-Security-Policy, logs del middleware y auditoría del despliegue.',
+      image: {
+        src: 'assets/images/Semana12/Semana12GuiaPractica.png',
+        alt: 'Aplicación web de gestión de eventos desarrollada con Django',
+        side: 'right',
+        tilt: 2,
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 12',
+      subtitle: 'Caso 1. Sistema de Gestión de Préstamos de Equipos de Laboratorio con Django',
+      text: 'Trabajo desarrollado en equipo de 2 integrantes, cada uno en su propia rama de Git dev/Gago-Edgar y dev/Huamanlazo-Pariona, uniendo el trabajo en main mediante Pull Requests. En el Caso 1 se construyó con Django un sistema de préstamos para la FIS UNCP con 10 equipos distribuidos en 5 laboratorios y 16 préstamos de prueba. En formularios, PrestamoSolicitudForm valida en clean() que el docente no tenga más de 3 préstamos activos, que la fecha de devolución sea posterior a la de préstamo, que el equipo esté operativo y que la cantidad no supere el stock, sanitizando además las observaciones. El stock se descuenta al aprobar un préstamo dentro de transaction.atomic() con select_for_update(). En el Django Admin se personalizó el listado de equipos con estado visual por colores, el campo calculado de días desde el mantenimiento, búsqueda, filtros por laboratorio, estado y categoría, y la acción de marcar como en mantenimiento, mientras que el listado de préstamos incorpora el campo calculado de días de retraso, filtros tanto por fecha como por estado, y la acción de enviar recordatorio de devolución. Se definieron los roles admin, docente, asistente e invitado, de modo que el docente solo visualiza sus propios préstamos, y se configuró la sesión HttpOnly con 30 minutos de inactividad. El middleware AuditoriaYAlertasMiddleware registra en el logger prestamos.auditoria cada acción crítica con usuario, fecha, hora, IP y acción, asimismo se genera una alerta WARNING al detectar préstamos vencidos durante el inicio de sesión. Se validó el flujo con casos válidos e inválidos, revisando los logs en consola y la cookie csrftoken en las DevTools.',
+      image: {
+        src: 'assets/images/Semana12/Semana12GuiaPracticaGrupalCaso1.png',
+        alt: 'Sistema de gestión de préstamos de equipos de laboratorio desarrollado con Django',
+        side: 'left',
+        tilt: -3,
+      },
+    },
+    {
+      subtitle: 'Caso 2. Plataforma de Gestión de Consultas Médicas',
+      text: 'En el Caso 2 se desarrolló la plataforma de consultas médicas simulando el backend en el navegador con HTML, CSS y JavaScript, almacenando los datos en localStorage, con 15 pacientes, 8 médicos en distintas especialidades y 30 citas de prueba. El formulario de cita filtra los médicos según la especialidad y valida un motivo de al menos 20 caracteres, que el paciente no tenga más de una cita el mismo día y que el médico no tenga citas superpuestas. Se implementó una cadena de middlewares de sesión, autorización, auditoría y horario, donde el de horario rechaza las citas fuera de lunes a viernes de 8:00 a 18:00 y sábados de 8:00 a 13:00, con citas de 30 minutos. Los permisos se asignaron por los grupos Admins, Medicos, Recepcionistas y Pacientes, con permisos como ver_historial_clinico y ver_auditoria, respondiendo con error 403 y registrando el intento cuando falta el permiso. La sesión se configuró con 20 minutos de inactividad y las cookies cm_sessionid y cm_csrftoken con SameSite Strict. El panel presenta la agenda diaria por médico con la acción masiva de marcar citas como completadas, y la vista de auditoría muestra los registros por nivel AUDIT, SENSIBLE, WARNING e INFO. Se documentó el diagrama de roles y la matriz de permisos.',
+      image: {
+        src: 'assets/images/Semana12/Semana12GuiaPracticaGrupalCaso2.png',
+        alt: 'Plataforma de gestión de consultas médicas con auditoría y permisos por grupo',
+        side: 'right',
+        tilt: 3,
+      },
+    },
+    {
+      subtitle: 'Caso 3. Sistema de Control de Asistencia y Permisos de Empleados',
+      text: 'En el Caso 3 se desarrolló un sistema de asistencia y permisos de manera simulada con HTML, CSS y JavaScript y datos en localStorage, con 12 empleados, 55 asistencias y 10 permisos de prueba. La marcación calcula horas trabajadas y horas extra en una jornada de 8 horas, el middleware de horario solo permite marcar entre dos horas antes y dos horas después del horario real. El formulario de permisos valida motivos de al menos 30 caracteres, el saldo de 30 días de vacaciones y la superposición de fechas con permisos pendientes o aprobados. En el flujo de aprobación la solicitud pasa de Pendiente a Aprobado, donde el jefe de área solo ve las solicitudes de su área y el empleado recibe una notificación. Se implementaron los roles Admin RRHH, Jefe de Área, Empleado y Contador con permisos como aprobar_permiso y ver_salarios, restringiendo los salarios solo a RRHH. La sesión se configuró con 45 minutos de inactividad y las cookies ta_sessionid y ta_csrftoken con SameSite Strict, mientras que el middleware de auditoría registra marcaciones, solicitudes, aprobaciones, accesos no autorizados y recordatorios de asistencia. Además, se incluyó dentro de la aplicación un manual de usuario para empleados.',
+      image: {
+        src: 'assets/images/Semana12/Semana12GuiaPracticaGrupalCaso3.png',
+        alt: 'Sistema de control de asistencia y permisos con flujo de aprobación',
+        side: 'left',
+        tilt: -4,
+      },
+    },
+  ],
 };
