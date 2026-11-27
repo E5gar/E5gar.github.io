@@ -1,5 +1,10 @@
 window.cuadernoWeeksData = window.cuadernoWeeksData || {};
 cuadernoWeeksData[13] = {
-  left: [],
+  left: [
+     {
+      chip: 'Tema',
+      title: 'Desarrollar Aplicaciones con APIs RESTful',
+    },
+  ],
   right: [],
 };
