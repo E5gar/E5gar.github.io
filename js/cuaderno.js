@@ -142,6 +142,76 @@
     return list.map(buildEntryHTML).join('');
   }
 
+  function isHeaderEntry(el) {
+    return (
+      el &&
+      !el.querySelector('.entry-text, .entry-table-wrap, .entry-pdf-wrap, .entry-image-wrap')
+    );
+  }
+
+  function getPageUsedHeight(page, content) {
+    if (!page || !content || !content.lastElementChild) return 0;
+    return content.lastElementChild.getBoundingClientRect().bottom - page.getBoundingClientRect().top;
+  }
+
+  function resetBalancedEntries() {
+    rightContainer.querySelectorAll('[data-moved-from-left="1"]').forEach((el) => {
+      el.removeAttribute('data-moved-from-left');
+      leftContainer.appendChild(el);
+    });
+    rightContainer.querySelectorAll('.entry-right-start').forEach((el) => {
+      el.classList.remove('entry-right-start');
+    });
+  }
+
+  function balanceNotebookPages() {
+    if (!leftContainer || !rightContainer) return;
+    const leftPage = leftContainer.closest('.notebook-page-left');
+    const rightPage = rightContainer.closest('.notebook-page-right');
+    if (!leftPage || !rightPage) return;
+
+    resetBalancedEntries();
+
+    if (window.innerWidth <= 900) return;
+    if (leftContainer.children.length <= 3 || !rightContainer.children.length) return;
+
+    const firstRightOriginal = rightContainer.firstElementChild;
+
+    while (leftContainer.children.length > 3) {
+      const leftH = getPageUsedHeight(leftPage, leftContainer);
+      const rightH = getPageUsedHeight(rightPage, rightContainer);
+      const diffBefore = leftH - rightH;
+      if (diffBefore <= 0) break;
+
+      const batch = [];
+      const last = leftContainer.lastElementChild;
+      batch.push(last);
+      if (isHeaderEntry(last.previousElementSibling) && leftContainer.children.length - 1 > 3) {
+        batch.push(last.previousElementSibling);
+      }
+
+      batch.forEach((el) => {
+        el.setAttribute('data-moved-from-left', '1');
+        rightContainer.insertBefore(el, rightContainer.firstElementChild);
+      });
+
+      const newDiff =
+        getPageUsedHeight(leftPage, leftContainer) - getPageUsedHeight(rightPage, rightContainer);
+
+      if (Math.abs(newDiff) >= Math.abs(diffBefore)) {
+        for (let i = batch.length - 1; i >= 0; i--) {
+          batch[i].removeAttribute('data-moved-from-left');
+          leftContainer.appendChild(batch[i]);
+        }
+        break;
+      }
+    }
+
+    if (rightContainer.querySelector('[data-moved-from-left="1"]') && firstRightOriginal) {
+      firstRightOriginal.classList.add('entry-right-start');
+    }
+  }
+
   function prepareReveal(root) {
     const items = [];
     (function walk(node) {
@@ -207,6 +277,20 @@
         bindEntryPdfs(leftContainer);
         bindEntryPdfs(rightContainer);
         [leftContainer, rightContainer].forEach((el) => el.classList.remove('is-loading'));
+        balanceNotebookPages();
+        [leftContainer, rightContainer].forEach((container) => {
+          container.querySelectorAll('img').forEach((img) => {
+            if (!img.complete) {
+              img.addEventListener(
+                'load',
+                () => {
+                  if (token === renderToken) balanceNotebookPages();
+                },
+                { once: true }
+              );
+            }
+          });
+        });
         if (!reduceMotion) applyReveal([leftContainer, rightContainer], isFirst ? 0.6 : 0.05);
       },
       isFirst ? 0 : 250
@@ -222,6 +306,12 @@
   if (viewerCloseBtn) viewerCloseBtn.addEventListener('click', closeViewer);
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeViewer();
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(balanceNotebookPages, 150);
   });
 
   const weekLabel = document.querySelector('#weekLabel');

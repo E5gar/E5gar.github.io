@@ -662,3 +662,12 @@ html[data-theme='dark'] .entry-table thead th {
   background-color: #1c2530;
   color: #f3f6fa;
 }
+
+.entry-right-start {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px dashed color-mix(in srgb, var(--default-color), transparent 82%);
+}
+html[data-theme='dark'] .entry-right-start {
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
