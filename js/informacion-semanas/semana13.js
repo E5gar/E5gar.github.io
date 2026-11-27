@@ -373,5 +373,50 @@ cuadernoWeeksData[13] = {
         tilt: 3,
       },
     },
+    {
+      chip: 'Resultados',
+    },
+    {
+      title: '1. Guía Práctica Semana 13',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaSemana13" target="_blank">GitHub</a>',
+      image: {
+        src: 'assets/images/Semana13/Semana13MedicionesRuido.png',
+        alt: 'Listado de mediciones de ruido urbano',
+        side: 'right',
+        tilt: 4,
+      },
+      pdf: {
+        src: 'assets/files/Semana13/PRACTICA_SEMANA_13_GAGO_URIBE_EDGAR_ROBERT.pdf',
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 13',
+      text: 'Enlace en <a href="https://github.com/E5gar/GuiaPracticaGrupalSemana13" target="_blank">GitHub</a>',
+      pdf: {
+        src: 'assets/files/Semana13/Guia_Practica_Grupal_Semana_13_GAGO_HUAMANLAZO.pdf',
+      },
+    },
+    {
+      subtitle: 'Caso 1. API REST para Sistema de Gestión de Biblioteca Universitaria',
+    },
+    {
+      image: {
+        src: 'assets/images/Semana13/Semana13BibliotecaLibros.png',
+        alt: 'Aplicación Web de biblioteca universitaria',
+        side: 'left',
+        tilt: -4,
+      },
+    },
+    {
+      subtitle: 'Caso 2. API REST para Plataforma de E-commerce de Productos Tecnológicos',
+    },
+    {
+      image: {
+        src: 'assets/images/Semana13/Semana13TecnoMarketCatalogo.png',
+        alt: 'Aplicación Web de productos tecnológicos TecnoMarket',
+        side: 'right',
+        tilt: 4,
+      },
+    },
   ],
 };
