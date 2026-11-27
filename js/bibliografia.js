@@ -376,6 +376,41 @@
       autor: 'Titus Winters, Tom Manshreck y Hyrum Wright',
       url: 'https://abseil.io/resources/swe-book',
     },
+    {
+      semana: 13,
+      n: 1,
+      titulo: 'RESTful Web Services',
+      autor: 'Leonard Richardson y Sam Ruby',
+      url: 'https://www.crummy.com/writing/RESTful-Web-Services/',
+    },
+    {
+      semana: 13,
+      n: 2,
+      titulo: 'Web API Design: The Missing Link',
+      autor: 'Apigee, Google Cloud',
+      url: 'https://cloud.google.com/files/apigee/apigee-web-api-design-the-missing-link-ebook.pdf?hl=de',
+    },
+    {
+      semana: 13,
+      n: 3,
+      titulo: 'Undisturbed REST: A Guide to Designing the Perfect API',
+      autor: 'Mike Stowe',
+      url: 'https://www.onlineprogrammingbooks.com/undisturbed-rest/',
+    },
+    {
+      semana: 13,
+      n: 4,
+      titulo: 'Practical Guide to Building an API Back End with Spring Boot (Version 2)',
+      autor: 'Wim Deblauwe',
+      url: 'https://www.infoq.com/minibooks/spring-boot-api-backend-version2',
+    },
+    {
+      semana: 13,
+      n: 5,
+      titulo: 'ASP.NET Web API Succinctly',
+      autor: 'Emanuele DelBono',
+      url: 'https://www.syncfusion.com/succinctly-free-ebooks/aspnet-web-api-succinctly',
+    },
   ];
 
   const viewport = document.querySelector('#librosViewport');
