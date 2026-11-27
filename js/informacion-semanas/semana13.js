@@ -429,5 +429,39 @@ cuadernoWeeksData[13] = {
       title: '¿Cómo aprendió?',
       text: 'En la hora de teoría se explicaron los fundamentos de REST, restricciones de la arquitectura, diseño de recursos, URLs, métodos, códigos de estado, HATEOAS y las herramientas de Django REST Framework como serializadores, ViewSets, routers, filtrado, paginación, throttling, CORS y CSRF. En la hora de práctica se desarrolló la guía paso a paso, instalando djangorestframework, django-cors-headers y drf-spectacular, configurando REST_FRAMEWORK y verificando el proyecto con python manage.py check. Luego se crearon los serializadores de zonas urbanas y mediciones de ruido, se convirtieron las vistas a ModelViewSet registrados en un DefaultRouter y se probaron los filtros, búsqueda, ordenamiento, paginación y límite de peticiones con 130 solicitudes consecutivas hasta obtener la respuesta 429. Se validó el trabajo con Postman y curl, comprobando los códigos de estado, rechazo con 403 de un POST sin sesión, petición preflight desde un origen permitido y desde uno no permitido, documentación generada en /api/docs/. Lo aprendido se reforzó en la práctica grupal, donde en equipo de 2 integrantes cada uno trabajó en su propia rama de Git y se desarrollaron dos APIs para la gestión de una biblioteca universitaria y para un e-commerce de productos tecnológicos, aplicando serialización anidada, permisos por rol, autenticación por token, control de stock con transacciones, throttling y CORS. Finalmente, se unió el trabajo con Pull Requests de revisión cruzada, se verificó con pruebas unitarias y se documentó en un README.md la arquitectura, endpoints, roles y capturas de pantalla para cada una de las evidencias.',
     },
+    {
+      title: 'Bibliografía',
+      table: {
+        headers: ['N°', 'Título', 'Tipo'],
+        rows: [
+          [
+            '01',
+            '<a href="https://www.crummy.com/writing/RESTful-Web-Services/" target="_blank">RESTful Web Services</a> - Leonard Richardson y Sam Ruby (2007)',
+            'Libro',
+          ],
+          [
+            '02',
+            '<a href="https://cloud.google.com/files/apigee/apigee-web-api-design-the-missing-link-ebook.pdf?hl=de" target="_blank">Web API Design: The Missing Link</a> - Apigee, Google Cloud',
+            'Libro',
+          ],
+          [
+            '03',
+            '<a href="https://www.onlineprogrammingbooks.com/undisturbed-rest/" target="_blank">Undisturbed REST: A Guide to Designing the Perfect API</a> - Mike Stowe (2015)',
+            'Libro',
+          ],
+          [
+            '04',
+            '<a href="https://www.infoq.com/minibooks/spring-boot-api-backend-version2" target="_blank">Practical Guide to Building an API Back End with Spring Boot (Version 2)</a> - Wim Deblauwe',
+            'Libro',
+          ],
+          [
+            '05',
+            '<a href="https://www.syncfusion.com/succinctly-free-ebooks/aspnet-web-api-succinctly" target="_blank">ASP.NET Web API Succinctly</a> - Emanuele DelBono (2014)',
+            'Libro',
+          ],
+        ],
+        caption: '',
+      },
+    },
   ],
 };
