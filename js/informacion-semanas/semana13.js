@@ -333,6 +333,18 @@ cuadernoWeeksData[13] = {
         caption: 'Herramientas para probar APIs',
       },
     },
+    {
+      subtitle: 'Procedimiento',
+    },
+    {
+      text: '1. Desarrollo de clases en hora de teoría <br> 2. Desarrollo de clases en hora práctica <br> 3. Realización de la práctica de laboratorio <br> 4. Realización de la práctica grupal <br> 5. Actualización del cuaderno de la asignatura',
+      image: {
+        src: 'assets/images/Semana13/Semana13Teoria.jpeg',
+        alt: 'Desarrollo de clases teóricas',
+        side: 'right',
+        tilt: -6,
+      },
+    },
   ],
   right: [],
 };
