@@ -16,10 +16,7 @@ cuadernoWeeksData[13] = {
       table: {
         headers: ['Restricción', 'Significado'],
         rows: [
-          [
-            'Cliente-Servidor',
-            'Interfaz y almacenamiento de datos se separan',
-          ],
+          ['Cliente-Servidor', 'Interfaz y almacenamiento de datos se separan'],
           [
             'Sin estado',
             'Cada petición incluye toda la información necesaria, el servidor no guarda contexto del cliente',
@@ -33,10 +30,7 @@ cuadernoWeeksData[13] = {
             'Sistema en capas',
             'El cliente no distingue si se comunica con el servidor final o con un intermediario',
           ],
-          [
-            'Código bajo demanda',
-            'El servidor puede enviar código ejecutable al cliente',
-          ],
+          ['Código bajo demanda', 'El servidor puede enviar código ejecutable al cliente'],
         ],
         caption: 'Restricciones de la arquitectura REST',
       },
@@ -140,10 +134,7 @@ cuadernoWeeksData[13] = {
       table: {
         headers: ['Clase', 'Característica'],
         rows: [
-          [
-            'Serializer',
-            'Los campos se declaran a mano',
-          ],
+          ['Serializer', 'Los campos se declaran a mano'],
           ['ModelSerializer', 'Genera los campos desde el modelo e implementa create() y update()'],
           [
             'HyperlinkedModelSerializer',
@@ -346,5 +337,41 @@ cuadernoWeeksData[13] = {
       },
     },
   ],
-  right: [],
+  right: [
+    {
+      chip: 'Ejercicios de Laboratorio',
+    },
+    {
+      title: '1. Guía Práctica Semana 13',
+      subtitle: 'API RESTful para Monitoreo de Ruido Urbano con Django REST Framework',
+      text: 'Se desarrolló una API RESTful para registrar zonas urbanas y mediciones de ruido. En la configuración se instalaron djangorestframework, django-cors-headers y drf-spectacular, registrando cada uno en INSTALLED_APPS, se definió el diccionario REST_FRAMEWORK con autenticación, permisos, paginación, filtros y throttling, además de CORS_ALLOWED_ORIGINS y SPECTACULAR_SETTINGS, asimismo se verificó el proyecto con python manage.py check. Con respecto a serialización, se creó serializers.py con un HyperlinkedModelSerializer para ZonaUrbana con campos calculados y enlaces relacionados, un serializador de MedicionRuido con campos de solo lectura validado con validate() que no se registren mediciones duplicadas. Se convirtieron las vistas a ModelViewSet con queryset, serializer_class, filter_backends y pagination_class, registrándolos en DefaultRouter con la ruta /api/. Se agregó una acción personalizada con @action que devuelve el promedio, máximo, mínimo, mediciones excedidas y resultados por franja horaria. Se validó la respuesta OPTIONS con el encabezado Allow y que un POST sin sesión fuera rechazado con 403 Forbidden. Respecto al filtrado, se configuraron DjangoFilterBackend, SearchFilter y OrderingFilter con PageNumberPagination, asimismo se probaron mediciones pendientes en la página 2, filtros combinados por exceso del límite, distrito de Huancayo, fuente de tráfico, búsqueda por Mercado ordenado de mayor a menor nivel de decibeles y páginas de 5 mediciones. Con AnonRateThrottle y UserRateThrottle se probaron 130 solicitudes consecutivas, obteniendo respuestas 200 y 429 con el encabezado Retry-After. Finalmente, se configuró el middleware de CORS y CSRF, validando tanto con curl como con Postman la petición preflight OPTIONS desde un origen permitido que devolvió Access-Control-Allow-Origin, y desde uno no permitido que no devolvió encabezados de CORS. Se generó el esquema OpenAPI con drf-spectacular y se publicó en /api/docs/. Se desarrolló además un frontend con página de inicio, zonas urbanas, mediciones de ruido, formulario de reporte, tema oscuro y diseño responsive.',
+      image: {
+        src: 'assets/images/Semana13/Semana13GuiaPractica.png',
+        alt: 'API RESTful de monitoreo de ruido urbano desarrollada con Django REST Framework',
+        side: 'right',
+        tilt: 3,
+      },
+    },
+    {
+      title: '2. Guía Práctica Grupal Semana 13',
+      subtitle: 'Caso 1. API REST para Sistema de Gestión de Biblioteca Universitaria',
+      text: 'Trabajo desarrollado en equipo de 2 integrantes cada uno en su propia rama de Git. Se construyó con Django REST Framework la API de una Biblioteca Central par la UNCP con catálogo público de libros, préstamos, devoluciones y usuarios, organizando el código en una app comun con la autenticación TokenConExpiracion de 12 horas, AuditoriaMixin, permisos y manejo de excepciones para respuestas 429. Los serializadores incluyen datos del autor de forma anidada, campos calculados e hipervínculos HATEOAS con HyperlinkedIdentityField. Los ViewSets se registraron en un router con paginación mediante PageNumberPagination y LimitOffsetPagination, asimismo filtros con django-filter. Para aceptar parámetros con caracteres en español tales como ?año__gte=2020, ?ordering=-año y ?ordering=título se usaron nombres ASCII en los modelos, año y titulo, así como clase OrdenamientoFlexible y alias en LibroFilter. Los préstamos y devoluciones se realizan en transaction.atomic() con select_for_update() para controlar la concurrencia del stock, validando también el cupo máximo por usuario, mientras que el manager actualiza el estado a vencido antes de listar, calculando multa de S/ 2.00 por día. Se configuraron los roles con permisos, throttling con registro en logs/throttling.log, CORS, documentación con Swagger UI y ReDoc, así como pruebas unitarias. Se desarrolló además una página web con tema claro y oscuro.',
+      image: {
+        src: 'assets/images/Semana13/Semana13GuiaPracticaGrupalCaso1.png',
+        alt: 'API REST de biblioteca universitaria desarrollada con Django REST Framework',
+        side: 'left',
+        tilt: -3,
+      },
+    },
+    {
+      subtitle: 'Caso 2. API REST para Plataforma de E-commerce de Productos Tecnológicos',
+      text: 'En el Caso 2 se desarrolló la API de TecnoMarket Perú de 6 aplicaciones siendo comun, productos, carrito, ordenes, resenas y usuarios. Se registraron DRF, token, django-filter, drf-spectacular y CORS con paginación de 24 elementos y límites de peticiones, el script populate_data.py genera 120 productos, 25 usuarios, 60 órdenes y 104 reseñas usando Decimal para evitar errores de redondeo. Los serializadores incluyen campos calculados tales como el precio con descuento, disponibilidad y rating, categoría anidada, enlaces y validaciones de stock. La autenticación es por token en la cabecera Authorization, con permisos por rol donde el invitado solo consulta el catálogo, el vendedor registra sus productos, el cliente usa carrito y órdenes, mientras que el administrador controla todo. El carrito recibe producto_id, cantidad y cupón opcional, para luego devolver subtotal, impuestos, total y total con descuento rechazando con 400 cuando la cantidad supera el stock. El checkout convierte el carrito en una orden dentro de una transacción, descuenta stock y guarda el precio del momento de la compra con los estados pendiente, pagada, enviada, entregada y cancelada, para luego generar el número de seguimiento al pasar a enviada. Las reseñas solo las pueden hacer compradores verificados con calificación de 1 a 5 y una sola por producto. Se agregaron filtros por categoría, marca, precio y disponibilidad, throttling de 60 peticiones por hora para invitados con respuesta 429, CORS para los 3 dominios de TecnoMarket con credenciales y documentación tanto con Swagger UI como con ReDoc. Se realizaron 8 pruebas con resultado. se creó una colección de Postman y se conectó un frontend en HTML, CSS y JavaScript con inicio, catálogo con filtros, detalle de producto, carrito, órdenes y acceso con token.',
+      image: {
+        src: 'assets/images/Semana13/Semana13GuiaPracticaGrupalCaso2.png',
+        alt: 'API REST de e-commerce de productos tecnológicos desarrollada con Django REST Framework',
+        side: 'right',
+        tilt: 3,
+      },
+    },
+  ],
 };
